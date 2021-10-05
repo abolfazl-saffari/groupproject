@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/home-grid.css">
+    <link rel="stylesheet" href="css/movable-slidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services-sec.css">
+    <link rel="stylesheet" href="css/pictures-sec.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/sticky-button-right-side.css">
+    <link rel="stylesheet" href="css/hambergure.css">
+    <script src="java.js"></script>
+
+
+</head>
+<body>
+<div class="hambergure-menu" id="hambergure-menu">
+        <a href="#" class="logo">
+            <img src="images/retina-clinic3.png" alt="retina-clinic">
+        </a>
+    <ion-icon name="menu-outline" id="open-icon" onclick="openMenu()"></ion-icon>
+</div>
+
+
+<div class="hambergure-content close-menu" id="hambergure-content">
+
+    <div>
+        <ion-icon name="close-outline" id="close-icon" onclick="closeMenu()"></ion-icon>
+    </div>
+
+    <dl>
+        <dt><a class="current" href="#">Home</a></dt>
+        <dt><a href="#">About us</a></dt>
+        <dt><a href="#">Services</a></dt>
+        <dt><a href="#">Team</a></dt>
+        <dt><a href="#">Contact</a></dt>
+        <dt><a href="#">Buy now</a></dt>
+    </dl>
+
+</div>
+
+<div class="container" id="container" onclick="closeMenuBody()">
+    <header>
+        <a href="#" class="logo"><img src="images/retina-clinic3.png" alt="retina-clinic"></a>
+        <dl>
+            <dt><a class="current" href="#">Home</a></dt>
+            <dt><a href="#">About us</a></dt>
+            <dt><a href="#">Services</a></dt>
+            <dt><a href="#">Team</a></dt>
+            <dt><a href="#">Contact</a></dt>
+            <dt><a href="#">Buy now</a></dt>
+        </dl>
+    </header>
+
+    <div class="header">
+        <div id="welcome">
+            <h1>
+                Welcome to
+            </h1>
+            <h1>
+                the medical clinic
+            </h1>
+            <h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+            <a href="services.html" class="btnMore">More</a>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-top">
+            <h2>Services takes good <br> care of you.</h2>
+        </div>
+        <div class="cell cell1">
+            <img src="images/home_clinic3_pic1.png" alt="home-clinic1">
+            <h4>Stomatology</h4>
+            <p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi maximus</p>
+        </div>
+        <div class="cell cell2">
+            <img src="images/home_clinic3_pic2.png" alt="home-clinic2">
+            <h4>Vaccination</h4>
+            <p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi maximus</p>
+        </div>
+        <div class="cell cell3">
+            <img src="images/home_clinic3_pic3.png" alt="home-clinic3">
+            <h4>Check-up</h4>
+            <p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi maximus</p>
+        </div>
+        <div class="cell cell4">
+            <img src="images/home_clinic3_pic4.png" alt="home-clinic4">
+            <h4>Medical help</h4>
+            <p>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi maximus</p>
+        </div>
+        <div class="view">
+            <a href="#" class="btnViewall">View all</a>
+        </div>
+    </div>
+
+    <div class="pics">
+        <div class="left-pic">
+            <h1>Great working<br> conditions.</h1>
+            <h3>Lorem ipsum dolor sit</h3>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="right-pic">
+            <img src="images/home_clinic3_pic5%20(3).png" alt="">
+            <h3>Health is the only way to be happy.</h3>
+            <a class="btn-ourteam"> OUR TEAM </a>
+        </div>
+
+        <div class="book-online">
+            <h3>Book online now</h3>
+            <h4>Maecenas eget arcu venenatis</h4>
+            <a href="#header">Read more</a>
+        </div>
+
+        <div class="opening-time">
+            <h5>OPENING TIME</h5>
+            <h5>Monday - Friday</h5>
+            <p>7:00 - 20:00</p>
+            <hr>
+            <a href=""><img src="images/home_clinic3_pic6.png" alt=""></a>
+        </div>
+        <hr class="seperator">
+    </div>
+
+
+    <div class="videos">
+
+        <div class="left">
+            <h2>BeClinic video</h2>
+            <div id="left-video">
+                <div class="btns">
+                    <img class="playBtn" src="../images/home_clinic3_pic7.png" alt="playBtn">
+                    <img class="pauseBtn" src="../images/home_clinic3_pic8.png" alt="pauseBtn">
+                </div>
+                <h2>Our clinic</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <div class="right">
+            <div id="right-video">
+                <div class="btns">
+                    <img class="playBtn" src="../images/home_clinic3_pic7.png" alt="playBtn">
+                    <img class="pauseBtn" src="../images/home_clinic3_pic8.png" alt="pauseBtn">
+                </div>
+                <h2>How we work?</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="allfooter">
+        <div class="footer">
+            <div id="icon-number">
+                <img src="images/home_clinic3_pic9.png" alt="retina-clinic">
+                <p>Phone number</p>
+                <h3>+61 (0) 3 8376 6284</h3>
+            </div>
+            <div id="company">
+                <h3>Company</h3>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Lorem ipsum</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Praesent pretium</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Pellentesque</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Aliquam</p></a></div>
+            </div>
+            <div id="help">
+                <h3>Help</h3>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Lorem ipsum</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Praesent pretium</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Pellentesque</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Aliquam</p></a></div>
+            </div>
+
+        </div>
+        <div class="subfooter">
+                <a class="fa fa-angle-up" href="#"></a>
+                &#169;
+                <span> 2021 Betheme by </span>
+                <a class="footer-hover-a" href="https://muffingroup.com/"> Muffin
+                    group </a>
+                &#124;
+                <span> All Rights Reserved</span>
+                &#124;
+                <span> Powered by</span>
+                <a class="footer-hover-a" href="https://wordpress.org/"> WordPress</a>
+
+        </div>
+    </div>
+    <div class="sti-btn">
+        <a href="#" class="sti-btn-up">
+            <span class="blink"> 600&#x2B </span>
+            <span class="blink"> websites </span>
+        </a>
+        <a target="_blank" class="sti-btn-down" href="https://1.envato.market/DENky">
+            <img src="images/buy.svg" alt="">
+            <span>Buy now</span>
+        </a>
+    </div>
+
+</div>
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,146 @@
+.hambergure-menu {
+    display: none;
+}
+
+.hambergure-content {
+    display: none;
+}
+
+@media screen and (max-width: 765px) {
+
+    .hambergure-content {
+        display: block;
+    }
+
+    .hambergure-menu {
+        background-color: rgba(10, 22, 34, 1);
+        display: block;
+        width: 100vw;
+        min-height: 13vw;
+        z-index: 100;
+        padding-top: 2vw;
+    }
+
+    .hambergure-menu a {
+        display: inline-block;
+        /*margin: 2rem;*/
+        padding-left: 28vw;
+    }
+
+    .hambergure-menu a img {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .hambergure-menu ion-icon {
+        font-size: 8vw;
+        color: #00c19f;
+        float: right;
+        margin: -11.5vw 4.5vw 0 0;
+        padding-top: 12vw;
+    }
+
+    .hambergure-menu ion-icon:hover {
+        cursor: pointer;
+    }
+
+    .hambergure-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .hambergure-content ion-icon {
+        font-size: 2rem;
+        padding: 1rem;
+        float: right;
+        color: #a6a6a6;
+    }
+
+    .hambergure-content {
+        background-color: #191919;
+        width: 250px;
+        height: 105vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+
+    .hambergure-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .hambergure-content dl dt:last-child a {
+
+    }
+
+    .hambergure-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+
+    .hambergure-content dl dt:last-child a{
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+
+    .hambergure-content dl dt a:hover {
+        color: #fff;
+    }
+
+    .hambergure-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    .hambergure-content .current {
+        color: #fff;
+    }
+
+
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+
+    }
+
+    .close-menu {
+        transform: translate(100vw);
+        transition: transform 1s 0.5s;
+    }
+
+    .moveOn-container {
+        transform: translate(-30vw);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(70%);
+       transition: 1s 0.5s;
+    }
+
+    .moveBack-container {
+        transsform: translate(0);
+        transition: transform 1s;
+    }
+
+    .sticky {
+        position: fixed;
+        min-height: 10vh ;
+        width:100vw;
+        transition: ease-in 1s;
+    }
+
+}

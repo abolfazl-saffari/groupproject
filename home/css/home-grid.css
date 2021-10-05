@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::selection {
+    color: #ffffff;
+    background: #00F1C7;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-rows:  max-content max-content max-content max-content auto;
+    row-gap: 1vw;
+    grid-template-areas: "header"
+                         "content1"
+                         "content2"
+                         "content3"
+                         "footer";
+}
+
+.header {
+    grid-area: header;
+}
+.services {
+    grid-area: content1;
+}
+
+.pics {
+    grid-area: content2;
+}
+
+.videos {
+    grid-area: content3;
+}
+
+.footer {
+    grid-area: footer;
+}
