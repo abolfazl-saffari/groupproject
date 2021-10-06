@@ -1,3 +1,4 @@
+// Hamburger Menu
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
@@ -18,7 +19,9 @@ on_Click.onclick = () => {
     navbar.classList.remove("show");
     move_menu.classList.remove("move-menu")
 }
+
+// Sticky navbar
 window.addEventListener("scroll", function () {
     let navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 0);
+    navbar.classList.toggle("sticky", window.scrollY > 100);
 })

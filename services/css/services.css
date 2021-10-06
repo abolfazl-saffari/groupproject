@@ -1,7 +1,8 @@
-/*grid*/
-
+/******     main     ******/
 body {
     font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-rows: 57vh 220vh 77vh auto;
     grid-template-areas: "header"
@@ -21,16 +22,6 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #001b37;
-    display: flex;
-    justify-items: flex-start;
-    padding-left: 10vw;
-    padding-top: 8vh;
-}
-.header h1 {
-    color: white;
-    font-size: 5vw;
-    margin-top: 20vh;
 }
 
 .content1 {
@@ -44,41 +35,54 @@ body {
 .mainFooter {
     grid-area: footer;
 }
-@media screen and (max-width: 765px){
-    .header{
-        padding-left: 8vw;
-        padding-top: 5vh;
-    }
 
-}
+/*****  Header *****/
 
-/*header*/
 .header {
-    background-image: url("images/home_clinic3_pic15 (1).png");
-    background-size: 120vw;
+    display: flex;
+    justify-items: flex-start;
+    padding-left: 11vw;
+    padding-top: 8vh;
+    background-color: #001b37;
+    background-image: url("../images/home_clinic3_pic15 (1).png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
+    background-size: 135%;
 }
 
+.header h1 {
+    color: #fff;
+    font-size: 5vw;
+    margin-top: 20vh;
+}
 
 #current {
     color: #fff;
 }
 
-/*.container {*/
-/*    transition-duration: 0.4s;*/
-/*    transition-timing-function: linear;*/
-/*    transition-delay: 0.1s*/
+/*header {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width:max-content;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    transition: 0.6s;*/
+/*    padding: 4.5vw 12vw;*/
+/*    z-index: 1000;*/
 /*}*/
 
-.content {
-    max-width: 100vw;
-    margin: auto;
+
+.container {
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s
 }
 
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     padding: 3vw 14vw;
     transition: 0.6s;
@@ -86,7 +90,7 @@ body {
 
 .navbar.sticky {
     background: #020E1B;
-    padding: 0.3vw 10vh;
+    padding: 1.5rem 12vw;
     transition: 0.6s;
     opacity: 0.977;
 }
@@ -94,12 +98,10 @@ body {
 .navbar .content {
     display: flex;
     align-items: center;
-    /*padding-left: 6v;*/
-    /*justify-content: space-around;*/
 }
 
 .navbar .logo img {
-    width: 14vw;
+    width: 12vw;
 }
 
 .navbar .menu-list {
@@ -107,22 +109,12 @@ body {
     z-index: 3;
 }
 
-.menu-btn ion-icon {
-    color: #00F1C7;
-    font-size: 5vw;
-}
-
 .menu-list li {
     list-style: none;
 }
 
-.menu-list .cancel-btn {
-    position: absolute;
-    right: 5vw;
-    top: 5vh;
-}
-
-.menu-list  li a {
+.menu-list li a {
+    /*position: relative;*/
     color: #B5BDC4;
     font-size: 1.1vw;
     font-weight: 700;
@@ -149,7 +141,8 @@ body {
     transform: translate(-30vw);
     transition-duration: 0.4s;
     transition-timing-function: linear;
-    transition-delay: 0.1s
+    transition-delay: 0.1s;
+    background-color: rgba(0, 27, 55, 0.75);
 }
 
 @media only screen and (min-width: 869px) {
@@ -158,29 +151,12 @@ body {
     }
 }
 
-
-
-/*تا اینجا؟*/
-
-/*.navbar .logo {*/
-/*    margin-top: 1vh;*/
-/*    margin-right: 9vw;*/
-/*}*/
-
-/*.navbar .logo img {*/
-/*    width: 10vw;*/
-/*}*/
-
-/*.content ul {*/
-/*    border-collapse: collapse;*/
-/*}*/
-
+.navbar .logo {
+    margin-top: 1vh;
+    margin-right: 18vw;
+}
 
 @media screen and (max-width: 765px) {
-    /*header {*/
-    /*    padding: 8vw 8vw;*/
-    /*}*/
-
     body.disabled {
         overflow: paged-y;
     }
@@ -189,8 +165,6 @@ body {
         display: none;
     }
 
-
-    /*برای گوشه ک باز میشه*/
     .navbar .menu-list {
         position: fixed;
         height: 100%;
@@ -230,12 +204,14 @@ body {
     .cancel-btn ion-icon {
         font-size: 6vw;
         color: #A6A6A6;
-
+        position: absolute;
+        right: 5vw;
+        top: 5vh;
     }
+
     .cancel-btn ion-icon:hover {
         color: white;
         cursor: pointer;
-
     }
 
     .menu-btn ion-icon {
@@ -244,13 +220,17 @@ body {
         cursor: pointer;
     }
 
+    .header{
+        padding-left: 4vw;
+        margin-top: 2vh;
+    }
 
     .header h1 {
         font-size: 10vw;
     }
-    header.sticky {
-        padding: 2vw 6vh;
 
+    header.sticky {
+        padding: 3vw 6vh;
     }
 
     header ul {
@@ -276,27 +256,18 @@ body {
         justify-content: space-around;
         justify-items: center;
     }
+
     .navbar .logo img {
         width: 30vw;
     }
 
-    /*header .logo img {*/
-    /*    width: 10vw;*/
-    /*}*/
-    /*.header__banner {*/
-    /*    height: 47vw;*/
-    /*}*/
-    /*.header__banner div {*/
-    /*    position: relative;*/
-    /*    top: 40%;*/
-    /*    left: 5%;*/
-    /*}*/
-    /*.header__banner div h1 {*/
-    /*    font-size: 8vw;*/
-    /*}*/
+    .navbar .logo {
+        margin-right: 2vw;
+    }
 }
 
-/*content1*/
+/*****content1*****/
+
 .content1 {
     margin-top: 7vw;
     width: 100vw;
@@ -311,7 +282,6 @@ body {
     flex-direction: column;
     justify-content: right;
     margin-left: 15%;
-
 }
 
 .headline img {
@@ -476,7 +446,6 @@ body {
         width: 75vw;
     }
 
-
     .book-online {
         width: 75vw;
         height: 42vh;
@@ -489,7 +458,7 @@ body {
         display: inline;
     }
 
-    .book-online:first-letter{
+    .book-online:first-letter {
         padding-left: 5.2vw;
     }
 
@@ -506,7 +475,8 @@ body {
         margin-left: 5.2vw;
     }
 }
-/*content2*/
+
+/****** content2 ******/
 .content2 {
     grid-area: content2;
     width: 100vw;
@@ -515,8 +485,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .content2 h5, h2 {
@@ -590,7 +558,8 @@ body {
     }
 }
 
-/*footer*/
+/***** footer *****/
+
 .mainFooter {
     width: 100vw;
     display: flex;
@@ -679,7 +648,6 @@ body {
     font-weight: 200;
 }
 
-
 #help div a p {
     display: inline;
     font-size: 1.1vw;
@@ -715,7 +683,6 @@ body {
     color: #8C8C8C;
 }
 
-
 .footerBottom a {
     text-decoration: none;
     font-size: 1.2vw;
@@ -727,7 +694,6 @@ body {
     text-decoration: underline;
     color: #00F1C7;
 }
-
 
 .footerBottom a:first-of-type {
     float: right;
