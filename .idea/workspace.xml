@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic15 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/images/buy.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/js/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/js/services.js" afterDir="false" />
@@ -46,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,7 +65,8 @@
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
       <workItem from="1633454872910" duration="6042000" />
-      <workItem from="1633494144195" duration="8918000" />
+      <workItem from="1633494144195" duration="16391000" />
+      <workItem from="1633578685262" duration="33526000" />
     </task>
     <task id="LOCAL-00001" summary="added services tab">
       <created>1633456748934</created>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633456748934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Edited services tab">
+      <created>1633505035930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633505035930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added services tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="added services tab" />
+    <MESSAGE value="Edited services tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited services tab" />
   </component>
 </project>
