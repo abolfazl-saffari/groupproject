@@ -1,44 +1,7 @@
-@media screen and (max-width: 765px) {
-
-    header {
-        display: none;
-    }
-
-    .container {
-        grid-template-rows:  120vh max-content max-content max-content max-content;
-    }
-
-
-    /*!*================= Header =================*!*/
-    .header {
-        background-position: -21vw 0 ;
-        background-size: 151vw;
-        width: 100vw;
-    }
-
-    #welcome {
-        margin-left: 5vw;
-        margin-top: 25vw;
-        line-height: 3vw;
-
-    }
-
-    #welcome h1 {
-        font-size: 7.2vw;
-    }
-
-    #welcome h4 {
-        font-size: 1.7vw;
-    }
-
-    .btnMore {
-        width: 14.5vw;
-        height: 4.7vw;
-        font-size: 1.7vw;
-    }
-
+@media screen and (max-width: 425px) {
 
     /*!*================= services =================*!*/
+
     .services {
         padding: 0 12vw 0 6vw;
         display: flex;
