@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic17 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/home_clinic3_pic9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/images/logo-brand(white).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/js/services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
