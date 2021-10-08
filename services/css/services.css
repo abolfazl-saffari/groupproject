@@ -1,0 +1,1690 @@
+/******     main     ******/
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: #fff;
+    background: #00f1c7;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 57vh 220vh 80vh max-content;
+    grid-template-areas: "header"
+                         "content1"
+                         "content2"
+                         "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/*!*****  Header *****!*/
+
+.header {
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+    height: auto;
+    margin: 0;
+    background-color: #001B37;
+    background-image: url("../images/home_clinic3_pic15 (1).png");
+    background-position: center top;
+    background-size: 130%;
+    /*background-position: center ;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#welcome {
+    box-sizing: border-box;
+    margin-left: 11vw;
+    margin-top: 32vh;
+    color: #fff;
+}
+
+#welcome h1 {
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-content {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 4.5vw 12vw;
+    z-index: 1000;
+}
+
+header .logo {
+    margin-right: 19.5vw;
+}
+
+header .logo img {
+    width: 12vw;
+    margin-top: 1.2rem;
+}
+
+header.sticky {
+    width:max-content;
+    padding: 0.2rem 12vw;
+    background: rgba(10, 22, 34, 0.95);
+}
+
+header dl {
+    display: flex;
+    margin-top: 1rem;
+}
+
+header dl dt:last-child a {
+    color: #08F1C9;
+}
+
+header dl dt a {
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: #B5BDC4;
+    text-decoration: none;
+    position: relative;
+    margin: 0.5rem 1.4vw;
+    transition: 0.6s;
+}
+
+header dl dt a:hover{
+    color: #fff;
+}
+header dl dt:last-child a:hover{
+    color: #08F1C9;
+}
+header .current{
+    color: #fff;
+}
+
+/*****content1*****/
+
+.content1 {
+    margin-top: 8vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-areas: "left right "
+}
+
+.left-section {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 20%;
+}
+
+.headline img {
+    margin-bottom: 3.2vh;
+    width: 3vw;
+}
+
+.headline h1 {
+    font-size: 4.2vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+.headline p {
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+}
+
+.card {
+    display: flex;
+    justify-items: center;
+    /*margin-top: 4vh;*/
+}
+
+.pic img {
+    width: 6.5vw;
+    height: 12.5vh;
+    margin-top: 4.2vh;
+}
+
+.text {
+    padding-left: 4vw;
+}
+
+.text h4 {
+    font-size: 1.6vw;
+    font-weight: 400;
+    letter-spacing: 0.08vw;
+}
+
+.text p {
+    font-size: 1.1vw;
+    color: #7A7C7E;
+    line-height: 2.3vw;
+}
+
+.right-section {
+    margin-left: 16%;
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 105vh 48vh;
+    grid-template-areas: "pic" "book";
+}
+
+.image{
+    grid-area: pic;
+}
+
+.image img {
+    width: 33vw;
+}
+
+.book-online {
+    grid-area: book;
+    background-color: #00F1C7;
+    width: 16vw;
+    display: flex;
+    padding: 8vh 0 6vh 3.5vw;
+}
+
+.book-online h3 {
+    font-size: 2.2vw;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 10vw;
+}
+
+.book-online p {
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    /*margin: 3vh 0 5vh 0;*/
+    margin-bottom: 5.5vh;
+}
+
+.book-online button {
+    width: 50%;
+    height: 7vh;
+    background: #000;
+    border: 0 solid #000;
+    font-size: 1.08vw;
+}
+
+.book-online a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/****** content2 ******/
+.content2 {
+    grid-area: content2;
+    width: 100%;
+    background: #001B37;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*justify-items: center;*/
+}
+
+.content2 h5, h2 {
+    color: #fff;
+}
+
+.content2 h5 {
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    font-weight: 300;
+}
+
+.content2 h2 {
+    font-size: 3.4vw;
+    margin-top: 0.1vh;
+}
+
+.content2 p {
+    color: #a1abb5;
+    font-size: 1.1vw;
+    text-align: center;
+    line-height: 4vh;
+    /*margin-top: 0.8vh;*/
+    padding: 0 25vw;
+    margin-top: 0.6vh;
+
+}
+
+.content2 button {
+    background: #000;
+    border: 0 solid #000;
+    width: 8.5%;
+    height: 7vh;
+    font-size: 1.1vw;
+    margin-top: 4vh;
+}
+
+.content2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/***** footer *****/
+
+.mainFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*margin-top: 20vh;*/
+}
+
+.footerTop {
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: right;
+    width: max-content;
+    height: max-content;
+    padding-bottom: 6vw;
+    margin-top: 20vh;
+}
+
+.footerTop > div {
+    margin: 0 6.5vw;
+    vertical-align: middle;
+}
+
+#icon-number {
+    margin-left: 9vw;
+    margin-bottom: 0;
+}
+
+#icon-number img {
+    width: 12vw;
+}
+
+#icon-number p {
+    color: #8C8C8C;
+    font-size: 1.1vw;
+    margin: 3vw 0 0.8vw 0;
+}
+
+#icon-number h3 {
+    color: #00F1C7;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#company h3 {
+    font-weight: 400;
+    font-size: 1.8vw;
+    margin: 0 0 1.6vw 0;
+}
+
+#company div span {
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+
+#company div a p {
+    display: inline;
+    font-size: 1.1vw;
+}
+
+#company div {
+    margin: 1.2vw 0;
+    color: #5E5E5E;
+
+}
+
+#company div a {
+    text-decoration: none;
+    color: #5E5E5E;
+
+}
+
+#help {
+    color: #000;
+    margin-left: 8vw;
+}
+
+#help h3 {
+    font-weight: 400;
+    font-size: 1.8vw;
+    margin: 0 0 1.6vw 0;
+
+}
+
+#help div span {
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+#help div a p {
+    display: inline;
+    font-size: 1.1vw;
+}
+
+#help div {
+    margin: 1.2vw 0;
+    color: #5E5E5E;
+
+}
+
+#help div a {
+    text-decoration: none;
+    color: #5E5E5E;
+
+}
+
+#company div a p:hover {
+    text-decoration: underline;
+    color: #00F1C7;
+}
+
+#help div a p:hover {
+    text-decoration: underline;
+    color: #00F1C7;
+}
+
+.footerBottom {
+    border-top: 0.07vw solid #e2e2e2;
+    padding: 4vh 11vw;
+    font-size: 1.1vw;
+    /*font-family: Montserrat, Arial, serif;*/
+    color: #8C8C8C;
+}
+
+.footerBottom a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #5E5E5E;
+
+}
+
+.footer-hover-a:hover {
+    text-decoration: underline;
+    color: #00F1C7;
+
+}
+
+.footerBottom a:first-of-type {
+    float: right;
+    font-size: 2.5vw;
+    padding: 0;
+    vertical-align: middle;
+    font-weight: lighter;
+}
+
+.stickyButton-up {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #06070C;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 62%;
+    right: 0;
+    text-decoration: none;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.stickyButton-up span:first-child {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+}
+
+.stickyButton-up span:last-child {
+    font-size: 0.9rem;
+}
+
+.stickyButton-down {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #80B541;
+    color: #F3F5F2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 73%;
+    right: 0;
+    text-decoration: none;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.stickyButton-down img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.stickyButton-down span {
+    font-size: 0.9rem;
+    /*margin-top: 0.21rem;*/
+}
+
+.blink {
+    animation: blinker 4s infinite;
+}
+
+@keyframes blinker {
+    0%, 100%, 50% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: .2
+    }
+}
+/**********  Responsive for Small phone and down **********/
+@media screen and (max-width: 320px) {
+    .container {
+        grid-template-rows: 38vh 380vh max-content max-content;
+        display: block;
+    }
+    /********* Header **********/
+    header {
+        display: none;
+    }
+
+    #welcome {
+        margin-left: 11vw;
+        margin-top: 17vh;
+    }
+    #welcome h1{
+        font-size: 13vw;
+        font-weight: 700;
+    }
+
+    /********* Hamburger menu **********/
+    .hamburger-content {
+        display: block;
+    }
+
+    .hamburger-menu {
+        background-color: rgba(10, 22, 34, 1);
+        display: block;
+        width: 100vw;
+        min-height: 13vw;
+        z-index: 100;
+        padding-top: 2vw;
+    }
+
+    .hamburger-menu a {
+        display: inline-block;
+        /*margin: 2rem;*/
+        padding-left: 28vw;
+    }
+
+    .hamburger-menu a img {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .hamburger-menu ion-icon {
+        font-size: 8vw;
+        color: #00c19f;
+        float: right;
+        margin: -11.5vw 4.5vw 0 0;
+        padding-top: 12vw;
+    }
+
+    .hamburger-menu ion-icon:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon {
+        font-size: 8vw;
+        /*padding: 1rem;*/
+        float: right;
+        color: #a6a6a6;
+    }
+
+    .hamburger-content {
+        background-color: #191919;
+        width: 250px;
+        height: 105vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+
+    .hamburger-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .hamburger-content dl dt:last-child a {
+
+    }
+
+    .hamburger-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+
+    .hamburger-content dl dt:last-child a{
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+
+    .hamburger-content dl dt a:hover {
+        color: #fff;
+    }
+
+    .hamburger-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    .hamburger-content .current {
+        color: #fff;
+    }
+
+
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+
+    }
+
+    .close-menu {
+        transform: translate(100vw);
+        transition: transform 1s 0.5s;
+    }
+
+    .moveOn-container {
+        transform: translate(-30vw);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(50%);
+        transition: 1s 0.5s;
+    }
+
+    .moveBack-container {
+        transsform: translate(0);
+        transition: transform 1s;
+    }
+
+    .sticky {
+        position: fixed;
+        min-height: 10vh ;
+        width:100vw;
+        transition: ease-in 1s;
+    }
+
+    /********* Content1 **********/
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 100% 100%;
+    }
+
+    .left-section {
+        margin-left: 10%;
+    }
+
+    .headline h1 {
+        font-size: 11.5vw;
+        font-weight: 700;
+        line-height: 7.5vh;
+        padding-right: 8vw;
+    }
+
+    .headline img {
+        width: 14vw;
+        margin-top: 13vh;
+    }
+
+    .headline p {
+        font-size: 4vw;
+        margin-top: 4vh;
+        line-height: 3.5vh;
+        letter-spacing: 0.2vw;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .pic img {
+        width: 28vw;
+        height: 14.5vh;
+        /*margin-top: 5vh;*/
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    .text h4 {
+        font-size: 4.7vw;
+        margin-top: 2.4vh;
+        font-weight: 400;
+    }
+
+    .text p {
+        font-size: 4vw;
+        line-height: 3.5vh;
+        margin-top: 1.5vh;
+        padding-right: 10vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .right-section {
+        grid-template-rows: 64vh 40vh ;
+        margin-left: 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: stretch;*/
+        /*align-content: flex-start;*/
+        align-items: center;
+        /*align-content: center;*/
+        margin-top: 4.8vh;
+        /*display: block;*/
+    }
+
+    .image img {
+        width: 70vw;
+    }
+
+    .book-online {
+        width: 66.8vw;
+        height: 28vh;
+        margin-bottom: 12vh;
+    }
+
+    .book-online h3 {
+        /*margin-top: 2vh;*/
+        font-size: 6vw;
+        font-weight: 700;
+        /*margin-left: 8vh;*/
+        /*display: inline;*/
+        padding-left: 8vw;
+    }
+
+    /*.book-online:first-letter {*/
+    /*    padding-left: 8vw;*/
+    /*}*/
+
+    .book-online p {
+        font-size: 4.5vw;
+        padding-left: 8vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .book-online button {
+        width: 80%;
+        height: 7.5vh;
+        font-size: 4vw;
+        margin-left: 8vw;
+        font-weight: 200;
+        /*margin-top: 2vh;*/
+    }
+
+    /********* Content2 **********/
+
+    .content2 {
+        width: 100%;
+        height: 100vh;
+        /*padding: 0;*/
+        /*margin: 0;*/
+    }
+
+    .content2 h5 {
+        font-size: 4.5vw;
+        font-weight: 300;
+        padding: 0;
+        margin-top: 0.01vh;
+        letter-spacing: 0.1vw   ;
+    }
+
+    .content2 h2 {
+        font-size: 9vw;
+        margin-top: 0.8vh;
+        padding: 0 10vw;
+        text-align: center;
+    }
+
+    .content2 p {
+        font-size: 4vw;
+        line-height: 4vh;
+        padding: 0 10vw ;
+        margin-top: 0.8vh;
+    }
+
+    .content2 button {
+        width: 37%;
+        height: 7vh;
+        font-size: 4.2vw;
+        font-weight: 100;
+        margin-top: 8vh;
+    }
+    /********* Footer **********/
+    /*.mainFooter {*/
+    /*    margin-top: 1vh;*/
+    /*}*/
+
+    .footerTop {
+        display: flex;
+        flex-direction: column;
+        /*padding-bottom: 14vw;*/
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*.footerTop > div {*/
+    /*    margin: 1vw 10vw;*/
+    /*    font-size: 3vw;*/
+    /*}*/
+
+
+    /*#icon-number {*/
+    /*    margin-top: 28vw;*/
+    /*}*/
+
+    #icon-number img {
+        width: 50vw;
+        margin-top: 20vh;
+    }
+
+    #icon-number p {
+        font-size: 4.2vw;
+        margin: 6vh 0 1.5vh 0;
+    }
+
+    #icon-number h3 {
+        font-size: 4.4vw;
+        margin-bottom: 12vh;
+
+    }
+    #company{
+        margin-bottom: 12vh;
+        margin-left: 11vw;
+    }
+    #company h3 {
+        font-size: 4.5vw;
+    }
+
+    #company div {
+        margin: 2vh 0;
+    }
+
+    #company div span {
+        font-size: 3vw;
+    }
+
+    #company div a p {
+        font-size: 4vw;
+        /*margin-top: 2.5vh;*/
+    }
+
+    #help {
+        margin-bottom: 14vh;
+        margin-left: 11vw;
+        /*margin-top: 12vh;*/
+
+    }
+
+    #help h3 {
+        font-size: 4.5vw;
+    }
+
+    #help div span {
+        font-size: 3vw;
+    }
+
+
+    #help div a p {
+        font-size: 4vw;
+        /*margin-top: 2.5vh;*/
+
+    }
+
+    #help div {
+        margin: 2vh 0;
+    }
+
+    .footerBottom {
+        text-align: center;
+        padding: 5vh 7vw;
+        font-size: 4.2vw;
+        line-height: 3.3vh;
+    }
+
+    .footerBottom a:first-of-type {
+        float: none;
+        display: block;
+        font-size: 10vw;
+        margin-bottom: 4.5vh;
+    }
+
+    .footerBottom a {
+        font-size: 4.3vw;
+
+
+    }
+    .sti-btn {
+        display: none;
+    }
+}
+
+/**********  Responsive for Medium phone and down **********/
+@media screen and (max-width: 375px) {
+    .container {
+        grid-template-rows: max-content 380vh max-content max-content;
+        display: block;
+    }
+    /********* Header **********/
+    header {
+        display: none;
+    }
+    .header {
+        background-size: 250%;
+    }
+    #welcome {
+        margin-left: 9vw;
+        margin-top: 14vh;
+    }
+    #welcome h1{
+        font-size: 11.2vw;
+        font-weight: 700;
+        padding-bottom: 10vh;
+    }
+
+    /********* Hamburger menu **********/
+    .hamburger-content {
+        display: block;
+    }
+
+    .hamburger-menu {
+        background-color: rgba(10, 22, 34, 1);
+        display: block;
+        width: 100vw;
+        min-height: 13vw;
+        z-index: 100;
+        padding-top: 2vw;
+    }
+
+    .hamburger-menu a {
+        display: inline-block;
+        /*margin: 2rem;*/
+        padding-left: 28vw;
+    }
+
+    .hamburger-menu a img {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .hamburger-menu ion-icon {
+        font-size: 8vw;
+        color: #00c19f;
+        float: right;
+        margin: -11.5vw 4.5vw 0 0;
+        padding-top: 12vw;
+    }
+
+    .hamburger-menu ion-icon:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon {
+        font-size: 8vw;
+        /*padding: 1rem;*/
+        float: right;
+        color: #a6a6a6;
+    }
+
+    .hamburger-content {
+        background-color: #191919;
+        width: 250px;
+        height: 105vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+
+    .hamburger-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .hamburger-content dl dt:last-child a {
+
+    }
+
+    .hamburger-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+
+    .hamburger-content dl dt:last-child a{
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+
+    .hamburger-content dl dt a:hover {
+        color: #fff;
+    }
+
+    .hamburger-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    .hamburger-content .current {
+        color: #fff;
+    }
+
+
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+
+    }
+
+    .close-menu {
+        transform: translate(100vw);
+        transition: transform 1s 0.5s;
+    }
+
+    .moveOn-container {
+        transform: translate(-30vw);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(50%);
+        transition: 1s 0.5s;
+    }
+
+    .moveBack-container {
+        transsform: translate(0);
+        transition: transform 1s;
+    }
+
+    .sticky {
+        position: fixed;
+        min-height: 10vh ;
+        width:100vw;
+        transition: ease-in 1s;
+    }
+    /********* Content1 **********/
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 100% 100%;
+    }
+
+    .left-section {
+        margin-left: 8%;
+    }
+
+    .headline h1 {
+        font-size: 10vw;
+        font-weight: 700;
+        line-height: 7vh;
+        /*padding-right: 1vw;*/
+    }
+
+    .headline img {
+        width: 12vw;
+        margin-top: 11vh;
+    }
+
+    .headline p {
+        font-size: 3.5vw;
+        margin-top: 4.5vh;
+        padding-right: 10vw;
+        line-height: 3.5vh;
+        letter-spacing: 0.2vw;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .pic img {
+        width: 22.5vw;
+        height: 14.5vh;
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    .text h4 {
+        font-size: 3.8vw;
+        margin-top: 2.4vh;
+        font-weight: 400;
+    }
+
+    .text p {
+        font-size: 3.2vw;
+        line-height: 3.5vh;
+        margin-top: 1.5vh;
+        padding-right: 10vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .right-section {
+        grid-template-rows: 64vh 40vh ;
+        margin-left: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.5vh;
+    }
+
+    .image img {
+        width: 75vw;
+    }
+
+    .book-online {
+        width: 72vw;
+        height: 28vh;
+        margin-bottom: 12vh;
+    }
+
+    .book-online h3 {
+        font-size: 6vw;
+        font-weight: 700;
+        padding-left: 8.8vw;
+    }
+
+    .book-online p {
+        font-size: 3.5vw;
+        padding-left: 8.8vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .book-online button {
+        width: 55%;
+        height: 7.5vh;
+        font-size: 3.4vw;
+        margin-left: 8.8vw;
+        font-weight: 150;
+    }
+
+    /********* Content2 **********/
+
+    .content2 {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .content2 h5 {
+        font-size: 3.8vw;
+        font-weight: 300;
+        padding: 0 ;
+        margin-top: 0.01vh;
+    }
+
+    .content2 h2 {
+        font-size: 7.8vw;
+        margin-top: 0.8vh;
+        padding: 0 16vw;
+        text-align: center;
+    }
+
+    .content2 p {
+        font-size: 3.5vw;
+        line-height: 4vh;
+        padding: 0 7vw;
+        margin-top: 0.8vh;
+    }
+
+    .content2 button {
+        width: 32%;
+        height: 7vh;
+        font-size: 3.8vw;
+        font-weight: 100;
+        margin-top: 8vh;
+    }
+    .footerTop {
+        display: flex;
+        flex-direction: column;
+        /*padding-bottom: 14vw;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    #icon-number img {
+        width: 45vw;
+        margin-top: 22vh;
+    }
+
+    #icon-number p {
+        font-size: 3.5vw;
+        margin: 8vh 0 0.5vh 0;
+    }
+
+    #icon-number h3 {
+        font-size: 3.8vw;
+        margin-bottom: 12vh;
+
+    }
+    #company{
+        margin-bottom: 12vh;
+        margin-left: 11vw;
+    }
+    #company h3 {
+        font-size: 4vw;
+    }
+
+    #company div {
+        margin: 2vh 0;
+    }
+
+    #company div span {
+        font-size: 3vw;
+    }
+
+    #company div a p {
+        font-size: 3.5vw;
+    }
+
+    #help {
+        margin-bottom: 14vh;
+        margin-left: 11vw;
+        /*margin-top: 12vh;*/
+
+    }
+
+    #help h3 {
+        font-size: 4vw;
+    }
+
+    #help div span {
+        font-size: 3vw;
+    }
+
+
+    #help div a p {
+        font-size: 3.5vw;
+    }
+
+    #help div {
+        margin: 2vh 0;
+    }
+
+    .footerBottom {
+        text-align: center;
+        padding: 5vh 7vw;
+        font-size: 3.5vw;
+        line-height: 3.3vh;
+    }
+
+    .footerBottom a:first-of-type {
+        float: none;
+        display: block;
+        font-size: 8vw;
+        margin-bottom: 4.5vh;
+    }
+
+    .footerBottom a {
+        font-size: 3.7vw;
+
+
+    }
+    .sti-btn {
+        display: none;
+    }
+}
+
+/**********  Responsive for Large phone and down **********/
+@media screen and (max-width: 425px) {
+    .container {
+        grid-template-rows: max-content 380vh max-content max-content;
+        display: block;
+    }
+    /********* Header **********/
+    header {
+        display: none;
+    }
+    .header {
+        background-size: 250%;
+    }
+    #welcome {
+        margin-left: 8vw;
+        margin-top: 14vh;
+    }
+    #welcome h1{
+        font-size: 9.5vw;
+        font-weight: 700;
+        padding-bottom: 10vh;
+    }
+
+    /********* Hamburger menu **********/
+    .hamburger-content {
+        display: block;
+    }
+
+    .hamburger-menu {
+        background-color: rgba(10, 22, 34, 1);
+        display: block;
+        width: 100vw;
+        min-height: 13vw;
+        z-index: 100;
+        padding-top: 2vw;
+    }
+
+    .hamburger-menu a {
+        display: inline-block;
+        /*margin: 2rem;*/
+        padding-left: 28vw;
+    }
+
+    .hamburger-menu a img {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .hamburger-menu ion-icon {
+        font-size: 8vw;
+        color: #00c19f;
+        float: right;
+        margin: -11.5vw 4.5vw 0 0;
+        padding-top: 12vw;
+    }
+
+    .hamburger-menu ion-icon:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .hamburger-content ion-icon {
+        font-size: 8vw;
+        /*padding: 1rem;*/
+        float: right;
+        color: #a6a6a6;
+    }
+
+    .hamburger-content {
+        background-color: #191919;
+        width: 250px;
+        height: 105vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+
+    .hamburger-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .hamburger-content dl dt:last-child a {
+
+    }
+
+    .hamburger-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+
+    .hamburger-content dl dt:last-child a{
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+
+    .hamburger-content dl dt a:hover {
+        color: #fff;
+    }
+
+    .hamburger-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    .hamburger-content .current {
+        color: #fff;
+    }
+
+
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+
+    }
+
+    .close-menu {
+        transform: translate(100vw);
+        transition: transform 1s 0.5s;
+    }
+
+    .moveOn-container {
+        transform: translate(-30vw);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(50%);
+        transition: 1s 0.5s;
+    }
+
+    .moveBack-container {
+        transsform: translate(0);
+        transition: transform 1s;
+    }
+
+    .sticky {
+        position: fixed;
+        min-height: 10vh ;
+        width:100vw;
+        transition: ease-in 1s;
+    }
+    /********* Content1 **********/
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 100% 100%;
+    }
+
+    .left-section {
+        margin-left: 8%;
+    }
+
+    .headline img {
+        width: 10vw;
+        margin-top: 11vh;
+    }
+
+    .headline h1 {
+        font-size: 8.6vw;
+        font-weight: 700;
+        line-height: 7.2vh;
+        padding-right: 16vw;
+    }
+
+    .headline p {
+        font-size: 3vw;
+        margin-top: 4.5vh;
+        letter-spacing: 0.2vw;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .pic img {
+        width: 20vw;
+        height: 14.5vh;
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    .text h4 {
+        font-size: 3.4vw;
+        margin-top: 2.4vh;
+        font-weight: 400;
+    }
+
+    .text p {
+        font-size: 2.8vw;
+        line-height: 3.5vh;
+        margin-top: 1.5vh;
+        padding-right: 5vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .right-section {
+        grid-template-rows: 64vh 40vh ;
+        margin-left: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.5vh;
+    }
+
+    .image img {
+        width: 80vw;
+    }
+
+    .book-online {
+        width: 76vw;
+        height: 28vh;
+        margin-bottom: 12vh;
+    }
+
+    .book-online h3 {
+        font-size: 4.5vw;
+        font-weight: 700;
+        padding-left: 8.8vw;
+    }
+
+    .book-online p {
+        font-size: 3vw;
+        padding-left: 8.8vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .book-online button {
+        width: 54%;
+        height: 7vh;
+        font-size: 3.4vw;
+        margin-left: 8.8vw;
+        font-weight: 150;
+    }
+
+    /********* Content2 **********/
+
+    .content2 {
+        width: 100%;
+        height: 85vh;
+    }
+
+    .content2 h5 {
+        font-size: 3vw;
+        font-weight: 300;
+        padding: 0 ;
+        margin-top: 1vh;
+        letter-spacing: 0.1vw;
+    }
+
+    .content2 h2 {
+        font-size: 7vw;
+        margin-top: 0.8vh;
+    }
+
+    .content2 p {
+        font-size: 3vw;
+        line-height: 3.2vh;
+        padding: 0 7vw;
+        margin-top: 0.8vh;
+    }
+
+    .content2 button {
+        width: 26%;
+        height: 7vh;
+        font-size: 3.1vw;
+        font-weight: 100;
+        margin-top: 6vh;
+    }
+    .footerTop {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #icon-number img {
+        width: 40vw;
+        margin-top: 22vh;
+    }
+
+    #icon-number p {
+        font-size: 3vw;
+        margin: 8vh 0 0.5vh 0;
+    }
+
+    #icon-number h3 {
+        font-size: 3.2vw;
+        margin-bottom: 12vh;
+
+    }
+    #company{
+        margin-bottom: 12vh;
+        margin-left: 9vw;
+    }
+    #company h3 {
+        font-size: 3.3vw;
+    }
+
+    #company div {
+        margin: 2vh 0;
+    }
+
+    #company div span {
+        font-size: 2.4vw;
+    }
+
+    #company div a p {
+        font-size: 3vw;
+    }
+
+    #help {
+        margin-bottom: 14vh;
+        margin-left: 9vw;
+    }
+
+    #help h3 {
+        font-size: 3.3vw;
+    }
+
+    #help div span {
+        font-size: 2.4vw;
+    }
+
+
+    #help div a p {
+        font-size: 3vw;
+    }
+
+    #help div {
+        margin: 2vh 0;
+    }
+
+    .footerBottom {
+        text-align: center;
+        padding: 5vh 7vw;
+        font-size: 3vw;
+        line-height: 3.3vh;
+    }
+
+    .footerBottom a:first-of-type {
+        float: none;
+        display: block;
+        font-size: 8vw;
+        margin-bottom: 4.5vh;
+    }
+
+    .footerBottom a {
+        font-size: 3.2vw;
+
+
+    }
+    .sti-btn {
+        display: none;
+    }
+}
+
+
