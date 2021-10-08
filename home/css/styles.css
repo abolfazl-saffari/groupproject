@@ -96,9 +96,6 @@ body {
         padding-top: 13vw;
     }
 
-
-
-
     .hambergure-menu ion-icon:hover {
         cursor: pointer;
     }
@@ -204,6 +201,41 @@ body {
 
 }
 
+@media screen and (max-width: 376px) {
+    .hambergure-content ion-icon {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .hambergure-menu {
+        min-height: 14.7vw;
+        padding-top: 3vw;
+    }
+
+    .hambergure-menu a {
+        padding-left: 25vw;
+    }
+
+    .hambergure-menu a img {
+        width: 46vw;
+    }
+
+    .hambergure-menu ion-icon {
+        font-size: 9vw;
+        margin: -11.5vw 2.5vw 0 0;
+    }
+
+    .hambergure-content dl {
+        margin-top: 3.6rem;
+    }
+
+    .hambergure-content dl dt a {
+        padding: 0.6rem 1rem;
+    }
+
+    .open-menu {
+    }
+}
 /*================= Movable Navbar ==================*/
 
 header {
@@ -273,7 +305,6 @@ header .current {
         display: none;
     }
 }
-
 
 /*================= Header ==================*/
 
@@ -374,7 +405,14 @@ a.btnMore:hover {
         font-size: 2vw;
     }
 }
-
+@media screen and (max-width: 376px) {
+    .header {
+        max-height: 77vw;
+    }
+    #welcome {
+        margin-top: 29vw;
+    }
+}
 /*================= Section 1 ==================*/
 
 .services {
@@ -506,7 +544,41 @@ a.btnMore:hover {
         margin-top: 19.5vw;
         margin-bottom: 22.5vw;
     }
+}
 
+@media screen and (max-width: 376px) {
+    .services {
+        padding: 0 12vw 0 6vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-top {
+        width: 63vw;
+    }
+
+    .services-top h2 {
+        font-size: 8vw;
+        line-height: 10vh;
+        margin-bottom: 15vw;
+    }
+
+    .cell h4 {
+        font-size: 3.5vw;
+        margin-bottom: 9vw;
+    }
+
+    .cell p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .btnViewall {
+        padding: 3.5vw 2vw;
+        height: 11vw;
+        font-size: 3.5vw;
+    }
 }
 
 /*================= Section 2 ==================*/
@@ -818,6 +890,102 @@ a.btnMore:hover {
     }
 }
 
+@media screen and (max-width: 376px) {
+
+    .left-pic {
+        background-size: 208vw;
+        background-position: -62vw 0vw;
+        padding: 39.5vh 5vw;
+        width: 74vw;
+        height: 106vw;
+    }
+
+    .left-pic h1 {
+        font-size: 9vw;
+        margin-top: 36.5vw;
+        margin-left: 5vw;
+        width: 18vw;
+    }
+
+    .left-pic h3 {
+        font-size: 3.5vw;
+        margin: 2.2vw 0 7vw 6vw;
+    }
+
+    .left-pic a {
+        font-size: 3.4vw;
+        padding: 3vw 6vw;
+        margin-left: 5.5vw;
+    }
+
+    .right-pic {
+        background-size: 215vw;
+        background-position: -64vw 0.2vw;
+        padding: 47vh 5vw;
+        width: 74vw;
+        height: 68vw;
+    }
+
+    .right-pic img {
+        width: 11vw;
+        margin: 29.5vw 0 7vw 12.5vw;
+    }
+
+    .right-pic h3 {
+        margin: 0 0 12vw 14vw;
+    }
+
+    .book-online {
+        width: 73vw;
+        height: 60vw;
+        padding: 8vh 5.5vw;
+    }
+
+    .book-online h3 {
+        font-size: 5.2vw;
+        margin: 11vw 0 7.5vw 0;
+    }
+
+    .book-online h4 {
+        font-size: 3.8vw;
+        margin-bottom: 10.5vw;
+    }
+
+    .book-online a {
+        font-size: 3.6vw;
+        padding: 3.3vw 6vw;
+    }
+
+
+    .opening-time {
+        padding: 8vh 17.7vw;
+    }
+
+    .opening-time hr {
+        width: 40vw;
+    }
+
+    .opening-time h5:first-of-type {
+        font-size: 3.7vw;
+    }
+
+    .opening-time h5:last-of-type {
+        font-size: 3.7vw;
+    }
+
+    .opening-time p {
+        font-size: 3.5vw;
+    }
+
+    .opening-time a img {
+        width: 5.3vw;
+    }
+
+    .seperator {
+        margin-top: 34.5vw;
+    }
+}
+
 /*================= Section 3 ==================*/
 
 .videos {
@@ -1013,6 +1181,78 @@ a.btnMore:hover {
     }
 }
 
+@media screen and (max-width: 376px) {
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3vw;
+        margin-top: 19vw;
+        height: max-content;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        /*overflow: hidden;*/
+        /*transition: 0.5s ease-in-out;*/
+    }
+
+    .left:nth-of-type(1) h2 {
+        font-size: 8.5vw;
+        margin-top: 5vw;
+    }
+
+    #left-video {
+        margin-top: 9vw;
+        padding: 50vh 0;
+        width: 85vw;
+        height: 75.5vw;
+        background-size: 215vw;
+        margin-left: 5.62vw;
+        background-position: -65vw -2vw;
+    }
+
+    .btns {
+        transform: translateX(4vw);
+    }
+
+    .pauseBtn {
+        transform: translateX(2vw);
+    }
+
+    #left-video h2 {
+        margin-top: 12vw;
+        font-size: 9.5vw;
+    }
+
+    #left-video p {
+        font-size: 4vw;
+        margin-left: 6vw;
+    }
+
+    #right-video {
+        margin-top: 0;
+        padding: 50vh 0;
+        width: 85vw;
+        height: 89vw;
+        background-size: 215vw;
+        margin-left: 5.62vw;
+        background-position: -64vw 0;
+    }
+
+    #right-video h2 {
+        margin: 15vw 0 4vw 5vw;
+        width: 40vw;
+        font-size: 9.5vw;
+    }
+
+    #right-video p {
+        font-size: 4vw;
+    }
+
+}
+
 /*================= Footer ==================*/
 
 .allfooter {
@@ -1156,12 +1396,7 @@ a.btnMore:hover {
 
 /*======= Footer ==> queries == */
 
-@media screen and (max-width: 426px) {
-
-    .allfooter {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-    }
+@media screen and (max-width: 376px) {
 
     .footer {
         display: flex;
@@ -1176,30 +1411,29 @@ a.btnMore:hover {
     }
 
     #icon-number {
-        margin-top: 30vw;
+        margin-top: 32vw;
     }
 
     #icon-number img {
-        width: 40vw;
+        width: 47vw;
     }
 
     #icon-number p {
-        font-size: 3vw;
-        margin: 10vw 0 2vw 0;
+        font-size: 3.8vw;
     }
 
     #icon-number h3 {
-        font-size: 3.4vw;
+        font-size: 3.8vw;
     }
 
     #company h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin-top: 14.5vw;
         margin-bottom: 4.5vw;
     }
 
     #company div {
-        margin: 3vw 0;
+        margin: 4vw 0;
     }
 
     #company div span {
@@ -1207,15 +1441,15 @@ a.btnMore:hover {
     }
 
     #company div a p {
-        font-size: 3.2vw;
+        font-size: 3.5vw;
     }
 
     #help {
-        margin-bottom: 7vw;
+        margin-bottom: 9vw;
     }
 
     #help h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin-top: 13.7vw;
     }
 
@@ -1225,31 +1459,36 @@ a.btnMore:hover {
 
 
     #help div a p {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     #help div {
-        margin: 3.8vw 0;
+        margin: 4vw 0;
     }
 
     .subfooter {
         text-align: center;
-        padding: 6vw 7.7vw;
-        font-size: 3vw;
+        padding: 8vw 7.7vw;
+        font-size: 3.5vw;
     }
 
     .subfooter a:first-of-type {
         float: none;
         display: block;
         font-size: 8vw;
-        padding: 2vw 36vw 6vw;
+        padding: 1vw 36vw 9vw;
     }
 
     .subfooter a {
-        font-size: 3vw;
+        font-size: 3.7vw;
         line-height: 5vw;
 
     }
+}
+
+@media screen and (max-width: 376px) {
+
+
 }
 
 /*================= sticky button ==================*/
