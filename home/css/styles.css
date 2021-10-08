@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 ::selection {
     color: #ffffff;
     background: #00F1C7;
@@ -23,22 +24,33 @@ body {
                          "content3"
                          "footer";
 }
+
 .header {
     grid-area: header;
 }
+
 .services {
     grid-area: content1;
 }
+
 .pics {
     grid-area: content2;
 }
+
 .videos {
     grid-area: content3;
 }
+
 .footer {
     grid-area: footer;
 }
 
+@media screen and (max-width: 426px) {
+    .container {
+        grid-template-rows:  81.5vw max-content max-content max-content auto;
+
+    }
+}
 /*================= Burger menu ==================*/
 
 .hambergure-menu {
@@ -49,7 +61,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 426px) {
 
     .hambergure-content {
         display: block;
@@ -59,7 +71,7 @@ body {
         background-color: rgba(10, 22, 34, 1);
         display: block;
         width: 100vw;
-        min-height: 13vw;
+        min-height: 12.7vw;
         z-index: 100;
         padding-top: 2vw;
     }
@@ -68,20 +80,24 @@ body {
         display: inline-block;
         /*margin: 2rem;*/
         padding-left: 28vw;
+        padding-top: 1vw;
     }
 
     .hambergure-menu a img {
         margin: auto;
-        width: 50vw;
+        width: 40vw;
     }
 
     .hambergure-menu ion-icon {
         font-size: 8vw;
         color: #00c19f;
         float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+        margin: -12.5vw 2.5vw 0 0;
+        padding-top: 13vw;
     }
+
+
+
 
     .hambergure-menu ion-icon:hover {
         cursor: pointer;
@@ -136,7 +152,7 @@ body {
     }
 
 
-    .hambergure-content dl dt:last-child a{
+    .hambergure-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
@@ -181,8 +197,8 @@ body {
 
     .sticky {
         position: fixed;
-        min-height: 10vh ;
-        width:100vw;
+        min-height: 10vh;
+        width: 100vw;
         transition: ease-in 1s;
     }
 
@@ -190,11 +206,11 @@ body {
 
 /*================= Movable Navbar ==================*/
 
-    header {
+header {
     position: fixed;
     top: 0;
     left: 0;
-    width:max-content;
+    width: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,7 +229,7 @@ header .logo img {
 }
 
 header.sticky {
-    width:max-content;
+    width: max-content;
     padding: 0.2rem 12vw;
     background: rgba(10, 22, 34, 0.95);
 }
@@ -237,19 +253,21 @@ header dl dt a {
     transition: 0.6s;
 }
 
-header dl dt a:hover{
+header dl dt a:hover {
     color: #fff;
 }
-header dl dt:last-child a:hover{
+
+header dl dt:last-child a:hover {
     color: #08F1C9;
 }
-header .current{
+
+header .current {
     color: #fff;
 }
 
 /*======= Movable Navbar ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     header {
         display: none;
@@ -328,17 +346,17 @@ a.btnMore:hover {
 
 /*======= Header ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .header {
-        background-position: -21vw 0;
-        background-size: 151vw;
+        background-position: -20vw 14vw;
+        background-size: 145vw;
         width: 100vw;
     }
 
     #welcome {
-        margin-left: 5vw;
-        margin-top: 25vw;
+        margin-left: 4vw;
+        margin-top: 31vw;
         line-height: 3vw;
     }
 
@@ -353,7 +371,7 @@ a.btnMore:hover {
     .btnMore {
         width: 14.5vw;
         height: 4.7vw;
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 }
 
@@ -365,7 +383,7 @@ a.btnMore:hover {
     grid-template-rows: max-content max-content max-content;
     grid-template-columns:18vw 18vw 18vw 18vw;
     column-gap: 2vw;
-    row-gap:4vw;
+    row-gap: 4vw;
     grid-template-areas: "top top top top"
                          "cell1 cell2 cell3 cell4"
                          "view-button view-button view-button view-button";
@@ -397,6 +415,7 @@ a.btnMore:hover {
     font-size: 1vw;
     line-height: 2vw;
 }
+
 .cell {
     padding: 3vh;
 }
@@ -445,51 +464,52 @@ a.btnMore:hover {
 
 /*======= Section 1 ==> queries == */
 
-    @media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
-        .services {
-            padding: 0 12vw 0 6vw;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .services-top {
-            margin-top: 21vw;
-        }
-
-        .services-top h2 {
-            font-size: 6.5vw;
-            line-height: 10vh;
-            margin-bottom: 13vw;
-        }
-
-        .cell h4 {
-            font-size: 3vw;
-            margin-top: 8vw;
-            margin-bottom: 7vw;
-        }
-
-        .cell p {
-            font-size: 3vw;
-            line-height: 4vw;
-        }
-
-        .cell {
-            padding: 2vh;
-        }
-
-        .btnViewall {
-            padding: 2vw 2vw;
-            width: 80vw;
-            height: 9vw;
-            font-size: 3vw;
-            margin-top: 18vw;
-            margin-bottom: 32vw;
-        }
-
+    .services {
+        padding: 0 12vw 0 6vw;
+        display: flex;
+        flex-direction: column;
     }
 
-        /*================= Section 2 ==================*/
+    .services-top {
+        margin-top: 21vw;
+    }
+
+    .services-top h2 {
+        font-size: 7vw;
+        line-height: 8.5vh;
+        margin-bottom: 13vw;
+    }
+
+    .cell h4 {
+        font-size: 3.3vw;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+    }
+
+    .cell p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-bottom: 0;
+    }
+
+    .cell {
+        padding: 2vh;
+    }
+
+    .btnViewall {
+        padding: 3vw 2vw;
+        width: 84vw;
+        height: 9vw;
+        font-size: 3vw;
+        margin-top: 19.5vw;
+        margin-bottom: 22.5vw;
+    }
+
+}
+
+/*================= Section 2 ==================*/
 
 .pics {
     padding-left: 10vw;
@@ -506,7 +526,7 @@ a.btnMore:hover {
     display: flex;
     flex-direction: column;
     justify-content: right;
-    align-items:start;
+    align-items: start;
     background-image: url("../images/home_clinic3_pic10.jpg");
     background-repeat: no-repeat;
     background-size: 55.2vw;
@@ -585,16 +605,18 @@ a.btnMore:hover {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 0.25vw;
+    height: 0.5vw;
     background-color: rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     transform: scale(0.9);
 }
+
 .btn-ourteam:hover:before {
     top: 0.5vw;
     background-color: #00c19f;
     transform: scale(1);
 }
+
 .btn-ourteam:hover:after {
     background-color: #00c19f;
     transform: scale(1);
@@ -666,18 +688,19 @@ a.btnMore:hover {
 .opening-time a img {
     width: 1.4vw;
 }
+
 .seperator {
     grid-area: line;
     width: 100vw;
     margin-top: 3vh;
     margin-left: -10vw;
     border: none;
-    border-bottom:0.01vw solid #e2e2e2;
+    border-bottom: 0.01vw solid #e2e2e2;
 }
 
 /*======= Section 2 ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .pics {
         padding-left: 10vw;
@@ -686,11 +709,11 @@ a.btnMore:hover {
     }
 
     .left-pic {
-        background-size: 175vw;
-        background-position: -48vw 0.2vw;
-        padding: 30vh 5vw;
-        width: 70vw;
-        height: 93vw;
+        background-size: 183vw;
+        background-position: -50vw 0vw;
+        padding: 28.5vh 6vw;
+        width: 74vw;
+        height: 92vw;
     }
 
     .left-pic h1 {
@@ -700,43 +723,45 @@ a.btnMore:hover {
     }
 
     .left-pic h3 {
-        font-size: 3vw;
-        margin: 1vw 0 8vw 3vw;
+        font-size: 3.2vw;
+        margin: 2.2vw 0 8vw 3vw;
     }
 
     .left-pic a {
         font-size: 3vw;
         padding: 3vw 5vw;
-        margin-left: 3vw;
+        margin-left: 1.5vw;
     }
 
     .right-pic {
         background-size: 175vw;
-        background-position: -48vw 0.2vw;
+        background-position: -42vw 0.2vw;
         padding: 30vh 5vw;
-        width: 70vw;
-        height: 78vw;
+        width: 76vw;
+        height: 68vw;
     }
 
     .right-pic img {
-        width: 9vw;
-        margin: 35.5vw 0 8vh 10.5vw;
+        width: 10vw;
+        margin: 29.5vw 0 5vw 10.5vw;
     }
 
     .right-pic h3 {
-        font-size: 4.5vw;
-        margin: 0 0 9vw 8.5vw;
+        font-size: 4.8vw;
+        line-height: 7vw;
+        margin: 0 0 7vw 12vw;
+        width: 50vw ;
     }
 
     .btn-ourteam {
-        padding: 2.5vw 2vw 2vw 2vw;
-        font-size: 3vw;
-        margin: 1vw 10vw;
+        padding: 3.5vw 2vw 3vw 2vw;
+        font-size: 3.8vw;
+        margin: 1vw 15vw;
     }
 
     .book-online {
-        width: 69vw;
-        height: 51.5vw;
+        width: 75vw;
+        height: 52vw;
         margin: 0 0 8vw 0vw;
         padding: 8vh 5.5vw;
     }
@@ -753,29 +778,31 @@ a.btnMore:hover {
 
     .book-online a {
         font-size: 3vw;
-        padding: 2.7vw 4.5vw;
+        padding: 2.8vw 5vw;
     }
 
 
     .opening-time {
-        padding: 4.4vh 5.7vw;
+        padding: 4.4vh 17.7vw;
     }
 
     .opening-time hr {
         border: none;
         border-bottom: 0.001vw solid #d7d7d7;
-        margin: 5vw 0;
+        margin: 6vw 0 5vw;
         width: 33vw;
     }
 
     .opening-time h5:first-of-type {
-        font-size: 3vw;
-        margin: 4.5vw 0 8vw;
+        font-size: 3.2vw;
+        margin: 5vw 0 9vw;
     }
 
     .opening-time h5:last-of-type {
-        font-size: 3vw;
-        margin: 0 0 4vw 0;
+        font-size: 3.2vw;
+        letter-spacing: 0.5px;
+        font-stretch: 100%;
+        margin: 0 0 5vw 0;
     }
 
     .opening-time p {
@@ -787,11 +814,11 @@ a.btnMore:hover {
     }
 
     .seperator {
-        margin-top: 31vw;
+        margin-top: 32.5vw;
     }
 }
 
-    /*================= Section 3 ==================*/
+/*================= Section 3 ==================*/
 
 .videos {
     padding-left: 3vw;
@@ -820,7 +847,7 @@ a.btnMore:hover {
 .left:nth-of-type(1) h2 {
     grid-area: text;
     margin-left: 6vw;
-    margin-top: 0.7vw;
+    margin-top: 2.8vw;
     font-size: 3.6vw;
     text-align: start;
     color: black;
@@ -894,7 +921,7 @@ a.btnMore:hover {
     grid-template-areas: "rightPicture";
     background-image: url("../images/home_clinic3_pic13.jpg");
     background-repeat: no-repeat;
-    background-size:57vw;
+    background-size: 57vw;
     align-items: center;
     background-position: -8.5vw 0;
 }
@@ -916,7 +943,7 @@ a.btnMore:hover {
 
 /*======= Section 3 ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .videos {
         display: flex;
@@ -939,12 +966,12 @@ a.btnMore:hover {
 
     #left-video {
         margin-top: 9vw;
-        padding: 45vh 0;
+        padding: 38vh 0;
         width: 85vw;
-        height: 71vw;
+        height: 72vw;
         background-size: 185vw;
         margin-left: 5.62vw;
-        background-position: -50vw -2vw;
+        background-position: -50vw 0vw;
     }
 
     .btns {
@@ -967,7 +994,7 @@ a.btnMore:hover {
 
     #right-video {
         margin-top: 0;
-        padding: 45vh 0;
+        padding: 36vh 0;
         width: 85vw;
         height: 71vw;
         background-size: 185vw;
@@ -976,7 +1003,7 @@ a.btnMore:hover {
     }
 
     #right-video h2 {
-        margin: 10vw 0 4vw 5vw;
+        margin: 12vw 0 4vw 5vw;
         width: 75vw;
         font-size: 8.5vw;
     }
@@ -1004,12 +1031,12 @@ a.btnMore:hover {
     padding-bottom: 6vw;
 }
 
-#company div a p:hover{
+#company div a p:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
 
-#help div a p:hover{
+#help div a p:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
@@ -1106,19 +1133,19 @@ a.btnMore:hover {
     color: #8C8C8C;
 }
 
-.subfooter a{
+.subfooter a {
     text-decoration: none;
     font-size: 1.2vw;
     color: #5E5E5E;
 }
 
-.footer-hover-a:hover{
+.footer-hover-a:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
 
 
-.subfooter a:first-of-type{
+.subfooter a:first-of-type {
     float: right;
     font-size: 2.5vw;
     padding: 0;
@@ -1129,7 +1156,7 @@ a.btnMore:hover {
 
 /*======= Footer ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .allfooter {
         /*display: flex;*/
@@ -1144,12 +1171,12 @@ a.btnMore:hover {
 
 
     .footer > div {
-        margin: 1vw 10vw;
+        margin: 1vw 10vw 0;
         font-size: 3vw;
     }
 
     #icon-number {
-        margin-top: 28vw;
+        margin-top: 30vw;
     }
 
     #icon-number img {
@@ -1168,6 +1195,7 @@ a.btnMore:hover {
     #company h3 {
         font-size: 3.5vw;
         margin-top: 14.5vw;
+        margin-bottom: 4.5vw;
     }
 
     #company div {
@@ -1179,7 +1207,7 @@ a.btnMore:hover {
     }
 
     #company div a p {
-        font-size: 3vw;
+        font-size: 3.2vw;
     }
 
     #help {
@@ -1188,7 +1216,7 @@ a.btnMore:hover {
 
     #help h3 {
         font-size: 3.5vw;
-        margin-top: 14.5vw;
+        margin-top: 13.7vw;
     }
 
     #help div span {
@@ -1201,12 +1229,12 @@ a.btnMore:hover {
     }
 
     #help div {
-        margin: 3vw 0;
+        margin: 3.8vw 0;
     }
 
     .subfooter {
         text-align: center;
-        padding: 2vw 7.7vw;
+        padding: 6vw 7.7vw;
         font-size: 3vw;
     }
 
@@ -1214,11 +1242,12 @@ a.btnMore:hover {
         float: none;
         display: block;
         font-size: 8vw;
-        padding: 4vw 36vw;
+        padding: 2vw 36vw 6vw;
     }
 
     .subfooter a {
-        font-size: 3.4vw;
+        font-size: 3vw;
+        line-height: 5vw;
 
     }
 }
@@ -1298,7 +1327,7 @@ a.btnMore:hover {
 
 /*======= Section 2 ==> queries == */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .sti-btn {
         display: none;
