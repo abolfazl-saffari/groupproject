@@ -12,7 +12,6 @@ body {
 }
 
 
-
 /*================ grids of main container ===================*/
 
 .container {
@@ -29,7 +28,7 @@ body {
 @media screen and (max-width: 765px) {
 
     .container {
-        grid-template-rows:  120vh max-content max-content max-content max-content;
+        grid-template-rows:  80vh max-content max-content max-content max-content;
     }
 }
 
@@ -39,7 +38,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width:max-content;
+    width: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +57,7 @@ header .logo img {
 }
 
 header.sticky {
-    width:max-content;
+    width: max-content;
     padding: 0.2rem 12vw;
     background: rgba(10, 22, 34, 0.95);
 }
@@ -82,13 +81,15 @@ header dl dt a {
     transition: 0.6s;
 }
 
-header dl dt a:hover{
+header dl dt a:hover {
     color: #fff;
 }
-header dl dt:last-child a:hover{
+
+header dl dt:last-child a:hover {
     color: #08F1C9;
 }
-header .current{
+
+header .current {
     color: #fff;
 }
 
@@ -121,9 +122,8 @@ header .current{
         position: fixed;
         top: 0;
         left: 0;
-        width:max-content;
         display: block;
-        width: 100vw;
+        width: 100%;
         min-height: 14vh;
         z-index: 100;
         padding-top: 2vw;
@@ -137,11 +137,11 @@ header .current{
 
     .hambergure-menu a img {
         margin: auto;
-        width: 40vw;
+        width: 25vw;
     }
 
     .hambergure-menu ion-icon {
-        font-size: 8vw;
+        font-size: 2rem;
         color: #00c19f;
         float: right;
         margin: -11.5vw 4.5vw 0 0;
@@ -201,7 +201,7 @@ header .current{
     }
 
 
-    .hambergure-content dl dt:last-child a{
+    .hambergure-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
@@ -240,15 +240,15 @@ header .current{
     }
 
     .moveBack-container {
-        transsform: translate(0);
+        transform: translate(0);
         transition: transform 1s;
     }
 
     .sticky2 {
         position: fixed;
-        min-height: 14vh;
-        padding-top: 6vw;
-        transition: ease-in 1s;
+        min-height: 3rem;
+        /*padding-top: 6vw;*/
+        transition: ease-in 0.25s;
     }
 
 }
@@ -283,9 +283,9 @@ header .current{
 
 
     .header h1 {
-        font-size: 2.6rem;
-        margin-top: 16vw;
-        margin-left: 8vw;
+        font-size: 3rem;
+        margin-top: 12rem;
+        margin-left: 6rem;
     }
 }
 
@@ -315,7 +315,7 @@ header .current{
 
 }
 
-.left-section h1{
+.left-section h1 {
     color: #000;
     margin-bottom: 0;
     margin-top: 1.2vw;
@@ -323,33 +323,35 @@ header .current{
     line-height: 10vh;
 }
 
-.left-section h4{
+.left-section h4 {
     color: #000;
     font-size: 1.5vw;
     font-weight: 400;
     margin-top: 2vw;
 }
 
-.left-section p{
+.left-section p {
+    color: gray;
     font-size: 1vw;
     font-weight: 300;
     line-height: 5vh;
     margin-top: 3vh;
 }
 
-.left-section button{
+.left-section button {
     position: relative;
-    padding: 1.2vw 1vw;
+    /*padding: 1.2vw 1vw;*/
     border: none;
-    width: 10vw;
+    width: 7rem;
+    height: 2.5rem;
     background-color: black;
-    color: white;
     cursor: pointer;
-    font-size: 1.1vw;
-    font-weight: 200;
-    margin: 0.5vw 1.3vw;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0.3rem;
     color: white;
 }
+
 .left-section a {
     text-decoration: none;
     color: #fff;
@@ -404,7 +406,6 @@ header .current{
     font-size: 1.1vw;
     font-weight: 200;
     margin: 0.5vw 1.3vw;
-    color: white;
 }
 
 .book-online a {
@@ -419,20 +420,34 @@ header .current{
     }
 
     .left-section {
-        margin-left: 4%;
+        margin-left: 10%;
+    }
+
+    .left-section h1 {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+
+    .left-section h4 {
+        font-size: 1rem;
+    }
+
+    .left-section p {
+        font-size: 0.7rem;
+        font-weight: 400;
     }
 
     .right-section {
-        margin-left: 2%;
+        margin-left: 10%;
         width: 100%;
         justify-content: center;
-        align-items: center;
         margin-top: 6vh;
     }
 
     .right-section img {
         width: 75vw;
     }
+
     .book-online {
         width: 75vw;
         height: 42vh;
@@ -444,7 +459,7 @@ header .current{
         display: inline;
     }
 
-    .book-online:first-letter{
+    .book-online:first-letter {
         padding-left: 5.2vw;
     }
 
@@ -460,6 +475,7 @@ header .current{
         font-size: 2.5vw;
         margin-left: 5.2vw;
     }
+
     .book-online a {
         text-decoration: none;
         color: #fff;
@@ -511,7 +527,6 @@ header .current{
     background-color: #00f1c7;
     flex-direction: column;
     justify-content: right;
-    align-items: start;
     background-image: url("../images/home_clinic3_pic12.jpg");
     background-repeat: no-repeat;
     background-size: 57.5vw;
@@ -562,7 +577,7 @@ header .current{
 .right {
     grid-area: right;
     display: grid;
-    grid-template-rows: 81% 0%;
+    grid-template-rows: 81% 0;
     grid-template-areas: "video"
                          "blank";
     overflow: hidden;
@@ -574,7 +589,7 @@ header .current{
     grid-template-areas: "rightPicture";
     background-image: url("../images/home_clinic3_pic13.jpg");
     background-repeat: no-repeat;
-    background-size:57vw;
+    background-size: 57vw;
     align-items: center;
     background-position: -8.5vw 0;
 }
@@ -599,9 +614,10 @@ header .current{
     .videos {
         display: flex;
         flex-direction: column;
-        padding-left: 3vw;
-        margin-top: 19vw;
+        padding-left: 0;
+        margin-top: 0;
         height: max-content;
+        align-items: center;
     }
 
     .left {
@@ -610,16 +626,18 @@ header .current{
     }
 
     .left:nth-of-type(1) h2 {
-        font-size: 7vw;
+        font-size: 3rem;
     }
 
     #left-video {
-        margin-top: 9vw;
-        padding: 28vh 0;
-        height: 81vw;
-        background-size: 185vw;
-        margin-left: 5.62vw;
-        background-position: -50vw -2vw;
+        padding: 15rem 0 10rem;
+        height: 25rem;
+        width: 35rem;
+        background-size: cover;
+        background-color: white;
+        margin: 0;
+        background-position: 0;
+        /*margin-left: 5.62vw;*/
     }
 
     .btns {
@@ -631,33 +649,36 @@ header .current{
     }
 
     #left-video h2 {
-        margin-top: 12vw;
-        font-size: 8.5vw;
+        margin-top: 3.5rem;
+        font-size: 2.5rem;
     }
 
     #left-video p {
-        font-size: 3.5vw;
+        font-size: 1rem;
+        font-weight: 500;
         margin-left: 6vw;
     }
 
     #right-video {
         margin-top: 0;
-        padding: 30vh 0;
-        width: 85vw;
-        height: 71vw;
-        background-size: 185vw;
-        margin-left: 5.62vw;
-        background-position: -50vw -2vw;
+        padding: 10rem 0 15rem;
+        width: 35rem;
+        height: 25rem;
+        background-size: cover;
+        background-position: 0;
+        /*margin-left: 5.62vw;*/
+        /*background-position: -50vw -2vw;*/
     }
 
     #right-video h2 {
-        margin: 10vw 0 4vw 5vw;
+        margin-top: 3.5rem;
         width: 75vw;
-        font-size: 8.5vw;
+        font-size: 2.5rem;
     }
 
     #right-video p {
-        font-size: 3vw;
+        font-size: 1rem;
+        font-weight: 500;
     }
 }
 
@@ -680,12 +701,12 @@ header .current{
     padding-bottom: 6vw;
 }
 
-#company div a p:hover{
+#company div a p:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
 
-#help div a p:hover{
+#help div a p:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
@@ -788,19 +809,20 @@ header .current{
     color: #8C8C8C;
 }
 
-.subfooter a{
+.subfooter a {
     text-decoration: none;
     font-size: 1.2vw;
     color: #5E5E5E;
 
 }
-.footer-hover-a:hover{
+
+.footer-hover-a:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
 
 
-.subfooter a:first-of-type{
+.subfooter a:first-of-type {
     float: right;
     font-size: 2.5vw;
     padding: 0;
@@ -813,12 +835,12 @@ header .current{
     .footer {
         display: flex;
         flex-direction: column;
-        padding-bottom: 18vw;
+        padding-bottom: 2rem;
     }
 
     .footer > div {
-        margin: 1vw 10vw;
-        font-size: 3vw;
+        margin: 1vw 8vw;
+        font-size: 1rem;
     }
 
     #icon-number {
@@ -826,21 +848,21 @@ header .current{
     }
 
     #icon-number img {
-        width: 40vw;
+        width: 30vw;
     }
 
     #icon-number p {
-        font-size: 3vw;
+        font-size: 1rem;
         margin: 10vw 0 2vw 0;
     }
 
     #icon-number h3 {
-        font-size: 3.4vw;
+        font-size: 1.2rem;
     }
 
     #company h3 {
-        font-size: 3.5vw;
-        margin-top: 14.5vw;
+        font-size: 1.5rem;
+        margin-top: 2rem;
     }
 
     #company div {
@@ -848,11 +870,11 @@ header .current{
     }
 
     #company div span {
-        font-size: 2.7vw;
+        font-size: 0.8rem;
     }
 
     #company div a p {
-        font-size: 3vw;
+        font-size: 0.8rem;
     }
 
     #help {
@@ -860,17 +882,17 @@ header .current{
     }
 
     #help h3 {
-        font-size: 3.5vw;
-        margin-top: 14.5vw;
+        font-size: 1.5rem;
+        margin-top: 1rem;
     }
 
     #help div span {
-        font-size: 2.7vw;
+        font-size: 0.8rem;
     }
 
 
     #help div a p {
-        font-size: 3vw;
+        font-size: 0.8rem;
     }
 
     #help div {
@@ -880,8 +902,8 @@ header .current{
     .subfooter {
         text-align: center;
         height: max-content;
-        padding: 7vw 7.7vw;
-        font-size: 3vw;
+        padding: 0 5vw 5vw;
+        font-size: 0.7rem;
     }
 
     .subfooter a:first-of-type {
@@ -892,7 +914,7 @@ header .current{
     }
 
     .subfooter a {
-        font-size: 3.4vw;
+        font-size: 0.8rem;
 
     }
 }
@@ -971,5 +993,104 @@ header .current{
 
     .sti-btn {
         display: none;
+    }
+}
+
+
+/*                      ####                        responsive for mobile                       */
+
+@media screen and (max-width: 580px){
+    .container {
+        grid-template-rows: 60vh max-content max-content max-content max-content;
+    }
+
+    .left:nth-of-type(1) h2 {
+        font-size: 2.3rem;
+        margin-left: 0;
+    }
+
+    #right-video {
+        width: 28rem;
+    }
+
+    #left-video {
+        width: 28rem;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .left-section h1 {
+        font-size: 2rem;
+        margin: revert;
+    }
+
+    .left-section p {
+        line-height: 4vh;
+        text-align: justify;
+        inline-size: 20rem;
+    }
+
+    .left:nth-of-type(1) h2 {
+        font-size: 2rem;
+    }
+
+    #left-video {
+        width: 22rem;
+    }
+
+    #right-video {
+        width: 22rem;
+    }
+
+    #right-video h2 {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .left-section h1 {
+        font-size: 1.8rem;
+        inline-size: 15rem;
+    }
+
+    .left-section p {
+        inline-size: 15rem;
+    }
+
+    .book-online {
+        height: 14rem;
+    }
+
+    .book-online p {
+        margin: revert;
+        font-size: 0.8rem;
+    }
+
+    .book-online h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-online button {
+        font-size: 0.6rem;
+    }
+
+    #left-video {
+        width: 20rem;
+    }
+
+    #right-video {
+        width: 20rem;
+    }
+
+    .subfooter {
+        padding: 0 2rem 1rem;
+    }
+
+    .subfooter a:first-of-type {
+        padding: unset;
+    }
+
+    .left:nth-of-type(1) h2 {
+        font-size: 1.8rem;
     }
 }
