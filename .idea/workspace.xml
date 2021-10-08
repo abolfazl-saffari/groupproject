@@ -4,6 +4,7 @@
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <workItem from="1633454872910" duration="6042000" />
       <workItem from="1633494144195" duration="16391000" />
       <workItem from="1633578685262" duration="33819000" />
-      <workItem from="1633662381297" duration="3746000" />
+      <workItem from="1633662381297" duration="14629000" />
     </task>
     <task id="LOCAL-00001" summary="added services tab">
       <created>1633456748934</created>
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633639538408</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="complected small phone responsive">
+      <created>1633666306326</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633666306326</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,7 @@
     <MESSAGE value="added services tab" />
     <MESSAGE value="Edited services tab" />
     <MESSAGE value="added small phone responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="added small phone responsive" />
+    <MESSAGE value="complected small phone responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="complected small phone responsive" />
   </component>
 </project>
