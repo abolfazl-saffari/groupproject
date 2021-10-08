@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/home/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about us/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/about us/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="alireza" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +63,9 @@
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
       <workItem from="1633454872910" duration="1772000" />
+      <workItem from="1633694096763" duration="9400000" />
+      <workItem from="1633705415902" duration="8853000" />
+      <workItem from="1633733398493" duration="3581000" />
     </task>
     <servers />
   </component>
