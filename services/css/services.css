@@ -373,43 +373,11 @@ header .current {
     margin-left: 8vw;
 }
 
-/*#help h3 {*/
-/*    font-weight: 400;*/
-/*    font-size: 1.8vw;*/
-/*    margin: 0 0 1.6vw 0;*/
-
-/*}*/
-
-/*#help div span {*/
-/*    font-size: 1vw;*/
-/*    font-weight: 200;*/
-/*}*/
-
-/*#help div a p {*/
-/*    display: inline;*/
-/*    font-size: 1.1vw;*/
-/*}*/
-
-/*#help div {*/
-/*    margin: 1.2vw 0;*/
-/*    color: #5E5E5E;*/
-/*}*/
-
-/*#help div a {*/
-/*    text-decoration: none;*/
-/*    color: #5E5E5E;*/
-/*}*/
-
 #company div a p:hover,
 #help div a p:hover{
     text-decoration: underline;
     color: #00F1C7;
 }
-
-/*#help div a p:hover {*/
-/*    text-decoration: underline;*/
-/*    color: #00F1C7;*/
-/*}*/
 
 .footerBottom {
     border-top: 0.07vw solid #e2e2e2;
@@ -2069,7 +2037,8 @@ header .current {
         font-size: 0.7rem;
     }
 }
-/**********  Responsive for Laptop 1024 **********/
+
+/**********  Responsive for Laptop 1440 **********/
 @media screen and (max-width: 1440px) {
     .container {
         grid-template-rows: max-content max-content max-content max-content;
@@ -2231,10 +2200,6 @@ header .current {
         /*align-items: center;*/
     }
 
-    /*.content2 h5, h2 {*/
-    /*    color: #fff;*/
-    /*}*/
-
     .content2 h5 {
         font-size: 1.5vw;
         margin-top: 5vh;
@@ -2256,21 +2221,16 @@ header .current {
     }
 
     .content2 button {
-        /*background: #000;*/
-        /*border: 0 solid #000;*/
         width: 9%;
         height: 3rem;
         /*font-size: 1.1vw;*/
         /*margin-top: 4vh;*/
     }
 
-    /***** footer *****/
+    /*!***** footer *****!*/
 
     .mainFooter {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        /*margin-top: 10rem;*/
     }
 
     .footerTop {
@@ -2283,13 +2243,8 @@ header .current {
         margin-top: 10rem;
     }
 
-    .footerTop > div {
-        margin: 0 6.5vw;
-        vertical-align: middle;
-    }
-
     #icon-number {
-        margin-left: 9vw;
+        margin-left: 13vw;
         margin-bottom: 0;
     }
 
@@ -2298,115 +2253,40 @@ header .current {
     }
 
     #icon-number p {
-        color: #8C8C8C;
-        font-size: 1.1vw;
-        margin: 3vw 0 0.8vw 0;
+        font-size: 1vw;
     }
 
     #icon-number h3 {
-        color: #00F1C7;
         font-size: 1.6vw;
-        font-weight: 400;
+        margin-top: 0;
     }
 
     #company h3,
     #help h3{
-        font-weight: 400;
-        font-size: 1.8vw;
-        margin: 0 0 1.6vw 0;
+        font-size: 1.5vw;
     }
 
     #company div span,
     #help div span{
-        font-size: 1vw;
-        font-weight: 200;
+        font-size: 0.8vw;
     }
     #company div a p,
     #help div a p {
         display: inline;
-        font-size: 1.1vw;
+        font-size: 1vw;
     }
-
-    #company div,
-    #help div {
-        margin: 1.2vw 0;
-        color: #5E5E5E;
-    }
-
-    #company div a,
-    #help div a{
-        text-decoration: none;
-        color: #5E5E5E;
-    }
-
-    #help {
-        /*color: #000;*/
-        margin-left: 8vw;
-    }
-
-    /*#help h3 {*/
-    /*    font-weight: 400;*/
-    /*    font-size: 1.8vw;*/
-    /*    margin: 0 0 1.6vw 0;*/
-
-    /*}*/
-
-    /*#help div span {*/
-    /*    font-size: 1vw;*/
-    /*    font-weight: 200;*/
-    /*}*/
-
-    /*#help div a p {*/
-    /*    display: inline;*/
-    /*    font-size: 1.1vw;*/
-    /*}*/
-
-    /*#help div {*/
-    /*    margin: 1.2vw 0;*/
-    /*    color: #5E5E5E;*/
-    /*}*/
-
-    /*#help div a {*/
-    /*    text-decoration: none;*/
-    /*    color: #5E5E5E;*/
-    /*}*/
-
-    #company div a p:hover,
-    #help div a p:hover{
-        text-decoration: underline;
-        color: #00F1C7;
-    }
-
-    /*#help div a p:hover {*/
-    /*    text-decoration: underline;*/
-    /*    color: #00F1C7;*/
-    /*}*/
 
     .footerBottom {
-        border-top: 0.07vw solid #e2e2e2;
-        padding: 2.2rem 11vw;
-        font-size: 1.1vw;
-        color: #8C8C8C;
+        padding: 2.1rem 14vw;
+        font-size: 1.08vw;
     }
 
     .footerBottom a {
-        text-decoration: none;
-        font-size: 1.2vw;
-        color: #5E5E5E;
-    }
-
-    .footer-hover-a:hover {
-        text-decoration: underline;
-        color: #00F1C7;
-
+        font-size: 1.1vw;
     }
 
     .footerBottom a:first-of-type {
-        float: right;
-        font-size: 2.5vw;
-        padding: 0;
-        vertical-align: middle;
-        font-weight: lighter;
+        font-size: 1.5vw;
     }
 
     .stickyButton-up {
