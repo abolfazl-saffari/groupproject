@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -202,27 +203,30 @@ body {
 }
 
 @media screen and (max-width: 376px) {
+    .hambergure-content {
+        width: 20rem;
+    }
     .hambergure-content ion-icon {
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: 2.2rem;
+        padding-right: 6rem;
     }
 
     .hambergure-menu {
-        min-height: 14.7vw;
-        padding-top: 3vw;
+        min-height: 3rem;
+        padding-top: 0.7rem;
     }
 
     .hambergure-menu a {
-        padding-left: 25vw;
+        padding-left: 5rem;
     }
 
     .hambergure-menu a img {
-        width: 46vw;
+        width: 10.5rem;
     }
 
     .hambergure-menu ion-icon {
-        font-size: 9vw;
-        margin: -11.5vw 2.5vw 0 0;
+        font-size: 2rem;
+        margin: -3rem 0.6rem 0 0;
     }
 
     .hambergure-content dl {
@@ -311,7 +315,7 @@ header .current {
 .header {
     padding: 0;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     height: auto;
     margin: 0;
     background-image: url("../images/slidebar.jpg");
@@ -382,7 +386,7 @@ a.btnMore:hover {
     .header {
         background-position: -5.3rem 3rem;
         background-size: 38.5rem;
-        width: 100vw;
+        width: 100%;
     }
 
     #welcome {
@@ -407,10 +411,22 @@ a.btnMore:hover {
 }
 @media screen and (max-width: 376px) {
     .header {
-        max-height: 77vw;
+        background-position: -5.3rem 3rem;
+        background-size: 38.5rem;
+        max-height: 20rem;
     }
     #welcome {
-        margin-top: 29vw;
+        margin-top: 8rem;
+    }
+    #welcome h1 {
+        font-size: 1.7rem;
+    }
+
+
+    .btnMore {
+        width: 3.7rem;
+        height: 1.2rem;
+        font-size: 0.5rem;
     }
 }
 /*================= Section 1 ==================*/
@@ -559,7 +575,7 @@ a.btnMore:hover {
 
     .services-top h2 {
         font-size: 8vw;
-        line-height: 10vh;
+        line-height: 2.2rem;
         margin-bottom: 15vw;
     }
 
@@ -763,7 +779,7 @@ a.btnMore:hover {
 
 .seperator {
     grid-area: line;
-    width: 100vw;
+    width: 100%;
     margin-top: 3vh;
     margin-left: -10vw;
     border: none;
@@ -1256,7 +1272,7 @@ a.btnMore:hover {
 /*================= Footer ==================*/
 
 .allfooter {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
