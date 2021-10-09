@@ -888,7 +888,7 @@ header .current {
 }
 
 /**********  Responsive for Medium phone and down **********/
-@media screen and (max-width: 375px) {
+@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
     .container {
         grid-template-rows: max-content 380vh max-content max-content;
         display: block;
@@ -1280,7 +1280,7 @@ header .current {
 }
 
 /**********  Responsive for Large phone and down **********/
-@media screen and (max-width: 425px) {
+@media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
     .container {
         grid-template-rows: max-content 380vh max-content max-content;
         display: block;
@@ -1666,7 +1666,7 @@ header .current {
 }
 
 /**********  Responsive for Laptop 1024 **********/
-@media screen and (max-width: 1024px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px){
     .container {
         grid-template-rows: max-content max-content max-content max-content;
         display: block;
@@ -2039,7 +2039,7 @@ header .current {
 }
 
 /**********  Responsive for Laptop 1440 **********/
-@media screen and (max-width: 1440px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
     .container {
         grid-template-rows: max-content max-content max-content max-content;
         display: block;
@@ -2125,12 +2125,6 @@ header .current {
         padding-left: 3.3vw;
     }
 
-    /*.text h4 {*/
-    /*    font-size: 1.6vw;*/
-    /*    font-weight: 400;*/
-    /*    letter-spacing: 0.08vw;*/
-    /*}*/
-
     .text p {
         font-size: 1.09vw;
         line-height: 1.8rem;
@@ -2141,7 +2135,6 @@ header .current {
         grid-area: right;
         display: grid;
         grid-template-rows: max-content max-content;
-        /*grid-template-areas: "pic" "book";*/
     }
 
     /*.image {*/
@@ -2193,11 +2186,6 @@ header .current {
     .content2 {
         width: 100%;
         height: 33rem;
-        /*background: #001B37;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
     }
 
     .content2 h5 {
@@ -2233,23 +2221,9 @@ header .current {
         width: 100%;
     }
 
-    .footerTop {
-        display: flex;
-        /*flex-direction: row;*/
-        justify-content: right;
-        width: max-content;
-        height: max-content;
-        padding-bottom: 6vw;
-        margin-top: 10rem;
-    }
-
     #icon-number {
         margin-left: 13vw;
         margin-bottom: 0;
-    }
-
-    #icon-number img {
-        width: 12vw;
     }
 
     #icon-number p {
@@ -2320,3 +2294,354 @@ header .current {
     }
 }
 
+/**********  Responsive for Laptop 2560 **********/
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+    .container {
+        grid-template-rows: 23rem max-content max-content max-content;
+    }
+    /*!*****  Header *****!*/
+
+    .header {
+        width: 100%;
+        background-position: center top;
+        background-size: 75%;
+    }
+
+    #welcome {
+        margin-left: 29vw;
+        margin-top: 8rem;
+    }
+
+    #welcome h1 {
+        font-weight: 700;
+        font-size: 2.8vw;
+        padding-top: 4rem;
+    }
+
+    /*.hamburger-menu {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.hamburger-content {*/
+    /*    display: none;*/
+    /*}*/
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        /*align-items: center;*/
+        /*transition: 0.6s;*/
+        /*padding: 1rem 10vw;*/
+        /*z-index: 1000;*/
+    }
+
+    header .logo {
+        margin-right: 0;
+    }
+
+    header .logo img {
+        width: 7vw;
+        margin-top: 0;
+    }
+
+    header.sticky {
+        width: 100%;
+        padding: 0.2rem 12vw;
+        /*position: fixed;*/
+        /*background: rgba(10, 22, 34, 0.95);*/
+    }
+
+    header dl {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    /*header dl dt:last-child a {*/
+    /*    color: #08F1C9;*/
+    /*}*/
+
+    header dl dt a {
+        font-weight: 600;
+        font-size: 0.8vw;
+        /*color: #B5BDC4;*/
+        /*text-decoration: none;*/
+        position: relative;
+        margin: 0.5rem 1.4vw;
+        /*transition: 0.6s;*/
+    }
+    /*****content1*****/
+
+    .content1 {
+        /*margin-top: 8vw;*/
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        /*margin-right: 20vw;*/
+        /*grid-template-areas: "left right "*/
+    }
+
+    .left-section {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: right;*/
+        margin-right: 0;
+        margin-left: 58%;
+    }
+
+    .headline img {
+        margin-bottom: 1rem;
+        width: 1.8vw;
+    }
+
+    .headline h1 {
+        font-size: 2.4vw;
+        font-weight: 700;
+        padding-right: 1vw;
+        margin: 0;
+    }
+
+    .headline p {
+        font-size: 0.75vw;
+        margin-top: 2rem;
+        letter-spacing: 0.08vw;
+    }
+
+    .card {
+        display: flex;
+        /*justify-items: center;*/
+        /*margin-top: 4vh;*/
+    }
+
+    .pic img {
+        width: 3.5vw;
+        height: 5.8rem;
+        margin-top: 2rem;
+    }
+
+    .text {
+        padding-left: 2vw;
+    }
+
+    .text h4 {
+        font-size: 0.9vw;
+        /*font-weight: 400;*/
+        letter-spacing: 0.08vw;
+        margin-bottom: 0;
+    }
+
+    .text p {
+        font-size: 0.6vw;
+        line-height: 1.8rem;
+        padding-right: 0.06vw;
+    }
+
+    .right-section {
+        margin-left: 11%;
+        grid-template-rows: max-content max-content;
+        /*grid-template-areas: "pic" "book";*/
+    }
+
+    .image img {
+        width: 18vw;
+    }
+
+    .book-online {
+        width: 11vw;
+        height: 20rem;
+        /*display: flex;*/
+        padding: 0;
+    }
+
+    .book-online h3 {
+        font-size: 1.2vw;
+        /*font-weight: 700;*/
+        margin: 0;
+        padding-top: 2.5rem;
+        padding-right: 4vw;
+        padding-left: 2vw;
+    }
+
+    .book-online p {
+        font-size: 0.7vw;
+        letter-spacing: 0.08vw;
+        margin-top: 2rem;
+        padding-left: 2vw;
+    }
+
+    .book-online button {
+        width: 50%;
+        margin-left: 2vw;
+        height: 3rem;
+    }
+
+    .book-online a {
+        font-size: 0.7vw;
+    }
+
+    /****** content2 ******/
+    .content2 {
+        width: 100%;
+        /*background: #001B37;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    /*.content2 h5, h2 {*/
+    /*    color: #fff;*/
+    /*}*/
+
+    .content2 h5 {
+        font-size: 0.9vw;
+        margin-top: 7rem;
+        /*font-weight: 300;*/
+    }
+
+    .content2 h2 {
+        font-size: 2vw;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .content2 p {
+        font-size: 0.6vw;
+        line-height: 1.5rem;
+        padding: 0 38vw;
+        /*margin-top: 0.1rem;*/
+    }
+
+    .content2 button {
+        width: 6%;
+        height: 3.5rem;
+        font-size: 0.7vw;
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    /***** footer *****/
+
+    .mainFooter {
+        width: 50%;
+        margin-left: 18%;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*margin-top: 10rem;*/
+    }
+
+    .footerTop {
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        justify-content: right;
+        /*width: max-content;*/
+        /*height: max-content;*/
+        padding-bottom: 6vw;
+        margin-top: 10rem;
+    }
+
+    .footerTop > div {
+        margin: 0 3.5vw;
+        /*vertical-align: middle;*/
+    }
+
+    #icon-number {
+        /*margin-left: 9vw;*/
+        margin-bottom: 0;
+    }
+
+    #icon-number img {
+        width: 8vw;
+    }
+
+    #icon-number p {
+        font-size: 0.7vw;
+        margin-top: 3rem;
+    }
+
+    #icon-number h3 {
+        font-size: 1vw;
+        /*font-weight: 400;*/
+    }
+
+    #company h3,
+    #help h3{
+        /*font-weight: 400;*/
+        font-size: 0.9vw;
+        margin: 0;
+    }
+
+    #company div span,
+    #help div span{
+        font-size: 0.5vw;
+        font-weight: 200;
+    }
+    #company div a p,
+    #help div a p {
+        display: inline;
+        font-size: 0.6vw;
+    }
+
+    #company div,
+    #help div {
+        margin: 1.2vw 0;
+    }
+
+    #help {
+        /*color: #000;*/
+        margin-left: 2vw;
+    }
+
+    .footerBottom {
+        /*padding: 2.2rem 11vw;*/
+        padding: 0;
+        font-size: 0.8vw;
+    }
+
+    .footerBottom a {
+        font-size: 0.8vw;
+    }
+
+    .footerBottom a:first-of-type {
+        font-size: 1.5vw;
+    }
+
+    .stickyButton-up {
+        width: 4rem;
+        height: 4rem;
+        top: 35%;
+    }
+
+    .stickyButton-up span:first-child {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-left: 0.2rem;
+    }
+
+    .stickyButton-up span:last-child {
+        font-size: 0.7rem;
+    }
+
+    .stickyButton-down {
+        width: 4rem;
+        height: 4rem;
+        top: 41%;
+    }
+
+    .stickyButton-down img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .stickyButton-down span {
+        font-size: 0.7rem;
+        /*margin-top: 0.21rem;*/
+    }
+}
