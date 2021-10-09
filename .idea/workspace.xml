@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/team/css/media-queries(laptop).css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/media-queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,6 +46,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -48,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
+      <workItem from="1633770522448" duration="15374000" />
     </task>
     <servers />
   </component>

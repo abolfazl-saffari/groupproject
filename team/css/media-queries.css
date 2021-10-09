@@ -15,7 +15,7 @@ and  (max-device-width: 425px) {
     .container {
         width: 100%;
         display: grid;
-        grid-template-rows: 65vw 195vw  492vw 110vw;
+        grid-template-rows: 66vw 195vw  492vw 110vw;
         grid-template-areas: "header-banner"
                          "section-1"
                          "section-2"
@@ -188,17 +188,19 @@ and  (max-device-width: 425px) {
 
     .se1-content img {
         width: 10vw;
+        margin-bottom: 4vw;
     }
 
     .se1-content h1 {
         font-size: 8.5vw;
         font-weight: 700;
-        margin: 4vw 0 5vw 0;
+        margin: 0;
     }
 
     .se1-content h3 {
-        font-size: 3vw;
-        margin-bottom: 6vw;
+        font-size: 3.3vw;
+        margin-top: 6vw;
+        margin-bottom: 8vw;
     }
 
     .se1-content p {
@@ -506,12 +508,14 @@ and  (max-device-width: 375px) {
     .se1-content h1 {
         font-size: 9.8vw;
         font-weight: 700;
+        line-height: 11vw;
         margin: 4vw 0 5vw 0;
     }
 
     .se1-content h3 {
-        font-size: 3.5vw;
-        margin-bottom: 6vw;
+        font-size: 3.8vw;
+        margin-top: 7vw;
+        margin-bottom: 7vw;
     }
 
     .se1-content p {
@@ -1024,9 +1028,11 @@ and  (max-device-width: 375px) {
         font-size: 4.2vw;
         margin-top: 2vw;
     }
-    #company{
+
+    #company {
         margin-bottom: 10vw;
     }
+
     #company h3 {
         font-size: 4.4vw;
         margin-top: 14.5vw;
