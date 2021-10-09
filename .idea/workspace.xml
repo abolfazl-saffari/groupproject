@@ -43,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,6 +66,7 @@
       <workItem from="1633494144195" duration="16391000" />
       <workItem from="1633578685262" duration="33819000" />
       <workItem from="1633662381297" duration="14629000" />
+      <workItem from="1633755934344" duration="13816000" />
     </task>
     <task id="LOCAL-00001" summary="added services tab">
       <created>1633456748934</created>
