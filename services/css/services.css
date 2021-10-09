@@ -77,7 +77,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width:max-content;
+    width: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@ header .logo img {
 }
 
 header.sticky {
-    width:max-content;
+    width: max-content;
     padding: 0.2rem 12vw;
     background: rgba(10, 22, 34, 0.95);
 }
@@ -120,13 +120,15 @@ header dl dt a {
     transition: 0.6s;
 }
 
-header dl dt a:hover{
+header dl dt a:hover {
     color: #fff;
 }
-header dl dt:last-child a:hover{
+
+header dl dt:last-child a:hover {
     color: #08F1C9;
 }
-header .current{
+
+header .current {
     color: #fff;
 }
 
@@ -200,7 +202,7 @@ header .current{
     grid-template-areas: "pic" "book";
 }
 
-.image{
+.image {
     grid-area: pic;
 }
 
@@ -212,7 +214,7 @@ header .current{
     grid-area: book;
     background-color: #00F1C7;
     width: 16vw;
-    display: flex;
+    /*display: flex;*/
     padding: 8vh 0 6vh 3.5vw;
 }
 
@@ -245,14 +247,12 @@ header .current{
 
 /****** content2 ******/
 .content2 {
-    grid-area: content2;
     width: 100%;
     background: #001B37;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*justify-items: center;*/
 }
 
 .content2 h5, h2 {
@@ -275,10 +275,8 @@ header .current{
     font-size: 1.1vw;
     text-align: center;
     line-height: 4vh;
-    /*margin-top: 0.8vh;*/
     padding: 0 25vw;
     margin-top: 0.6vh;
-
 }
 
 .content2 button {
@@ -301,7 +299,7 @@ header .current{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /*margin-top: 20vh;*/
+    /*margin-top: 10rem;*/
 }
 
 .footerTop {
@@ -311,7 +309,7 @@ header .current{
     width: max-content;
     height: max-content;
     padding-bottom: 6vw;
-    margin-top: 20vh;
+    margin-top: 10rem;
 }
 
 .footerTop > div {
@@ -340,84 +338,51 @@ header .current{
     font-weight: 400;
 }
 
-#company h3 {
+#company h3,
+#help h3{
     font-weight: 400;
     font-size: 1.8vw;
     margin: 0 0 1.6vw 0;
 }
 
-#company div span {
+#company div span,
+#help div span{
     font-size: 1vw;
     font-weight: 200;
 }
-
-
-#company div a p {
-    display: inline;
-    font-size: 1.1vw;
-}
-
-#company div {
-    margin: 1.2vw 0;
-    color: #5E5E5E;
-
-}
-
-#company div a {
-    text-decoration: none;
-    color: #5E5E5E;
-
-}
-
-#help {
-    color: #000;
-    margin-left: 8vw;
-}
-
-#help h3 {
-    font-weight: 400;
-    font-size: 1.8vw;
-    margin: 0 0 1.6vw 0;
-
-}
-
-#help div span {
-    font-size: 1vw;
-    font-weight: 200;
-}
-
+#company div a p,
 #help div a p {
     display: inline;
     font-size: 1.1vw;
 }
 
+#company div,
 #help div {
     margin: 1.2vw 0;
     color: #5E5E5E;
-
 }
 
-#help div a {
+#company div a,
+#help div a{
     text-decoration: none;
     color: #5E5E5E;
-
 }
 
-#company div a p:hover {
-    text-decoration: underline;
-    color: #00F1C7;
+#help {
+    /*color: #000;*/
+    margin-left: 8vw;
 }
 
-#help div a p:hover {
+#company div a p:hover,
+#help div a p:hover{
     text-decoration: underline;
     color: #00F1C7;
 }
 
 .footerBottom {
     border-top: 0.07vw solid #e2e2e2;
-    padding: 4vh 11vw;
+    padding: 2.2rem 11vw;
     font-size: 1.1vw;
-    /*font-family: Montserrat, Arial, serif;*/
     color: #8C8C8C;
 }
 
@@ -425,7 +390,6 @@ header .current{
     text-decoration: none;
     font-size: 1.2vw;
     color: #5E5E5E;
-
 }
 
 .footer-hover-a:hover {
@@ -506,12 +470,14 @@ header .current{
         opacity: .2
     }
 }
+
 /**********  Responsive for Small phone and down **********/
 @media screen and (max-width: 320px) {
     .container {
         grid-template-rows: 38vh 380vh max-content max-content;
         display: block;
     }
+
     /********* Header **********/
     header {
         display: none;
@@ -521,7 +487,8 @@ header .current{
         margin-left: 11vw;
         margin-top: 17vh;
     }
-    #welcome h1{
+
+    #welcome h1 {
         font-size: 13vw;
         font-weight: 700;
     }
@@ -612,7 +579,7 @@ header .current{
     }
 
 
-    .hamburger-content dl dt:last-child a{
+    .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
@@ -657,13 +624,12 @@ header .current{
 
     .sticky {
         position: fixed;
-        min-height: 10vh ;
-        width:100vw;
+        min-height: 10vh;
+        width: 100vw;
         transition: ease-in 1s;
     }
 
     /********* Content1 **********/
-
     .content1 {
         display: flex;
         flex-direction: column;
@@ -724,7 +690,7 @@ header .current{
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh ;
+        grid-template-rows: 64vh 40vh;
         margin-left: 4%;
         width: 100%;
         display: flex;
@@ -759,7 +725,6 @@ header .current{
     /*.book-online:first-letter {*/
     /*    padding-left: 8vw;*/
     /*}*/
-
     .book-online p {
         font-size: 4.5vw;
         padding-left: 8vw;
@@ -776,7 +741,6 @@ header .current{
     }
 
     /********* Content2 **********/
-
     .content2 {
         width: 100%;
         height: 100vh;
@@ -789,7 +753,7 @@ header .current{
         font-weight: 300;
         padding: 0;
         margin-top: 0.01vh;
-        letter-spacing: 0.1vw   ;
+        letter-spacing: 0.1vw;
     }
 
     .content2 h2 {
@@ -802,7 +766,7 @@ header .current{
     .content2 p {
         font-size: 4vw;
         line-height: 4vh;
-        padding: 0 10vw ;
+        padding: 0 10vw;
         margin-top: 0.8vh;
     }
 
@@ -813,11 +777,11 @@ header .current{
         font-weight: 100;
         margin-top: 8vh;
     }
+
     /********* Footer **********/
     /*.mainFooter {*/
     /*    margin-top: 1vh;*/
     /*}*/
-
     .footerTop {
         display: flex;
         flex-direction: column;
@@ -831,12 +795,9 @@ header .current{
     /*    margin: 1vw 10vw;*/
     /*    font-size: 3vw;*/
     /*}*/
-
-
     /*#icon-number {*/
     /*    margin-top: 28vw;*/
     /*}*/
-
     #icon-number img {
         width: 50vw;
         margin-top: 20vh;
@@ -852,10 +813,12 @@ header .current{
         margin-bottom: 12vh;
 
     }
-    #company{
+
+    #company {
         margin-bottom: 12vh;
         margin-left: 11vw;
     }
+
     #company h3 {
         font-size: 4.5vw;
     }
@@ -918,7 +881,8 @@ header .current{
 
 
     }
-    .sti-btn {
+
+    .stickyButton {
         display: none;
     }
 }
@@ -929,18 +893,22 @@ header .current{
         grid-template-rows: max-content 380vh max-content max-content;
         display: block;
     }
+
     /********* Header **********/
     header {
         display: none;
     }
+
     .header {
         background-size: 250%;
     }
+
     #welcome {
         margin-left: 9vw;
         margin-top: 14vh;
     }
-    #welcome h1{
+
+    #welcome h1 {
         font-size: 11.2vw;
         font-weight: 700;
         padding-bottom: 10vh;
@@ -1032,7 +1000,7 @@ header .current{
     }
 
 
-    .hamburger-content dl dt:last-child a{
+    .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
@@ -1077,12 +1045,12 @@ header .current{
 
     .sticky {
         position: fixed;
-        min-height: 10vh ;
-        width:100vw;
+        min-height: 10vh;
+        width: 100vw;
         transition: ease-in 1s;
     }
-    /********* Content1 **********/
 
+    /********* Content1 **********/
     .content1 {
         display: flex;
         flex-direction: column;
@@ -1143,7 +1111,7 @@ header .current{
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh ;
+        grid-template-rows: 64vh 40vh;
         margin-left: 3%;
         width: 100%;
         display: flex;
@@ -1183,7 +1151,6 @@ header .current{
     }
 
     /********* Content2 **********/
-
     .content2 {
         width: 100%;
         height: 90vh;
@@ -1192,7 +1159,7 @@ header .current{
     .content2 h5 {
         font-size: 3.8vw;
         font-weight: 300;
-        padding: 0 ;
+        padding: 0;
         margin-top: 0.01vh;
     }
 
@@ -1217,6 +1184,7 @@ header .current{
         font-weight: 100;
         margin-top: 8vh;
     }
+
     .footerTop {
         display: flex;
         flex-direction: column;
@@ -1240,10 +1208,12 @@ header .current{
         margin-bottom: 12vh;
 
     }
-    #company{
+
+    #company {
         margin-bottom: 12vh;
         margin-left: 11vw;
     }
+
     #company h3 {
         font-size: 4vw;
     }
@@ -1303,7 +1273,8 @@ header .current{
 
 
     }
-    .sti-btn {
+
+    .stickyButton {
         display: none;
     }
 }
@@ -1314,18 +1285,22 @@ header .current{
         grid-template-rows: max-content 380vh max-content max-content;
         display: block;
     }
+
     /********* Header **********/
     header {
         display: none;
     }
+
     .header {
         background-size: 250%;
     }
+
     #welcome {
         margin-left: 8vw;
         margin-top: 14vh;
     }
-    #welcome h1{
+
+    #welcome h1 {
         font-size: 9.5vw;
         font-weight: 700;
         padding-bottom: 10vh;
@@ -1417,7 +1392,7 @@ header .current{
     }
 
 
-    .hamburger-content dl dt:last-child a{
+    .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
@@ -1462,12 +1437,12 @@ header .current{
 
     .sticky {
         position: fixed;
-        min-height: 10vh ;
-        width:100vw;
+        min-height: 10vh;
+        width: 100vw;
         transition: ease-in 1s;
     }
-    /********* Content1 **********/
 
+    /********* Content1 **********/
     .content1 {
         display: flex;
         flex-direction: column;
@@ -1526,7 +1501,7 @@ header .current{
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh ;
+        grid-template-rows: 64vh 40vh;
         margin-left: 3%;
         width: 100%;
         display: flex;
@@ -1566,7 +1541,6 @@ header .current{
     }
 
     /********* Content2 **********/
-
     .content2 {
         width: 100%;
         height: 85vh;
@@ -1575,7 +1549,7 @@ header .current{
     .content2 h5 {
         font-size: 3vw;
         font-weight: 300;
-        padding: 0 ;
+        padding: 0;
         margin-top: 1vh;
         letter-spacing: 0.1vw;
     }
@@ -1599,6 +1573,7 @@ header .current{
         font-weight: 100;
         margin-top: 6vh;
     }
+
     .footerTop {
         display: flex;
         flex-direction: column;
@@ -1621,10 +1596,12 @@ header .current{
         margin-bottom: 12vh;
 
     }
-    #company{
+
+    #company {
         margin-bottom: 12vh;
         margin-left: 9vw;
     }
+
     #company h3 {
         font-size: 3.3vw;
     }
@@ -1682,9 +1659,664 @@ header .current{
 
 
     }
-    .sti-btn {
+
+    .stickyButton {
         display: none;
     }
 }
 
+/**********  Responsive for Laptop 1024 **********/
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-rows: max-content max-content max-content max-content;
+        display: block;
+    }
+
+    /********* Header **********/
+    header {
+        display: none;
+    }
+
+    .header {
+        background-size: 184%;
+    }
+
+    #welcome {
+        margin-left: 5.4vw;
+        margin-top: 1.4rem;
+    }
+
+    #welcome h1 {
+        font-size: 7vw;
+        font-weight: 700;
+        padding-bottom: 2.5rem;
+    }
+
+    /********* Hamburger menu **********/
+    .hamburger-content {
+        display: block;
+    }
+    .hamburger-menu {
+        background-color: rgba(10, 22, 34, 1);
+        display: block;
+        width: 100vw;
+        min-height: 13vw;
+        z-index: 100;
+        padding-top: 2vw;
+    }
+    .hamburger-menu a {
+        display: inline-block;
+        /*margin: 2rem;*/
+        padding-left: 28vw;
+    }
+    .hamburger-menu a img {
+        margin: auto;
+        width: 50vw;
+    }
+    .hamburger-menu ion-icon {
+        font-size: 8vw;
+        color: #00c19f;
+        float: right;
+        margin: -11.5vw 4.5vw 0 0;
+        padding-top: 12vw;
+    }
+    .hamburger-menu ion-icon:hover {
+        cursor: pointer;
+    }
+    .hamburger-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+    .hamburger-content ion-icon {
+        font-size: 8vw;
+        /*padding: 1rem;*/
+        float: right;
+        color: #a6a6a6;
+    }
+    .hamburger-content {
+        background-color: #191919;
+        width: 250px;
+        height: 105vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .hamburger-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+    .hamburger-content dl dt:last-child a {
+    }
+    .hamburger-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    .hamburger-content dl dt:last-child a {
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+    .hamburger-content dl dt a:hover {
+        color: #fff;
+    }
+    .hamburger-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+    .hamburger-content .current {
+        color: #fff;
+    }
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+    }
+    .close-menu {
+        transform: translate(100vw);
+        transition: transform 1s 0.5s;
+    }
+    .moveOn-container {
+        transform: translate(-30vw);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(50%);
+        transition: 1s 0.5s;
+    }
+    .moveBack-container {
+        transsform: translate(0);
+        transition: transform 1s;
+    }
+    .sticky {
+        position: fixed;
+        min-height: 10vh;
+        width: 100vw;
+        transition: ease-in 1s;
+    }
+    /********* Content1 **********/
+    .content1 {
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        margin-top: 6.6rem;
+        margin-bottom: 6.6rem;
+    }
+
+    .left-section {
+        margin-left: 9%;
+    }
+
+    .headline img {
+        width: 4vw;
+    }
+
+    .headline h1 {
+        font-size: 5.8vw;
+        font-weight: 700;
+        line-height: 4.5rem;
+        padding-right: 6.5vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .headline p {
+        font-size: 2vw;
+        margin-top: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .card {
+        margin-top: 0.8rem;
+    }
+
+    .pic img {
+        width: 8.8vw;
+        height: 5.2rem;
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    .text h4 {
+        font-size: 2.2vw;
+        padding-left: 2.4vw;
+    }
+
+    .text p {
+        font-size: 1.5vw;
+        padding-left: 2.4vw;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    .right-section {
+        grid-template-rows: max-content max-content;
+    }
+
+    .image img {
+        width: 38vw;
+    }
+
+    .book-online {
+        width: 19vw;
+        height: 19rem;
+    }
+
+    .book-online h3 {
+        font-size: 3vw;
+        padding-left: 2vw;
+        padding-top: 1.5rem;
+    }
+
+    .book-online p {
+        font-size: 2vw;
+        padding-left: 2vw;
+        padding-right: 3vw;
+        letter-spacing: 0.2vw;
+    }
+
+    .book-online button {
+        width: 60%;
+        height: 4.5rem;
+        font-size: 1.5vw;
+        margin-left: 2vw;
+        text-align: left;
+        padding-left: 2vw;
+    }
+
+    .book-online a {
+        padding-right: 3vw;
+        line-height: 1.5rem;
+    }
+
+    /********* Content2 **********/
+    .content2 {
+        width: 100%;
+        height: 32rem;
+        margin: 0;
+        padding: 0;
+    }
+    .content2 h5 {
+        font-size: 1.8vw;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        letter-spacing: 0.16vw;
+    }
+    .content2 h2 {
+        font-size: 5vw;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    .content2 p {
+        font-size: 1.5vw;
+        line-height: 1.6rem;
+        padding: 0 25vw;
+        margin-top: 0;
+
+    }
+    .content2 button {
+        width: 12%;
+        height: 3rem;
+        font-size: 1.5vw;
+        font-weight: 100;
+        /*margin-top: 6vh;*/
+    }
+
+    /***** footer *****/
+
+    .mainFooter {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerTop {
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    #icon-number {
+        margin-left: 5vw;
+    }
+
+    #icon-number img {
+        width: 16vw;
+    }
+
+    #icon-number p {
+        font-size: 1.5vw;
+        margin-left: 3vw;
+    }
+
+    #icon-number h3 {
+        font-size: 2.4vw;
+        margin-left: 3vw;
+        margin-top: 0;
+    }
+
+    #company h3,
+    #help h3 {
+        /*font-weight: 400;*/
+        font-size: 2.2vw;
+        margin: 0 0 1.6vw 0;
+    }
+
+    #company div span,
+    #help div span {
+        font-size: 1.4vw;
+        font-weight: 100;
+    }
+
+
+    #company div a p,
+    #help div a p{
+        font-size: 1.5vw;
+    }
+
+    #company div,
+    #help div{
+        margin: 1rem 0;
+    }
+
+    #help {
+        margin-left: 6vw;
+    }
+
+    .footerBottom {
+        padding: 1.5rem 6vw;
+        font-size: 1.5vw;
+    }
+
+    .footerBottom a {
+        font-size: 1.6vw;
+    }
+
+
+    .footerBottom a:first-of-type {
+        font-size: 3vw;
+        padding-left: 7vw;
+    }
+
+    /********* sticky button **********/
+    .stickyButton-up {
+        width: 4rem;
+        height: 4rem;
+        top: 73%;
+    }
+
+    .stickyButton-up span:first-child {
+        font-size: 1.32rem;
+        margin-left: 0.1rem;
+    }
+
+    .stickyButton-up span:last-child {
+        font-size: 0.71rem;
+    }
+
+    .stickyButton-down {
+        width: 4rem;
+        height: 4rem;
+        top: 86%;
+    }
+
+    .stickyButton-down img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .stickyButton-down span {
+        font-size: 0.7rem;
+    }
+}
+
+/**********  Responsive for Laptop 1440 **********/
+@media screen and (max-width: 1440px) {
+    .container {
+        grid-template-rows: max-content max-content max-content max-content;
+        display: block;
+    }
+    /*!*****  Header *****!*/
+
+    .header{
+        width: 100%;
+        background-size: 140%;
+    }
+
+    #welcome {
+        margin-left: 11vw;
+        margin-top: 12rem;
+    }
+
+    #welcome h1 {
+        font-weight: 700;
+        font-size: 5vw;
+        padding-bottom: 3rem;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-content {
+        display: none;
+    }
+
+    header dl dt a {
+        font-size: 1.1vw;
+    }
+
+    /*****content1*****/
+
+    .content1 {
+        margin-top: 6.5rem;
+        margin-bottom: 6.5rem;
+        width: 100%;
+        /*display: grid;*/
+        /*grid-template-columns: 50% 40%;*/
+        /*grid-template-areas: "left right "*/
+    }
+
+    .left-section {
+        /*grid-area: left;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: right;*/
+        margin-left: 24%;
+    }
+
+    .headline img {
+        margin-bottom: 1.2rem;
+        /*width: 3vw;*/
+    }
+
+    /*.headline h1 {*/
+    /*    font-size: 4.2vw;*/
+    /*    font-weight: 700;*/
+    /*    margin: 0;*/
+    /*}*/
+
+    .headline p {
+        font-size: 1.4vw;
+        letter-spacing: 0.05vw;
+    }
+
+    /*.card {*/
+    /*    display: block;*/
+    /*    !*justify-items: center;*!*/
+    /*    !*margin-top: 4vh;*!*/
+    /*}*/
+
+    .pic img {
+        width: 6vw;
+        height: 5rem;
+        margin-top: 2rem;
+    }
+
+    .text {
+        padding-left: 3.3vw;
+    }
+
+    /*.text h4 {*/
+    /*    font-size: 1.6vw;*/
+    /*    font-weight: 400;*/
+    /*    letter-spacing: 0.08vw;*/
+    /*}*/
+
+    .text p {
+        font-size: 1.09vw;
+        line-height: 1.8rem;
+    }
+
+    .right-section {
+        margin-left: 16%;
+        grid-area: right;
+        display: grid;
+        grid-template-rows: max-content max-content;
+        /*grid-template-areas: "pic" "book";*/
+    }
+
+    /*.image {*/
+    /*    grid-area: pic;*/
+    /*}*/
+
+    .image img {
+        width: 31.5vw;
+    }
+
+    .book-online {
+        /*grid-area: book;*/
+        width: 15vw;
+        height: 15rem;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-content: flex-start;*/
+        /*padding: 8vh 0 6vh 3.5vw;*/
+    }
+
+    /*.book-online h3 {*/
+    /*    font-size: 2.2vw;*/
+    /*    font-weight: 700;*/
+    /*    margin: 0;*/
+    /*    padding-right: 10vw;*/
+    /*}*/
+
+    .book-online p {
+        font-size: 1.3vw;
+        /*letter-spacing: 0.1vw;*/
+        /*margin: 3vh 0 5vh 0;*/
+        margin-bottom: 2rem;
+    }
+
+    .book-online button {
+        width: 60%;
+        height: 3rem;
+        /*background: #000;*/
+        /*border: 0 solid #000;*/
+        /*font-size: 1.08vw;*/
+    }
+
+    .book-online a {
+        font-size: 1.1vw;
+        font-weight: lighter;
+    }
+
+    /****** content2 ******/
+    .content2 {
+        width: 100%;
+        height: 33rem;
+        /*background: #001B37;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .content2 h5 {
+        font-size: 1.5vw;
+        margin-top: 5vh;
+        font-weight: 300;
+    }
+
+    .content2 h2 {
+        font-size: 3.4vw;
+        margin-top: 0.1vh;
+    }
+
+    .content2 p {
+        color: #a1abb5;
+        font-size: 1.1vw;
+        text-align: center;
+        line-height: 4vh;
+        padding: 0 25vw;
+        margin-top: 0.6vh;
+    }
+
+    .content2 button {
+        width: 9%;
+        height: 3rem;
+        /*font-size: 1.1vw;*/
+        /*margin-top: 4vh;*/
+    }
+
+    /*!***** footer *****!*/
+
+    .mainFooter {
+        width: 100%;
+    }
+
+    .footerTop {
+        display: flex;
+        /*flex-direction: row;*/
+        justify-content: right;
+        width: max-content;
+        height: max-content;
+        padding-bottom: 6vw;
+        margin-top: 10rem;
+    }
+
+    #icon-number {
+        margin-left: 13vw;
+        margin-bottom: 0;
+    }
+
+    #icon-number img {
+        width: 12vw;
+    }
+
+    #icon-number p {
+        font-size: 1vw;
+    }
+
+    #icon-number h3 {
+        font-size: 1.6vw;
+        margin-top: 0;
+    }
+
+    #company h3,
+    #help h3{
+        font-size: 1.5vw;
+    }
+
+    #company div span,
+    #help div span{
+        font-size: 0.8vw;
+    }
+    #company div a p,
+    #help div a p {
+        display: inline;
+        font-size: 1vw;
+    }
+
+    .footerBottom {
+        padding: 2.1rem 14vw;
+        font-size: 1.08vw;
+    }
+
+    .footerBottom a {
+        font-size: 1.1vw;
+    }
+
+    .footerBottom a:first-of-type {
+        font-size: 1.5vw;
+    }
+
+    .stickyButton-up {
+        width: 4rem;
+        height: 4rem;
+        top: 72%;
+    }
+
+    .stickyButton-up span:first-child {
+        font-size: 1.3rem;
+        margin-left: 0.2rem;
+    }
+
+    .stickyButton-up span:last-child {
+        font-size: 0.7rem;
+    }
+
+    .stickyButton-down {
+        width: 4rem;
+        height: 4rem;
+        top: 85%;
+    }
+
+    .stickyButton-down img {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .stickyButton-down span {
+        font-size: 0.7rem;
+    }
+}
 
