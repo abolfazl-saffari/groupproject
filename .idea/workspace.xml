@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/team/css/media-queries(laptop).css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/media-queries.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/team.html" afterDir="false" />
-    </list>
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,8 +56,16 @@
       <option name="presentableId" value="Default" />
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
-      <workItem from="1633770522448" duration="15374000" />
+      <workItem from="1633770522448" duration="16238000" />
     </task>
+    <task id="LOCAL-00001" summary="team tab v03">
+      <created>1633804110416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633804110416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +82,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="team tab v03" />
+    <option name="LAST_COMMIT_MESSAGE" value="team tab v03" />
   </component>
 </project>
