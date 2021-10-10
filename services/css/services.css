@@ -13,7 +13,7 @@ body {
 .container {
     width: 100vw;
     display: grid;
-    grid-template-rows: 57vh 220vh 80vh max-content;
+    grid-template-rows: max-content max-content max-content max-content;
     grid-template-areas: "header"
                          "content1"
                          "content2"
@@ -36,31 +36,29 @@ body {
     grid-area: footer;
 }
 
-/*!*****  Header *****!*/
-
+/******  Header  ******/
 .header {
     padding: 0;
-    width: 100%;
-    overflow-x: auto;
-    height: auto;
     margin: 0;
+    width: 100%;
+    height: 31rem;
+    overflow-x: auto;
     background-color: #001B37;
     background-image: url("../images/home_clinic3_pic15 (1).png");
     background-position: center top;
-    background-size: 130%;
-    /*background-position: center ;*/
+    background-size: 136%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#welcome {
+.header-title {
+    color: #fff;
     box-sizing: border-box;
     margin-left: 11vw;
-    margin-top: 32vh;
-    color: #fff;
+    margin-top: 16rem;
 }
 
-#welcome h1 {
+.header-title h1 {
     font-weight: 700;
     font-size: 5vw;
 }
@@ -82,28 +80,27 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 4.5vw 12vw;
+    padding: 4rem 12vw;
     z-index: 1000;
 }
 
 header .logo {
-    margin-right: 19.5vw;
+    margin-right: 20vw;
 }
 
 header .logo img {
     width: 12vw;
-    margin-top: 1.2rem;
 }
 
 header.sticky {
     width: max-content;
-    padding: 0.2rem 12vw;
+    padding: 0.6rem 12vw;
     background: rgba(10, 22, 34, 0.95);
 }
 
 header dl {
     display: flex;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
 }
 
 header dl dt:last-child a {
@@ -116,7 +113,7 @@ header dl dt a {
     color: #B5BDC4;
     text-decoration: none;
     position: relative;
-    margin: 0.5rem 1.4vw;
+    margin: 0.6rem 1.26vw;
     transition: 0.6s;
 }
 
@@ -135,7 +132,7 @@ header .current {
 /*****content1*****/
 
 .content1 {
-    margin-top: 8vw;
+    margin-top: 8rem;
     width: 100%;
     display: grid;
     grid-template-columns: 50% 40%;
@@ -150,45 +147,45 @@ header .current {
     margin-left: 20%;
 }
 
-.headline img {
-    margin-bottom: 3.2vh;
+.left-section__title img {
+    margin-bottom: 2rem;
     width: 3vw;
 }
 
-.headline h1 {
+.left-section__title h1 {
     font-size: 4.2vw;
     font-weight: 700;
     margin: 0;
 }
 
-.headline p {
+.left-section__title p {
     font-size: 1.4vw;
     letter-spacing: 0.1vw;
 }
 
-.card {
+.left-section__card {
     display: flex;
     justify-items: center;
-    /*margin-top: 4vh;*/
 }
 
-.pic img {
+.card-pic img {
     width: 6.5vw;
-    height: 12.5vh;
-    margin-top: 4.2vh;
+    height: 7rem;
+    margin-top: 2.5rem;
 }
 
-.text {
+.card-text {
     padding-left: 4vw;
 }
 
-.text h4 {
+.card-text h4 {
     font-size: 1.6vw;
     font-weight: 400;
     letter-spacing: 0.08vw;
+    margin-bottom: 0;
 }
 
-.text p {
+.card-text p {
     font-size: 1.1vw;
     color: #7A7C7E;
     line-height: 2.3vw;
@@ -202,45 +199,44 @@ header .current {
     grid-template-areas: "pic" "book";
 }
 
-.image {
+.right-section__pic {
+    background-color: red;
     grid-area: pic;
 }
 
-.image img {
+.right-section__pic img {
     width: 33vw;
 }
 
-.book-online {
+.right-section__online {
     grid-area: book;
     background-color: #00F1C7;
     width: 16vw;
-    /*display: flex;*/
-    padding: 8vh 0 6vh 3.5vw;
+    height: 24rem;
+    padding: 2rem 0 0 3vw;
 }
 
-.book-online h3 {
+.right-section__online h3 {
     font-size: 2.2vw;
     font-weight: 700;
-    margin: 0;
-    padding-right: 10vw;
+    padding-right: 3vw;
 }
 
-.book-online p {
+.right-section__online p {
     font-size: 1.5vw;
     letter-spacing: 0.1vw;
-    /*margin: 3vh 0 5vh 0;*/
-    margin-bottom: 5.5vh;
+    margin-bottom: 3rem;
 }
 
-.book-online button {
+.right-section__online button {
     width: 50%;
-    height: 7vh;
+    height: 4rem;
     background: #000;
     border: 0 solid #000;
     font-size: 1.08vw;
 }
 
-.book-online a {
+.right-section__online a {
     text-decoration: none;
     color: #fff;
 }
@@ -248,11 +244,13 @@ header .current {
 /****** content2 ******/
 .content2 {
     width: 100%;
+    height: 43rem;
     background: #001B37;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
 }
 
 .content2 h5, h2 {
@@ -261,31 +259,31 @@ header .current {
 
 .content2 h5 {
     font-size: 1.5vw;
-    margin-top: 5vh;
+    margin-top: 2rem;
     font-weight: 300;
 }
 
 .content2 h2 {
     font-size: 3.4vw;
-    margin-top: 0.1vh;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .content2 p {
     color: #a1abb5;
     font-size: 1.1vw;
     text-align: center;
-    line-height: 4vh;
+    line-height: 2.5rem;
     padding: 0 25vw;
-    margin-top: 0.6vh;
 }
 
 .content2 button {
     background: #000;
     border: 0 solid #000;
     width: 8.5%;
-    height: 7vh;
+    height: 4rem;
     font-size: 1.1vw;
-    margin-top: 4vh;
+    margin-top: 1rem;
 }
 
 .content2 a {
@@ -299,12 +297,10 @@ header .current {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /*margin-top: 10rem;*/
 }
 
 .footerTop {
     display: flex;
-    /*flex-direction: row;*/
     justify-content: right;
     width: max-content;
     height: max-content;
@@ -317,64 +313,66 @@ header .current {
     vertical-align: middle;
 }
 
-#icon-number {
+.icon-number {
     margin-left: 9vw;
     margin-bottom: 0;
 }
 
-#icon-number img {
+.icon-number img {
     width: 12vw;
 }
 
-#icon-number p {
+.icon-number p {
     color: #8C8C8C;
     font-size: 1.1vw;
     margin: 3vw 0 0.8vw 0;
 }
 
-#icon-number h3 {
+.icon-number h3 {
     color: #00F1C7;
     font-size: 1.6vw;
     font-weight: 400;
+    margin-top: 0;
 }
 
-#company h3,
-#help h3{
+.content-left h3,
+.content-right h3 {
     font-weight: 400;
     font-size: 1.8vw;
-    margin: 0 0 1.6vw 0;
+    /*margin: 0 0 1.6vw 0;*/
 }
 
-#company div span,
-#help div span{
+.content-left div span,
+.content-right div span {
     font-size: 1vw;
     font-weight: 200;
 }
-#company div a p,
-#help div a p {
+
+.content-left div a p,
+.content-right div a p {
     display: inline;
     font-size: 1.1vw;
 }
 
-#company div,
-#help div {
+.content-left div,
+.content-right div {
     margin: 1.2vw 0;
     color: #5E5E5E;
 }
 
-#company div a,
-#help div a{
+.content-left div a,
+.content-right div a {
     text-decoration: none;
     color: #5E5E5E;
 }
 
-#help {
-    /*color: #000;*/
+.content-right,
+.content-left {
     margin-left: 8vw;
 }
 
-#company div a p:hover,
-#help div a p:hover{
+.content-left div a p:hover,
+.content-right div a p:hover {
     text-decoration: underline;
     color: #00F1C7;
 }
@@ -395,7 +393,6 @@ header .current {
 .footer-hover-a:hover {
     text-decoration: underline;
     color: #00F1C7;
-
 }
 
 .footerBottom a:first-of-type {
@@ -416,7 +413,7 @@ header .current {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 62%;
+    top: 33rem;
     right: 0;
     text-decoration: none;
     border-radius: 0.2rem 0 0 0.2rem;
@@ -442,7 +439,7 @@ header .current {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 73%;
+    top: 39rem;
     right: 0;
     text-decoration: none;
     border-radius: 0.2rem 0 0 0.2rem;
@@ -474,7 +471,7 @@ header .current {
 /**********  Responsive for Small phone and down **********/
 @media screen and (max-width: 320px) {
     .container {
-        grid-template-rows: 38vh 380vh max-content max-content;
+        grid-template-rows: max-content max-content max-content max-content;
         display: block;
     }
 
@@ -482,15 +479,18 @@ header .current {
     header {
         display: none;
     }
-
-    #welcome {
-        margin-left: 11vw;
-        margin-top: 17vh;
+    .header{
+        height: 13rem;
+        background-size: 250%;
     }
 
-    #welcome h1 {
+    .header-title {
+        margin-left: 11vw;
+        margin-top: 5rem;
+    }
+
+    .header-title h1 {
         font-size: 13vw;
-        font-weight: 700;
     }
 
     /********* Hamburger menu **********/
@@ -501,29 +501,31 @@ header .current {
     .hamburger-menu {
         background-color: rgba(10, 22, 34, 1);
         display: block;
-        width: 100vw;
+        width: 100%;
         min-height: 13vw;
         z-index: 100;
-        padding-top: 2vw;
+        /*padding-top: 0.6rem;*/
     }
 
     .hamburger-menu a {
         display: inline-block;
         /*margin: 2rem;*/
-        padding-left: 28vw;
+        /*padding-left: 28vw;*/
     }
 
     .hamburger-menu a img {
-        margin: auto;
-        width: 50vw;
+        /*margin: 1rem;*/
+        padding: 0.7rem 0 0.7rem 22vw;
+        width: 52vw;
     }
 
     .hamburger-menu ion-icon {
-        font-size: 8vw;
+        font-size: 10vw;
         color: #00c19f;
         float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+        /*margin: -11.5vw 4.5vw 0 0;*/
+        padding-top: 0.7rem;
+        padding-right: 5vw;
     }
 
     .hamburger-menu ion-icon:hover {
@@ -531,22 +533,22 @@ header .current {
     }
 
     .hamburger-content ion-icon:hover {
-        color: white;
+        color: #fff;
         cursor: pointer;
     }
 
     .hamburger-content ion-icon {
-        font-size: 8vw;
-        /*padding: 1rem;*/
+        font-size: 9vw;
         float: right;
         color: #a6a6a6;
+        padding: 0.9rem 5vw 0.8rem ;
     }
 
     .hamburger-content {
         background-color: #191919;
-        width: 250px;
-        height: 105vh;
-        z-index: 105;
+        width: 80vw;
+        height: 100rem;
+        z-index: 100;
         flex-wrap: initial;
         float: right;
         position: fixed;
@@ -554,42 +556,35 @@ header .current {
         right: 0;
     }
 
-
     .hamburger-content dl {
         display: flex;
         flex-direction: column;
         margin-top: 3.6rem;
     }
 
-    .hamburger-content dl dt:last-child a {
-
-    }
-
-    .hamburger-content dl dt a {
+    .hamburger-content a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
         width: 100%;
-        padding: 0.5rem 1rem;
-        margin: 0.2rem;
-        font-weight: 700;
-        font-size: 0.8rem;
+        padding: 0.8rem 2vw 0.8rem 6vw;
+        font-weight: 600;
+        font-size: 4vw;
         color: #B5BDC4;
         text-decoration: none;
-        margin-left: 1rem;
     }
 
-
-    .hamburger-content dl dt:last-child a {
+    .hamburger-content dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
 
-    .hamburger-content dl dt a:hover {
+    .hamburger-content a:hover {
         color: #fff;
+        cursor: pointer;
     }
 
-    .hamburger-content dl dt:last-child a:hover {
+    .hamburger-content dt:last-child a:hover {
         color: #08F1C9;
     }
 
@@ -597,36 +592,34 @@ header .current {
         color: #fff;
     }
 
-
     .open-menu {
-        transform: translate(0);
+        /*transform: translate(0);*/
         /*float: right;*/
         transition: transform 1s;
-
     }
 
     .close-menu {
         transform: translate(100vw);
-        transition: transform 1s 0.5s;
+        transition: transform 1s;
     }
 
     .moveOn-container {
-        transform: translate(-30vw);
+        transform: translate(-40vw);
         background-color: rgba(27, 68, 179, 0.1);
         filter: grayscale(50%);
-        transition: 1s 0.5s;
+        transition: 1s;
     }
 
     .moveBack-container {
-        transsform: translate(0);
-        transition: transform 1s;
+        /*transsform: translate(0);*/
+        transition: transform 0.5s;
     }
 
     .sticky {
         position: fixed;
-        min-height: 10vh;
-        width: 100vw;
-        transition: ease-in 1s;
+        min-height: 3.2rem;
+        width: 100%;
+        transition: ease-in 1.5s;
     }
 
     /********* Content1 **********/
@@ -634,232 +627,201 @@ header .current {
         display: flex;
         flex-direction: column;
         grid-template-columns: 100% 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .left-section {
         margin-left: 10%;
+        margin-bottom: 1.5rem;
     }
 
-    .headline h1 {
+    .left-section__title img {
+        width: 14vw;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .left-section__title h1 {
         font-size: 11.5vw;
-        font-weight: 700;
-        line-height: 7.5vh;
+        line-height: 2.7rem;
         padding-right: 8vw;
     }
 
-    .headline img {
-        width: 14vw;
-        margin-top: 13vh;
-    }
-
-    .headline p {
+    .left-section__title p {
         font-size: 4vw;
-        margin-top: 4vh;
-        line-height: 3.5vh;
+        margin-top: 1.4rem;
+        line-height: 1.2rem;
         letter-spacing: 0.2vw;
     }
 
-    .card {
+    .left-section__card {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .pic img {
+    .card-pic img {
         width: 28vw;
-        height: 14.5vh;
-        /*margin-top: 5vh;*/
+        height: 5.3rem;
+        margin-top: 1.5rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 0;
     }
 
-    .text h4 {
+    .card-text h4 {
         font-size: 4.7vw;
-        margin-top: 2.4vh;
-        font-weight: 400;
+        margin-top: 1rem;
     }
 
-    .text p {
+    .card-text p {
         font-size: 4vw;
-        line-height: 3.5vh;
-        margin-top: 1.5vh;
+        line-height: 1.3rem;
+        margin-top: 1rem;
         padding-right: 10vw;
         letter-spacing: 0.1vw;
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh;
+        grid-template-rows: max-content max-content;
         margin-left: 4%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        /*justify-content: stretch;*/
-        /*align-content: flex-start;*/
         align-items: center;
-        /*align-content: center;*/
-        margin-top: 4.8vh;
-        /*display: block;*/
     }
 
-    .image img {
+    .right-section__pic img {
         width: 70vw;
     }
 
-    .book-online {
-        width: 66.8vw;
-        height: 28vh;
-        margin-bottom: 12vh;
+    .right-section__online {
+        width: 66.5vw;
+        height: 13rem;
     }
 
-    .book-online h3 {
-        /*margin-top: 2vh;*/
+    .right-section__online h3 {
         font-size: 6vw;
-        font-weight: 700;
-        /*margin-left: 8vh;*/
-        /*display: inline;*/
-        padding-left: 8vw;
+        padding-right: 0;
+        padding-left: 10vw;
+        margin-top: 0.6rem;
     }
 
-    /*.book-online:first-letter {*/
-    /*    padding-left: 8vw;*/
+    /*.right-section__online:first-letter {*/
+    /*    padding-left: 10vw;*/
     /*}*/
-    .book-online p {
+    .right-section__online p {
         font-size: 4.5vw;
-        padding-left: 8vw;
-        letter-spacing: 0.1vw;
+        padding-left: 10vw;
+        margin-bottom: 1.4rem;
+        /*padding-bottom: 1.4rem ;*/
+        /*letter-spacing: 0.1vw;*/
     }
 
-    .book-online button {
-        width: 80%;
-        height: 7.5vh;
+    .right-section__online button {
+        width: 50%;
+        height: 2.5rem;
+        margin-left: 10vw;
+        margin-top: 0.5rem;
+    }
+    .right-section__online a {
         font-size: 4vw;
-        margin-left: 8vw;
-        font-weight: 200;
-        /*margin-top: 2vh;*/
     }
 
     /********* Content2 **********/
     .content2 {
         width: 100%;
-        height: 100vh;
-        /*padding: 0;*/
-        /*margin: 0;*/
+        height: 33rem;
+        margin-top: 4rem;
     }
 
     .content2 h5 {
         font-size: 4.5vw;
-        font-weight: 300;
         padding: 0;
-        margin-top: 0.01vh;
+        margin-top: 2rem;
         letter-spacing: 0.1vw;
     }
 
     .content2 h2 {
         font-size: 9vw;
-        margin-top: 0.8vh;
+        margin-top: 0.5rem;
         padding: 0 10vw;
         text-align: center;
     }
 
     .content2 p {
         font-size: 4vw;
-        line-height: 4vh;
+        line-height: 1.3rem;
         padding: 0 10vw;
-        margin-top: 0.8vh;
+        margin-top: 0.5rem;
     }
 
     .content2 button {
         width: 37%;
-        height: 7vh;
+        height: 2.5rem;
         font-size: 4.2vw;
         font-weight: 100;
-        margin-top: 8vh;
+        margin-top: 2.6rem;
     }
 
     /********* Footer **********/
-    /*.mainFooter {*/
-    /*    margin-top: 1vh;*/
-    /*}*/
+    .mainFooter{
+        width: 100%;
+    }
     .footerTop {
         display: flex;
         flex-direction: column;
-        /*padding-bottom: 14vw;*/
-        margin: 0;
-        padding: 0;
+        padding-left: 3vw;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
     }
 
-
-    /*.footerTop > div {*/
-    /*    margin: 1vw 10vw;*/
-    /*    font-size: 3vw;*/
-    /*}*/
-    /*#icon-number {*/
-    /*    margin-top: 28vw;*/
-    /*}*/
-    #icon-number img {
+    .icon-number {
+        margin-top: 1rem;
+    }
+    .icon-number img {
         width: 50vw;
-        margin-top: 20vh;
+        margin-top: 0;
     }
 
-    #icon-number p {
+    .icon-number p {
         font-size: 4.2vw;
-        margin: 6vh 0 1.5vh 0;
+        margin-top: 2.5rem;
     }
 
-    #icon-number h3 {
+    .icon-number h3 {
         font-size: 4.4vw;
-        margin-bottom: 12vh;
-
+        margin-bottom: 4rem;
     }
 
-    #company {
-        margin-bottom: 12vh;
+    .content-left{
         margin-left: 11vw;
     }
+    .content-right {
+        margin-left: 11vw;
+        padding-top: 3rem;
+    }
 
-    #company h3 {
+    .content-left h3,
+    .content-right h3{
         font-size: 4.5vw;
     }
 
-    #company div {
-        margin: 2vh 0;
+    .content-left div,
+    .content-right div{
+        margin: 0.8rem 0;
     }
 
-    #company div span {
+    .content-left div span,
+    .content-right div span{
         font-size: 3vw;
     }
 
-    #company div a p {
+    .content-left div a p,
+    .content-right div a p{
         font-size: 4vw;
-        /*margin-top: 2.5vh;*/
-    }
-
-    #help {
-        margin-bottom: 14vh;
-        margin-left: 11vw;
-        /*margin-top: 12vh;*/
-
-    }
-
-    #help h3 {
-        font-size: 4.5vw;
-    }
-
-    #help div span {
-        font-size: 3vw;
-    }
-
-
-    #help div a p {
-        font-size: 4vw;
-        /*margin-top: 2.5vh;*/
-
-    }
-
-    #help div {
-        margin: 2vh 0;
     }
 
     .footerBottom {
@@ -873,13 +835,11 @@ header .current {
         float: none;
         display: block;
         font-size: 10vw;
-        margin-bottom: 4.5vh;
+        margin-bottom: 1.4rem;
     }
 
     .footerBottom a {
         font-size: 4.3vw;
-
-
     }
 
     .stickyButton {
@@ -887,10 +847,10 @@ header .current {
     }
 }
 
-/**********  Responsive for Medium phone and down **********/
+/**********  Responsive for Medium phone **********/
 @media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
     .container {
-        grid-template-rows: max-content 380vh max-content max-content;
+        grid-template-rows: max-content max-content max-content max-content;
         display: block;
     }
 
@@ -898,20 +858,18 @@ header .current {
     header {
         display: none;
     }
-
-    .header {
+    .header{
+        height: 13rem;
         background-size: 250%;
     }
 
-    #welcome {
-        margin-left: 9vw;
-        margin-top: 14vh;
+    .header-title {
+        margin-left: 10vw;
+        margin-top: 5rem;
     }
 
-    #welcome h1 {
-        font-size: 11.2vw;
-        font-weight: 700;
-        padding-bottom: 10vh;
+    .header-title h1 {
+        font-size: 11vw;
     }
 
     /********* Hamburger menu **********/
@@ -922,29 +880,26 @@ header .current {
     .hamburger-menu {
         background-color: rgba(10, 22, 34, 1);
         display: block;
-        width: 100vw;
+        width: 100%;
         min-height: 13vw;
         z-index: 100;
-        padding-top: 2vw;
     }
 
     .hamburger-menu a {
         display: inline-block;
-        /*margin: 2rem;*/
-        padding-left: 28vw;
     }
 
     .hamburger-menu a img {
-        margin: auto;
-        width: 50vw;
+        padding: 0.7rem 0 0.7rem 22vw;
+        width: 46vw;
     }
 
     .hamburger-menu ion-icon {
-        font-size: 8vw;
+        font-size: 10vw;
         color: #00c19f;
         float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+        padding-top: 0.7rem;
+        padding-right: 5vw;
     }
 
     .hamburger-menu ion-icon:hover {
@@ -952,22 +907,22 @@ header .current {
     }
 
     .hamburger-content ion-icon:hover {
-        color: white;
+        color: #fff;
         cursor: pointer;
     }
 
     .hamburger-content ion-icon {
-        font-size: 8vw;
-        /*padding: 1rem;*/
+        font-size: 9vw;
         float: right;
         color: #a6a6a6;
+        padding: 0.9rem 5vw 0.8rem ;
     }
 
     .hamburger-content {
         background-color: #191919;
-        width: 250px;
-        height: 105vh;
-        z-index: 105;
+        width: 70vw;
+        height: 100rem;
+        z-index: 100;
         flex-wrap: initial;
         float: right;
         position: fixed;
@@ -975,42 +930,35 @@ header .current {
         right: 0;
     }
 
-
     .hamburger-content dl {
         display: flex;
         flex-direction: column;
         margin-top: 3.6rem;
     }
 
-    .hamburger-content dl dt:last-child a {
-
-    }
-
-    .hamburger-content dl dt a {
+    .hamburger-content a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
         width: 100%;
-        padding: 0.5rem 1rem;
-        margin: 0.2rem;
-        font-weight: 700;
-        font-size: 0.8rem;
+        padding: 0.8rem 0 0.8rem 6vw;
+        font-weight: 600;
+        font-size: 3.5vw;
         color: #B5BDC4;
         text-decoration: none;
-        margin-left: 1rem;
     }
 
-
-    .hamburger-content dl dt:last-child a {
+    .hamburger-content dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
 
-    .hamburger-content dl dt a:hover {
+    .hamburger-content a:hover {
         color: #fff;
+        cursor: pointer;
     }
 
-    .hamburger-content dl dt:last-child a:hover {
+    .hamburger-content dt:last-child a:hover {
         color: #08F1C9;
     }
 
@@ -1018,36 +966,34 @@ header .current {
         color: #fff;
     }
 
-
     .open-menu {
-        transform: translate(0);
+        /*transform: translate(0);*/
         /*float: right;*/
         transition: transform 1s;
-
     }
 
     .close-menu {
         transform: translate(100vw);
-        transition: transform 1s 0.5s;
+        transition: transform 1s;
     }
 
     .moveOn-container {
-        transform: translate(-30vw);
+        transform: translate(-31vw);
         background-color: rgba(27, 68, 179, 0.1);
         filter: grayscale(50%);
-        transition: 1s 0.5s;
+        transition: 1s;
     }
 
     .moveBack-container {
-        transsform: translate(0);
-        transition: transform 1s;
+        /*transsform: translate(0);*/
+        transition: transform 0.5s;
     }
 
     .sticky {
         position: fixed;
-        min-height: 10vh;
-        width: 100vw;
-        transition: ease-in 1s;
+        min-height: 3.2rem;
+        width: 100%;
+        transition: ease-in 1.5s;
     }
 
     /********* Content1 **********/
@@ -1055,96 +1001,94 @@ header .current {
         display: flex;
         flex-direction: column;
         grid-template-columns: 100% 100%;
+        margin-top: 5.5rem;
+        margin-bottom: 5rem;
     }
 
     .left-section {
         margin-left: 8%;
     }
 
-    .headline h1 {
-        font-size: 10vw;
-        font-weight: 700;
-        line-height: 7vh;
-        /*padding-right: 1vw;*/
+    .left-section__title h1 {
+        font-size: 9.5vw;
+        line-height: 2.5rem;
     }
 
-    .headline img {
+    .left-section__title img {
         width: 12vw;
-        margin-top: 11vh;
+        margin-bottom: 1rem;
     }
 
-    .headline p {
+    .left-section__title p {
         font-size: 3.5vw;
-        margin-top: 4.5vh;
+        margin-top: 1.8rem;
         padding-right: 10vw;
-        line-height: 3.5vh;
+        line-height: 1.4rem;
         letter-spacing: 0.2vw;
     }
 
-    .card {
+    .left-section__card {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .pic img {
+    .card-pic img {
         width: 22.5vw;
-        height: 14.5vh;
+        height: 5rem;
+        margin-top: 1.8rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 0;
     }
 
-    .text h4 {
-        font-size: 3.8vw;
-        margin-top: 2.4vh;
-        font-weight: 400;
+    .card-text h4 {
+        font-size: 3.6vw;
+        margin-top: 1.4rem;
     }
 
-    .text p {
+    .card-text p {
         font-size: 3.2vw;
-        line-height: 3.5vh;
-        margin-top: 1.5vh;
+        line-height: 1.7rem;
+        margin-top: 1.2rem;
         padding-right: 10vw;
         letter-spacing: 0.1vw;
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh;
+        grid-template-rows: max-content max-content;
         margin-left: 3%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 4.5vh;
+        margin-top: 2rem;
     }
 
-    .image img {
+    .right-section__pic img {
         width: 75vw;
     }
 
-    .book-online {
+    .right-section__online {
         width: 72vw;
-        height: 28vh;
-        margin-bottom: 12vh;
+        height: 13rem;
     }
 
-    .book-online h3 {
+    .right-section__online h3 {
         font-size: 6vw;
-        font-weight: 700;
         padding-left: 8.8vw;
     }
 
-    .book-online p {
+    .right-section__online p {
         font-size: 3.5vw;
         padding-left: 8.8vw;
-        letter-spacing: 0.1vw;
+        margin-bottom: 2rem;
     }
 
-    .book-online button {
-        width: 55%;
-        height: 7.5vh;
+    .right-section__online button {
+        width: 43%;
+        height: 2.5rem;
         font-size: 3.4vw;
         margin-left: 8.8vw;
         font-weight: 150;
@@ -1153,125 +1097,115 @@ header .current {
     /********* Content2 **********/
     .content2 {
         width: 100%;
-        height: 90vh;
+        height: 32rem;
+        margin-top: 2rem;
     }
 
     .content2 h5 {
         font-size: 3.8vw;
         font-weight: 300;
         padding: 0;
-        margin-top: 0.01vh;
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 
     .content2 h2 {
         font-size: 7.8vw;
-        margin-top: 0.8vh;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
         padding: 0 16vw;
         text-align: center;
     }
 
     .content2 p {
         font-size: 3.5vw;
-        line-height: 4vh;
+        line-height: 1.3rem;
         padding: 0 7vw;
-        margin-top: 0.8vh;
+        margin-top: 2rem;
     }
 
     .content2 button {
-        width: 32%;
-        height: 7vh;
+        width: 30%;
+        height: 2.5rem;
         font-size: 3.8vw;
         font-weight: 100;
-        margin-top: 8vh;
+        margin-top: 1.5rem;
     }
 
+    /********* Footer **********/
+    .mainFooter{
+        width: 100%;
+    }
     .footerTop {
         display: flex;
         flex-direction: column;
-        /*padding-bottom: 14vw;*/
-        margin: 0;
-        padding: 0;
+        padding-left: 3vw;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
     }
 
-    #icon-number img {
+    .icon-number {
+        margin-top: 1rem;
+    }
+    .icon-number img {
         width: 45vw;
-        margin-top: 22vh;
+        margin-top: 0;
     }
 
-    #icon-number p {
-        font-size: 3.5vw;
-        margin: 8vh 0 0.5vh 0;
+    .icon-number p {
+        font-size: 3.2vw;
+        margin-top: 2.5rem;
     }
 
-    #icon-number h3 {
+    .icon-number h3 {
         font-size: 3.8vw;
-        margin-bottom: 12vh;
-
+        margin-bottom: 4rem;
     }
 
-    #company {
-        margin-bottom: 12vh;
+    .content-left{
         margin-left: 11vw;
     }
+    .content-right {
+        margin-left: 11vw;
+        padding-top: 3rem;
+    }
 
-    #company h3 {
+    .content-left h3,
+    .content-right h3{
         font-size: 4vw;
     }
 
-    #company div {
-        margin: 2vh 0;
+    .content-left div,
+    .content-right div{
+        margin: 0.8rem 0;
     }
 
-    #company div span {
+    .content-left div span,
+    .content-right div span{
         font-size: 3vw;
     }
 
-    #company div a p {
+    .content-left div a p,
+    .content-right div a p{
         font-size: 3.5vw;
-    }
-
-    #help {
-        margin-bottom: 14vh;
-        margin-left: 11vw;
-        /*margin-top: 12vh;*/
-
-    }
-
-    #help h3 {
-        font-size: 4vw;
-    }
-
-    #help div span {
-        font-size: 3vw;
-    }
-
-
-    #help div a p {
-        font-size: 3.5vw;
-    }
-
-    #help div {
-        margin: 2vh 0;
     }
 
     .footerBottom {
         text-align: center;
-        padding: 5vh 7vw;
+        padding: 2rem 7vw;
         font-size: 3.5vw;
-        line-height: 3.3vh;
+        line-height: 1.2rem;
     }
 
     .footerBottom a:first-of-type {
         float: none;
         display: block;
         font-size: 8vw;
-        margin-bottom: 4.5vh;
+        margin-bottom: 1.4rem;
     }
 
     .footerBottom a {
-        font-size: 3.7vw;
-
-
+        font-size: 3.6vw;
     }
 
     .stickyButton {
@@ -1279,31 +1213,28 @@ header .current {
     }
 }
 
-/**********  Responsive for Large phone and down **********/
+/**********  Responsive for Large phone **********/
 @media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
     .container {
-        grid-template-rows: max-content 380vh max-content max-content;
+        grid-template-rows: max-content max-content max-content max-content;
         display: block;
     }
-
     /********* Header **********/
     header {
         display: none;
     }
-
-    .header {
+    .header{
+        height: 13rem;
         background-size: 250%;
     }
 
-    #welcome {
-        margin-left: 8vw;
-        margin-top: 14vh;
+    .header-title {
+        margin-left: 10.5vw;
+        margin-top: 4.5rem;
     }
 
-    #welcome h1 {
+    .header-title h1 {
         font-size: 9.5vw;
-        font-weight: 700;
-        padding-bottom: 10vh;
     }
 
     /********* Hamburger menu **********/
@@ -1314,29 +1245,26 @@ header .current {
     .hamburger-menu {
         background-color: rgba(10, 22, 34, 1);
         display: block;
-        width: 100vw;
+        width: 100%;
         min-height: 13vw;
         z-index: 100;
-        padding-top: 2vw;
     }
 
     .hamburger-menu a {
         display: inline-block;
-        /*margin: 2rem;*/
-        padding-left: 28vw;
     }
 
     .hamburger-menu a img {
-        margin: auto;
-        width: 50vw;
+        padding: 0.5rem 0 0.5rem 34vw;
+        width: 40vw;
     }
 
     .hamburger-menu ion-icon {
         font-size: 8vw;
         color: #00c19f;
         float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+        padding-top: 0.5rem;
+        padding-right: 3vw;
     }
 
     .hamburger-menu ion-icon:hover {
@@ -1344,22 +1272,22 @@ header .current {
     }
 
     .hamburger-content ion-icon:hover {
-        color: white;
+        color: #fff;
         cursor: pointer;
     }
 
     .hamburger-content ion-icon {
         font-size: 8vw;
-        /*padding: 1rem;*/
         float: right;
         color: #a6a6a6;
+        padding: 0.9rem 5vw 0.8rem ;
     }
 
     .hamburger-content {
         background-color: #191919;
-        width: 250px;
-        height: 105vh;
-        z-index: 105;
+        width: 60vw;
+        height: 100rem;
+        z-index: 100;
         flex-wrap: initial;
         float: right;
         position: fixed;
@@ -1367,42 +1295,35 @@ header .current {
         right: 0;
     }
 
-
     .hamburger-content dl {
         display: flex;
         flex-direction: column;
-        margin-top: 3.6rem;
+        margin-top: 3.8rem;
     }
 
-    .hamburger-content dl dt:last-child a {
-
-    }
-
-    .hamburger-content dl dt a {
+    .hamburger-content a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
         width: 100%;
-        padding: 0.5rem 1rem;
-        margin: 0.2rem;
-        font-weight: 700;
-        font-size: 0.8rem;
+        padding: 0.8rem 2vw 0.8rem 6vw;
+        font-weight: 600;
+        font-size: 3.2vw;
         color: #B5BDC4;
         text-decoration: none;
-        margin-left: 1rem;
     }
 
-
-    .hamburger-content dl dt:last-child a {
+    .hamburger-content dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
 
-    .hamburger-content dl dt a:hover {
+    .hamburger-content a:hover {
         color: #fff;
+        cursor: pointer;
     }
 
-    .hamburger-content dl dt:last-child a:hover {
+    .hamburger-content dt:last-child a:hover {
         color: #08F1C9;
     }
 
@@ -1410,36 +1331,34 @@ header .current {
         color: #fff;
     }
 
-
     .open-menu {
-        transform: translate(0);
+        /*transform: translate(0);*/
         /*float: right;*/
         transition: transform 1s;
-
     }
 
     .close-menu {
         transform: translate(100vw);
-        transition: transform 1s 0.5s;
+        transition: transform 1s;
     }
 
     .moveOn-container {
         transform: translate(-30vw);
         background-color: rgba(27, 68, 179, 0.1);
         filter: grayscale(50%);
-        transition: 1s 0.5s;
+        transition: 1s;
     }
 
     .moveBack-container {
-        transsform: translate(0);
-        transition: transform 1s;
+        /*transsform: translate(0);*/
+        transition: transform 0.5s;
     }
 
     .sticky {
         position: fixed;
-        min-height: 10vh;
-        width: 100vw;
-        transition: ease-in 1s;
+        min-height: 3.2rem;
+        width: 100%;
+        transition: ease-in 1.5s;
     }
 
     /********* Content1 **********/
@@ -1447,94 +1366,95 @@ header .current {
         display: flex;
         flex-direction: column;
         grid-template-columns: 100% 100%;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
     }
 
     .left-section {
         margin-left: 8%;
     }
 
-    .headline img {
+    .left-section__title img {
         width: 10vw;
-        margin-top: 11vh;
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 
-    .headline h1 {
+    .left-section__title h1 {
         font-size: 8.6vw;
-        font-weight: 700;
-        line-height: 7.2vh;
+        line-height: 2.5rem;
         padding-right: 16vw;
     }
 
-    .headline p {
+    .left-section__title p {
         font-size: 3vw;
-        margin-top: 4.5vh;
-        letter-spacing: 0.2vw;
+        margin-top: 2rem;
     }
 
-    .card {
+    .left-section__card {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .pic img {
+    .card-pic img {
         width: 20vw;
-        height: 14.5vh;
+        height: 5rem;
+        margin-top: 1.6rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 0;
     }
 
-    .text h4 {
+    .card-text h4 {
         font-size: 3.4vw;
-        margin-top: 2.4vh;
+        margin-top: 1.5rem;
         font-weight: 400;
     }
 
-    .text p {
-        font-size: 2.8vw;
-        line-height: 3.5vh;
-        margin-top: 1.5vh;
+    .card-text p {
+        font-size: 2.9vw;
+        line-height: 1.3rem;
+        margin-top: 1.2rem;
         padding-right: 5vw;
-        letter-spacing: 0.1vw;
     }
 
     .right-section {
-        grid-template-rows: 64vh 40vh;
+        grid-template-rows: max-content max-content;
         margin-left: 3%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 4.5vh;
+        margin-top: 2rem;
     }
 
-    .image img {
+    .right-section__pic img {
         width: 80vw;
     }
 
-    .book-online {
-        width: 76vw;
-        height: 28vh;
-        margin-bottom: 12vh;
+    .right-section__online {
+        width: 77vw;
+        height: 13rem;
     }
 
-    .book-online h3 {
+    .right-section__online h3 {
         font-size: 4.5vw;
         font-weight: 700;
         padding-left: 8.8vw;
     }
 
-    .book-online p {
+    .right-section__online p {
         font-size: 3vw;
         padding-left: 8.8vw;
         letter-spacing: 0.1vw;
+        margin-bottom: 2rem;
     }
 
-    .book-online button {
-        width: 54%;
-        height: 7vh;
+    .right-section__online button {
+        width: 35%;
+        height: 2.5rem;
         font-size: 3.4vw;
         margin-left: 8.8vw;
         font-weight: 150;
@@ -1543,121 +1463,111 @@ header .current {
     /********* Content2 **********/
     .content2 {
         width: 100%;
-        height: 85vh;
+        height: 30rem;
+        margin-top: 2rem;
     }
 
     .content2 h5 {
         font-size: 3vw;
-        font-weight: 300;
         padding: 0;
-        margin-top: 1vh;
+        margin-top: 1rem;
         letter-spacing: 0.1vw;
     }
 
     .content2 h2 {
         font-size: 7vw;
-        margin-top: 0.8vh;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
     }
 
     .content2 p {
         font-size: 3vw;
-        line-height: 3.2vh;
+        line-height: 1.5rem;
         padding: 0 7vw;
-        margin-top: 0.8vh;
+        margin-top: 1.2rem;
     }
 
     .content2 button {
         width: 26%;
-        height: 7vh;
+        height: 2.5rem;
         font-size: 3.1vw;
         font-weight: 100;
         margin-top: 6vh;
     }
-
+    /********* Footer **********/
+    .mainFooter{
+        width: 100%;
+    }
     .footerTop {
         display: flex;
         flex-direction: column;
-        margin: 0;
-        padding: 0;
+        padding-left: 3vw;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
     }
 
-    #icon-number img {
-        width: 40vw;
-        margin-top: 22vh;
+    .icon-number {
+        margin-top: 1rem;
+    }
+    .icon-number img {
+        width: 45vw;
+        margin-top: 0;
     }
 
-    #icon-number p {
-        font-size: 3vw;
-        margin: 8vh 0 0.5vh 0;
-    }
-
-    #icon-number h3 {
+    .icon-number p {
         font-size: 3.2vw;
-        margin-bottom: 12vh;
-
+        margin-top: 2.5rem;
     }
 
-    #company {
-        margin-bottom: 12vh;
-        margin-left: 9vw;
+    .icon-number h3 {
+        font-size: 3.8vw;
+        margin-bottom: 4rem;
     }
 
-    #company h3 {
-        font-size: 3.3vw;
+    .content-left{
+        margin-left: 11vw;
+    }
+    .content-right {
+        margin-left: 11vw;
+        padding-top: 3rem;
     }
 
-    #company div {
-        margin: 2vh 0;
+    .content-left h3,
+    .content-right h3{
+        font-size: 3.5vw;
     }
 
-    #company div span {
-        font-size: 2.4vw;
+    .content-left div,
+    .content-right div{
+        margin: 0.8rem 0;
     }
 
-    #company div a p {
+    .content-left div span,
+    .content-right div span{
+        font-size: 2.8vw;
+    }
+
+    .content-left div a p,
+    .content-right div a p{
         font-size: 3vw;
-    }
-
-    #help {
-        margin-bottom: 14vh;
-        margin-left: 9vw;
-    }
-
-    #help h3 {
-        font-size: 3.3vw;
-    }
-
-    #help div span {
-        font-size: 2.4vw;
-    }
-
-
-    #help div a p {
-        font-size: 3vw;
-    }
-
-    #help div {
-        margin: 2vh 0;
     }
 
     .footerBottom {
         text-align: center;
-        padding: 5vh 7vw;
+        padding: 2rem 7vw;
         font-size: 3vw;
-        line-height: 3.3vh;
+        line-height: 1.2rem;
     }
 
     .footerBottom a:first-of-type {
         float: none;
         display: block;
-        font-size: 8vw;
-        margin-bottom: 4.5vh;
+        font-size: 6vw;
+        margin-bottom: 1.4rem;
     }
 
     .footerBottom a {
         font-size: 3.2vw;
-
-
     }
 
     .stickyButton {
@@ -1666,7 +1576,7 @@ header .current {
 }
 
 /**********  Responsive for Laptop 1024 **********/
-@media only screen and (min-device-width: 426px) and (max-device-width: 1024px){
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px) {
     .container {
         grid-template-rows: max-content max-content max-content max-content;
         display: block;
@@ -1681,12 +1591,12 @@ header .current {
         background-size: 184%;
     }
 
-    #welcome {
+    .header-title {
         margin-left: 5.4vw;
         margin-top: 1.4rem;
     }
 
-    #welcome h1 {
+    .header-title h1 {
         font-size: 7vw;
         font-weight: 700;
         padding-bottom: 2.5rem;
@@ -1696,6 +1606,7 @@ header .current {
     .hamburger-content {
         display: block;
     }
+
     .hamburger-menu {
         background-color: rgba(10, 22, 34, 1);
         display: block;
@@ -1704,15 +1615,18 @@ header .current {
         z-index: 100;
         padding-top: 2vw;
     }
+
     .hamburger-menu a {
         display: inline-block;
         /*margin: 2rem;*/
         padding-left: 28vw;
     }
+
     .hamburger-menu a img {
         margin: auto;
         width: 50vw;
     }
+
     .hamburger-menu ion-icon {
         font-size: 8vw;
         color: #00c19f;
@@ -1720,19 +1634,23 @@ header .current {
         margin: -11.5vw 4.5vw 0 0;
         padding-top: 12vw;
     }
+
     .hamburger-menu ion-icon:hover {
         cursor: pointer;
     }
+
     .hamburger-content ion-icon:hover {
         color: white;
         cursor: pointer;
     }
+
     .hamburger-content ion-icon {
         font-size: 8vw;
         /*padding: 1rem;*/
         float: right;
         color: #a6a6a6;
     }
+
     .hamburger-content {
         background-color: #191919;
         width: 250px;
@@ -1744,13 +1662,16 @@ header .current {
         top: 0;
         right: 0;
     }
+
     .hamburger-content dl {
         display: flex;
         flex-direction: column;
         margin-top: 3.6rem;
     }
+
     .hamburger-content dl dt:last-child a {
     }
+
     .hamburger-content dl dt a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
@@ -1763,45 +1684,55 @@ header .current {
         text-decoration: none;
         margin-left: 1rem;
     }
+
     .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
+
     .hamburger-content dl dt a:hover {
         color: #fff;
     }
+
     .hamburger-content dl dt:last-child a:hover {
         color: #08F1C9;
     }
+
     .hamburger-content .current {
         color: #fff;
     }
+
     .open-menu {
         transform: translate(0);
         /*float: right;*/
         transition: transform 1s;
     }
+
     .close-menu {
         transform: translate(100vw);
         transition: transform 1s 0.5s;
     }
+
     .moveOn-container {
         transform: translate(-30vw);
         background-color: rgba(27, 68, 179, 0.1);
         filter: grayscale(50%);
         transition: 1s 0.5s;
     }
+
     .moveBack-container {
         transsform: translate(0);
         transition: transform 1s;
     }
+
     .sticky {
         position: fixed;
         min-height: 10vh;
         width: 100vw;
         transition: ease-in 1s;
     }
+
     /********* Content1 **********/
     .content1 {
         width: 100%;
@@ -1814,11 +1745,11 @@ header .current {
         margin-left: 9%;
     }
 
-    .headline img {
+    .left-section__title img {
         width: 4vw;
     }
 
-    .headline h1 {
+    .left-section__title h1 {
         font-size: 5.8vw;
         font-weight: 700;
         line-height: 4.5rem;
@@ -1826,13 +1757,13 @@ header .current {
         letter-spacing: 0.1vw;
     }
 
-    .headline p {
+    .left-section__title p {
         font-size: 2vw;
         margin-top: 1.1rem;
         line-height: 2rem;
     }
 
-    .card {
+    .left-section__card {
         margin-top: 0.8rem;
     }
 
@@ -1865,25 +1796,25 @@ header .current {
         width: 38vw;
     }
 
-    .book-online {
+    .right-section__online {
         width: 19vw;
         height: 19rem;
     }
 
-    .book-online h3 {
+    .right-section__online h3 {
         font-size: 3vw;
         padding-left: 2vw;
         padding-top: 1.5rem;
     }
 
-    .book-online p {
+    .right-section__online p {
         font-size: 2vw;
         padding-left: 2vw;
         padding-right: 3vw;
         letter-spacing: 0.2vw;
     }
 
-    .book-online button {
+    .right-section__online button {
         width: 60%;
         height: 4.5rem;
         font-size: 1.5vw;
@@ -1892,7 +1823,7 @@ header .current {
         padding-left: 2vw;
     }
 
-    .book-online a {
+    .right-section__online a {
         padding-right: 3vw;
         line-height: 1.5rem;
     }
@@ -1904,17 +1835,20 @@ header .current {
         margin: 0;
         padding: 0;
     }
+
     .content2 h5 {
         font-size: 1.8vw;
         font-weight: 400;
         margin-top: 1.5rem;
         letter-spacing: 0.16vw;
     }
+
     .content2 h2 {
         font-size: 5vw;
         margin-top: 0;
         margin-bottom: 1.5rem;
     }
+
     .content2 p {
         font-size: 1.5vw;
         line-height: 1.6rem;
@@ -1922,6 +1856,7 @@ header .current {
         margin-top: 0;
 
     }
+
     .content2 button {
         width: 12%;
         height: 3rem;
@@ -1931,7 +1866,6 @@ header .current {
     }
 
     /***** footer *****/
-
     .mainFooter {
         width: 100%;
         height: 30rem;
@@ -1944,50 +1878,50 @@ header .current {
         margin-bottom: 3rem;
     }
 
-    #icon-number {
+    .icon-number {
         margin-left: 5vw;
     }
 
-    #icon-number img {
+    .icon-number img {
         width: 16vw;
     }
 
-    #icon-number p {
+    .icon-number p {
         font-size: 1.5vw;
         margin-left: 3vw;
     }
 
-    #icon-number h3 {
+    .icon-number h3 {
         font-size: 2.4vw;
         margin-left: 3vw;
         margin-top: 0;
     }
 
-    #company h3,
-    #help h3 {
+    .content-left h3,
+    .content-right h3 {
         /*font-weight: 400;*/
         font-size: 2.2vw;
         margin: 0 0 1.6vw 0;
     }
 
-    #company div span,
-    #help div span {
+    .content-left div span,
+    .content-right div span {
         font-size: 1.4vw;
         font-weight: 100;
     }
 
 
-    #company div a p,
-    #help div a p{
+    .content-left div a p,
+    .content-right div a p {
         font-size: 1.5vw;
     }
 
-    #company div,
-    #help div{
+    .content-left div,
+    .content-right div {
         margin: 1rem 0;
     }
 
-    #help {
+    .content-right {
         margin-left: 6vw;
     }
 
@@ -2044,19 +1978,19 @@ header .current {
         grid-template-rows: max-content max-content max-content max-content;
         display: block;
     }
-    /*!*****  Header *****!*/
 
-    .header{
+    /*****  Header *****/
+    .header {
         width: 100%;
         background-size: 140%;
     }
 
-    #welcome {
+    .header-title {
         margin-left: 11vw;
         margin-top: 12rem;
     }
 
-    #welcome h1 {
+    .header-title h1 {
         font-weight: 700;
         font-size: 5vw;
         padding-bottom: 3rem;
@@ -2075,7 +2009,6 @@ header .current {
     }
 
     /*****content1*****/
-
     .content1 {
         margin-top: 6.5rem;
         margin-bottom: 6.5rem;
@@ -2093,28 +2026,26 @@ header .current {
         margin-left: 24%;
     }
 
-    .headline img {
+    .left-section__title img {
         margin-bottom: 1.2rem;
         /*width: 3vw;*/
     }
 
-    /*.headline h1 {*/
+    /*.left-section__title h1 {*/
     /*    font-size: 4.2vw;*/
     /*    font-weight: 700;*/
     /*    margin: 0;*/
     /*}*/
-
-    .headline p {
+    .left-section__title p {
         font-size: 1.4vw;
         letter-spacing: 0.05vw;
     }
 
-    /*.card {*/
+    /*.left-section__card {*/
     /*    display: block;*/
     /*    !*justify-items: center;*!*/
     /*    !*margin-top: 4vh;*!*/
     /*}*/
-
     .pic img {
         width: 6vw;
         height: 5rem;
@@ -2140,12 +2071,11 @@ header .current {
     /*.image {*/
     /*    grid-area: pic;*/
     /*}*/
-
     .image img {
         width: 31.5vw;
     }
 
-    .book-online {
+    .right-section__online {
         /*grid-area: book;*/
         width: 15vw;
         height: 15rem;
@@ -2155,21 +2085,20 @@ header .current {
         /*padding: 8vh 0 6vh 3.5vw;*/
     }
 
-    /*.book-online h3 {*/
+    /*.right-section__online h3 {*/
     /*    font-size: 2.2vw;*/
     /*    font-weight: 700;*/
     /*    margin: 0;*/
     /*    padding-right: 10vw;*/
     /*}*/
-
-    .book-online p {
+    .right-section__online p {
         font-size: 1.3vw;
         /*letter-spacing: 0.1vw;*/
         /*margin: 3vh 0 5vh 0;*/
         margin-bottom: 2rem;
     }
 
-    .book-online button {
+    .right-section__online button {
         width: 60%;
         height: 3rem;
         /*background: #000;*/
@@ -2177,7 +2106,7 @@ header .current {
         /*font-size: 1.08vw;*/
     }
 
-    .book-online a {
+    .right-section__online a {
         font-size: 1.1vw;
         font-weight: lighter;
     }
@@ -2215,37 +2144,37 @@ header .current {
         /*margin-top: 4vh;*/
     }
 
-    /*!***** footer *****!*/
-
+    /***** footer *****/
     .mainFooter {
         width: 100%;
     }
 
-    #icon-number {
+    .icon-number {
         margin-left: 13vw;
         margin-bottom: 0;
     }
 
-    #icon-number p {
+    .icon-number p {
         font-size: 1vw;
     }
 
-    #icon-number h3 {
+    .icon-number h3 {
         font-size: 1.6vw;
         margin-top: 0;
     }
 
-    #company h3,
-    #help h3{
+    .content-left h3,
+    .content-right h3 {
         font-size: 1.5vw;
     }
 
-    #company div span,
-    #help div span{
+    .content-left div span,
+    .content-right div span {
         font-size: 0.8vw;
     }
-    #company div a p,
-    #help div a p {
+
+    .content-left div a p,
+    .content-right div a p {
         display: inline;
         font-size: 1vw;
     }
@@ -2295,24 +2224,24 @@ header .current {
 }
 
 /**********  Responsive for Laptop 2560 **********/
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
     .container {
         grid-template-rows: 23rem max-content max-content max-content;
     }
-    /*!*****  Header *****!*/
 
+    /*****  Header *****/
     .header {
         width: 100%;
         background-position: center top;
         background-size: 75%;
     }
 
-    #welcome {
+    .header-title {
         margin-left: 29vw;
         margin-top: 8rem;
     }
 
-    #welcome h1 {
+    .header-title h1 {
         font-weight: 700;
         font-size: 2.8vw;
         padding-top: 4rem;
@@ -2321,11 +2250,9 @@ header .current {
     /*.hamburger-menu {*/
     /*    display: none;*/
     /*}*/
-
     /*.hamburger-content {*/
     /*    display: none;*/
     /*}*/
-
     header {
         position: fixed;
         top: 0;
@@ -2364,7 +2291,6 @@ header .current {
     /*header dl dt:last-child a {*/
     /*    color: #08F1C9;*/
     /*}*/
-
     header dl dt a {
         font-weight: 600;
         font-size: 0.8vw;
@@ -2374,8 +2300,8 @@ header .current {
         margin: 0.5rem 1.4vw;
         /*transition: 0.6s;*/
     }
-    /*****content1*****/
 
+    /*****content1*****/
     .content1 {
         /*margin-top: 8vw;*/
         width: 100%;
@@ -2396,25 +2322,25 @@ header .current {
         margin-left: 58%;
     }
 
-    .headline img {
+    .left-section__title img {
         margin-bottom: 1rem;
         width: 1.8vw;
     }
 
-    .headline h1 {
+    .left-section__title h1 {
         font-size: 2.4vw;
         font-weight: 700;
         padding-right: 1vw;
         margin: 0;
     }
 
-    .headline p {
+    .left-section__title p {
         font-size: 0.75vw;
         margin-top: 2rem;
         letter-spacing: 0.08vw;
     }
 
-    .card {
+    .left-section__card {
         display: flex;
         /*justify-items: center;*/
         /*margin-top: 4vh;*/
@@ -2453,14 +2379,14 @@ header .current {
         width: 18vw;
     }
 
-    .book-online {
+    .right-section__online {
         width: 11vw;
         height: 20rem;
         /*display: flex;*/
         padding: 0;
     }
 
-    .book-online h3 {
+    .right-section__online h3 {
         font-size: 1.2vw;
         /*font-weight: 700;*/
         margin: 0;
@@ -2469,20 +2395,20 @@ header .current {
         padding-left: 2vw;
     }
 
-    .book-online p {
+    .right-section__online p {
         font-size: 0.7vw;
         letter-spacing: 0.08vw;
         margin-top: 2rem;
         padding-left: 2vw;
     }
 
-    .book-online button {
+    .right-section__online button {
         width: 50%;
         margin-left: 2vw;
         height: 3rem;
     }
 
-    .book-online a {
+    .right-section__online a {
         font-size: 0.7vw;
     }
 
@@ -2499,7 +2425,6 @@ header .current {
     /*.content2 h5, h2 {*/
     /*    color: #fff;*/
     /*}*/
-
     .content2 h5 {
         font-size: 0.9vw;
         margin-top: 7rem;
@@ -2528,7 +2453,6 @@ header .current {
     }
 
     /***** footer *****/
-
     .mainFooter {
         width: 50%;
         margin-left: 18%;
@@ -2552,49 +2476,50 @@ header .current {
         /*vertical-align: middle;*/
     }
 
-    #icon-number {
+    .icon-number {
         /*margin-left: 9vw;*/
         margin-bottom: 0;
     }
 
-    #icon-number img {
+    .icon-number img {
         width: 8vw;
     }
 
-    #icon-number p {
+    .icon-number p {
         font-size: 0.7vw;
         margin-top: 3rem;
     }
 
-    #icon-number h3 {
+    .icon-number h3 {
         font-size: 1vw;
         /*font-weight: 400;*/
     }
 
-    #company h3,
-    #help h3{
+    .content-left h3,
+    .content-right h3 {
         /*font-weight: 400;*/
         font-size: 0.9vw;
         margin: 0;
     }
 
-    #company div span,
-    #help div span{
+    .content-left div span,
+    .content-right div span {
         font-size: 0.5vw;
         font-weight: 200;
     }
-    #company div a p,
-    #help div a p {
+
+    .content-left div a p,
+    .content-right div a p {
         display: inline;
         font-size: 0.6vw;
     }
 
-    #company div,
-    #help div {
+    .content-left div,
+    .content-right div {
         margin: 1.2vw 0;
     }
 
-    #help {
+    .content-right {
         /*color: #000;*/
         margin-left: 2vw;
     }
