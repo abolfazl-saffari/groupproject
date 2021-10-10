@@ -31,6 +31,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -43,6 +44,11 @@
     <setting file="file://$PROJECT_DIR$/home/css/styles.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/home/home.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/home/javascript/java.js" root0="FORCE_HIGHLIGHTING" />
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/home/javascript/java.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/home/home.html" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Abolfazl
   </component>
   <component name="ProjectId" id="1z5zjvEq7bo6hf1bHN3AQmCNqcG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
