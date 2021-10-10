@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
+    </list>
+>>>>>>> Maryam
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +71,16 @@
       <option name="presentableId" value="Default" />
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
+<<<<<<< HEAD
       <workItem from="1633770522448" duration="16238000" />
+=======
+      <workItem from="1633454872910" duration="6042000" />
+      <workItem from="1633494144195" duration="16391000" />
+      <workItem from="1633578685262" duration="33819000" />
+      <workItem from="1633662381297" duration="14629000" />
+      <workItem from="1633755934344" duration="13816000" />
+      <workItem from="1633836089575" duration="24015000" />
+>>>>>>> Maryam
     </task>
     <task id="LOCAL-00001" summary="team tab v03">
       <created>1633804110416</created>
@@ -73,7 +89,18 @@
       <option name="project" value="LOCAL" />
       <updated>1633804110416</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
+=======
+    <task id="LOCAL-00005" summary="complected responsive">
+      <created>1633860282262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633860282262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> Maryam
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +119,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="team tab v03" />
     <option name="LAST_COMMIT_MESSAGE" value="team tab v03" />
+=======
+    <MESSAGE value="added services tab" />
+    <MESSAGE value="Edited services tab" />
+    <MESSAGE value="added small phone responsive" />
+    <MESSAGE value="complected small phone responsive" />
+    <MESSAGE value="complected responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="complected responsive" />
+>>>>>>> Maryam
   </component>
 </project>
