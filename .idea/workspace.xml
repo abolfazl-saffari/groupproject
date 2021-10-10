@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="team tab v03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/css/mediaQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/mediaQ.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.html" afterDir="false" />
     </list>
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="alireza" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
