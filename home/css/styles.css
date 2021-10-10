@@ -54,12 +54,15 @@ body {
 }
 /*================= Burger menu ==================*/
 
-.hambergure-menu {
-    display: none;
-}
+@media screen and (min-width: 426px) {
 
-.hambergure-content {
-    display: none;
+    .hambergure-menu {
+        display: none;
+    }
+
+    .hambergure-content {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -241,67 +244,75 @@ body {
     }
 }
 /*================= Movable Navbar ==================*/
+@media screen and (min-width: 426px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 2.5vw 12vw;
+        z-index: 1000;
+    }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: max-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 4.5vw 12vw;
-    z-index: 1000;
+    header .logo {
+        margin-right: 19.5vw;
+    }
+
+    header .logo img {
+        width: 12vw;
+        margin-top: 1.2rem;
+    }
+
+    header.sticky {
+        width: max-content;
+        padding: 0.2rem 12vw;
+        background: rgba(10, 22, 34, 0.95);
+    }
+
+    header dl {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    header dl dt:last-child a {
+        color: #08F1C9;
+    }
+
+    header dl dt a {
+        font-weight: 700;
+        font-size: 1.2vw;
+        color: #B5BDC4;
+        text-decoration: none;
+        position: relative;
+        margin: 0.5rem 1.4vw;
+        transition: 0.6s;
+    }
+
+    header dl dt a:hover {
+        color: #fff;
+    }
+
+    header dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    header .current {
+        color: #fff;
+    }
 }
-
-header .logo {
-    margin-right: 19.5vw;
-}
-
-header .logo img {
-    width: 12vw;
-    margin-top: 1.2rem;
-}
-
-header.sticky {
-    width: max-content;
-    padding: 0.2rem 12vw;
-    background: rgba(10, 22, 34, 0.95);
-}
-
-header dl {
-    display: flex;
-    margin-top: 1rem;
-}
-
-header dl dt:last-child a {
-    color: #08F1C9;
-}
-
-header dl dt a {
-    font-weight: 700;
-    font-size: 1.2vw;
-    color: #B5BDC4;
-    text-decoration: none;
-    position: relative;
-    margin: 0.5rem 1.4vw;
-    transition: 0.6s;
-}
-
-header dl dt a:hover {
-    color: #fff;
-}
-
-header dl dt:last-child a:hover {
-    color: #08F1C9;
-}
-
-header .current {
-    color: #fff;
-}
-
 /*======= Movable Navbar ==> queries == */
+
+
+@media screen and (min-width: 1238px) {
+    header #open-icon {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 426px) {
 
@@ -451,7 +462,7 @@ a.btnMore:hover {
 
 .services-top h2 {
     font-size: 3.7vw;
-    line-height: 10vh;
+    line-height: 5.1rem;
     font-weight: 700;
 }
 
@@ -471,7 +482,7 @@ a.btnMore:hover {
 }
 
 .cell {
-    padding: 3vh;
+    padding: 1.53rem;
 }
 
 
@@ -602,7 +613,7 @@ a.btnMore:hover {
 .pics {
     padding-left: 10vw;
     display: grid;
-    grid-template-rows: 110.5vh 60vh 2vh;
+    grid-template-rows: 46.3rem 30.6rem 1.02rem;
     grid-template-columns: 53vw 27vw;
     grid-template-areas: "left-pic right-pic"
                          "book opening"
@@ -619,25 +630,25 @@ a.btnMore:hover {
     background-repeat: no-repeat;
     background-size: 55.2vw;
     background-position: -1.8vw 0;
-    padding: 30vh 5vw;
+    padding: 15.3rem 5vw;
     font-family: Montserrat, serif;
 }
 
 .left-pic h1 {
     font-size: 4.2vw;
-    margin-top: 11vh;
+    margin-top: 5.61rem;
     font-weight: 600;
 }
 
 .left-pic h3 {
     font-size: 1.6vw;
-    margin: 1.2vh 0 6vh 0;
+    margin: 0.61rem 0 3.06rem 0;
     font-weight: 400;
 }
 
 .left-pic a {
     font-size: 1.2vw;
-    padding: 1.5vh 2.2vw;
+    padding: 0.765rem 2.2vw;
     background-color: #fff;
     text-decoration: none;
     color: black;
@@ -656,21 +667,21 @@ a.btnMore:hover {
     background-size: 57vw;
     background-position: -15vw 0;
     background-position-y: 5vw;
-    padding: 30vh 4vw;
+    padding: 15.3rem 4vw;
     font-family: Montserrat, Arial, serif;
     color: #ffffff;
 }
 
 .right-pic img {
     width: 2.9vw;
-    margin: 22vh 0 4.9vh 1.4vw;
+    margin: 11.22rem 0 2.5rem 1.4vw;
 }
 
 .right-pic h3 {
     font-size: 2.4vw;
     font-weight: 600;
     text-shadow: 0 0 2.5vw rgba(0, 0, 0, 1);
-    margin: 0 0 5vh 1.4vw;
+    margin: 0 0 2.55rem 1.4vw;
 
 }
 
@@ -716,7 +727,7 @@ a.btnMore:hover {
     width: 29vw;
     height: 15vw;
     margin-left: 13vw;
-    padding: 8vh 5.5vw;
+    padding: 4.08rem 5.5vw;
     background-color: #00F1C7;
     color: #000000;
 }
@@ -724,18 +735,18 @@ a.btnMore:hover {
 .book-online h3 {
     font-size: 2.3vw;
     font-weight: 600;
-    margin: 3vh 0;
+    margin: 1.53rem 0;
 }
 
 .book-online h4 {
     font-size: 1.7vw;
     font-weight: 400;
-    margin: 4vh 0 7vh 0;
+    margin: 2.04rem 0 3.57rem 0;
 }
 
 .book-online a {
     font-size: 1.1vw;
-    padding: 2vh 1.5vw;
+    padding: 1.02rem 1.5vw;
     background-color: #000000;
     text-decoration: none;
     color: #ffffff;
@@ -743,13 +754,13 @@ a.btnMore:hover {
 
 .opening-time {
     grid-area: opening;
-    padding: 4.4vh 5.7vw;
+    padding: 2.24rem 5.7vw;
 }
 
 .opening-time hr {
     border: none;
     border-bottom: 0.05vw solid #656565;
-    margin: 4vh 0;
+    margin: 2.244rem 0;
     width: 10vw;
 }
 
@@ -757,13 +768,13 @@ a.btnMore:hover {
     font-size: 1.3vw;
     font-weight: 400;
     color: #B1B1B1;
-    margin: 5.5vh 0;
+    margin: 2.805rem 0;
 }
 
 .opening-time h5:last-of-type {
     font-size: 1.3vw;
     font-weight: 400;
-    margin: 0 0 3vh 0;
+    margin: 0 0 1.53rem 0;
 }
 
 .opening-time p {
@@ -780,7 +791,7 @@ a.btnMore:hover {
 .seperator {
     grid-area: line;
     width: 100%;
-    margin-top: 3vh;
+    margin-top: 1.53rem;
     margin-left: -10vw;
     border: none;
     border-bottom: 0.01vw solid #e2e2e2;
@@ -911,7 +922,7 @@ a.btnMore:hover {
     .left-pic {
         background-size: 208vw;
         background-position: -62vw 0vw;
-        padding: 39.5vh 5vw;
+        padding: 20.1rem 5vw;
         width: 74vw;
         height: 106vw;
     }
@@ -937,7 +948,7 @@ a.btnMore:hover {
     .right-pic {
         background-size: 215vw;
         background-position: -64vw 0.2vw;
-        padding: 47vh 5vw;
+        padding: 24rem 5vw;
         width: 74vw;
         height: 68vw;
     }
@@ -954,7 +965,7 @@ a.btnMore:hover {
     .book-online {
         width: 73vw;
         height: 60vw;
-        padding: 8vh 5.5vw;
+        padding: 4.08rem 5.5vw;
     }
 
     .book-online h3 {
@@ -974,7 +985,7 @@ a.btnMore:hover {
 
 
     .opening-time {
-        padding: 8vh 17.7vw;
+        padding: 4.08rem 17.7vw;
     }
 
     .opening-time hr {
@@ -1008,7 +1019,7 @@ a.btnMore:hover {
     padding-left: 3vw;
     margin-top: 6vw;
     display: grid;
-    height: 140vh;
+    height: 61rem;
     grid-template-columns: 46vw 40vw;
     grid-template-areas: "left right";
 }
@@ -1221,7 +1232,7 @@ a.btnMore:hover {
 
     #left-video {
         margin-top: 9vw;
-        padding: 50vh 0;
+        padding: 25.5rem 0;
         width: 85vw;
         height: 75.5vw;
         background-size: 215vw;
@@ -1249,7 +1260,7 @@ a.btnMore:hover {
 
     #right-video {
         margin-top: 0;
-        padding: 50vh 0;
+        padding: 25.5rem 0;
         width: 85vw;
         height: 89vw;
         background-size: 215vw;
