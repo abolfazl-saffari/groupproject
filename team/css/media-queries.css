@@ -1621,7 +1621,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         margin: 0.4rem 0.73vw;
     }
 
-    /*========header-banner=========*/
     .header__banner {
         height: 14.5vw;
     }
@@ -1636,7 +1635,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         font-size: 2.75vw;
     }
 
-    /*========section-1=========*/
     .section-1 {
         grid-template-rows: 30vw;
         grid-template-columns: 51.5vw 30vw;
@@ -1683,7 +1681,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         margin-left: 2vw;
     }
 
-    /*========section-2=========*/
     .section-2 {
         grid-template-rows: 6.5vw 25vw;
         grid-template-columns: 10vw 10vw 10vw 10vw;
@@ -1774,7 +1771,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         font-size: 0.45vw;
     }
 
-    /*========section-3=========*/
     .section-3 {
         padding: 1vw 0;
     }
@@ -1800,7 +1796,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         padding: 0.6vw 0.9vw;
     }
 
-    /*========sticky-buttons=========*/
     .sti-btn-up {
         width: 2.55vw;
         height: 2.55vw;
@@ -1835,7 +1830,6 @@ and (min-device-width: 2560px) and  (max-device-width: 3500px) {
         margin-top: 0.1vw;
     }
 
-    /*========footer=========*/
     .allfooter {
         width: 100%;
         margin: 3vw 20.5vw 0 0;
