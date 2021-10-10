@@ -1767,21 +1767,21 @@ header .current {
         margin-top: 0.8rem;
     }
 
-    .pic img {
+    .card-pic img {
         width: 8.8vw;
         height: 5.2rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 0;
     }
 
-    .text h4 {
+    .card-text h4 {
         font-size: 2.2vw;
         padding-left: 2.4vw;
     }
 
-    .text p {
+    .card-text p {
         font-size: 1.5vw;
         padding-left: 2.4vw;
         line-height: 1.8rem;
@@ -1792,7 +1792,7 @@ header .current {
         grid-template-rows: max-content max-content;
     }
 
-    .image img {
+    .right-section__pic img {
         width: 38vw;
     }
 
@@ -2046,17 +2046,17 @@ header .current {
     /*    !*justify-items: center;*!*/
     /*    !*margin-top: 4vh;*!*/
     /*}*/
-    .pic img {
+    .card-pic img {
         width: 6vw;
         height: 5rem;
         margin-top: 2rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 3.3vw;
     }
 
-    .text p {
+    .card-text p {
         font-size: 1.09vw;
         line-height: 1.8rem;
     }
@@ -2068,10 +2068,7 @@ header .current {
         grid-template-rows: max-content max-content;
     }
 
-    /*.image {*/
-    /*    grid-area: pic;*/
-    /*}*/
-    .image img {
+    .right-section__pic img {
         width: 31.5vw;
     }
 
@@ -2140,8 +2137,6 @@ header .current {
     .content2 button {
         width: 9%;
         height: 3rem;
-        /*font-size: 1.1vw;*/
-        /*margin-top: 4vh;*/
     }
 
     /***** footer *****/
@@ -2346,24 +2341,24 @@ header .current {
         /*margin-top: 4vh;*/
     }
 
-    .pic img {
+    .card-pic img {
         width: 3.5vw;
         height: 5.8rem;
         margin-top: 2rem;
     }
 
-    .text {
+    .card-text {
         padding-left: 2vw;
     }
 
-    .text h4 {
+    .card-text h4 {
         font-size: 0.9vw;
         /*font-weight: 400;*/
         letter-spacing: 0.08vw;
         margin-bottom: 0;
     }
 
-    .text p {
+    .card-text p {
         font-size: 0.6vw;
         line-height: 1.8rem;
         padding-right: 0.06vw;
@@ -2375,7 +2370,7 @@ header .current {
         /*grid-template-areas: "pic" "book";*/
     }
 
-    .image img {
+    .right-section__pic img {
         width: 18vw;
     }
 

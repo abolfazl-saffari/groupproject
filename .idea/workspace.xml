@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected small phone responsive">
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/js/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/js/services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <workItem from="1633578685262" duration="33819000" />
       <workItem from="1633662381297" duration="14629000" />
       <workItem from="1633755934344" duration="13816000" />
-      <workItem from="1633836089575" duration="23420000" />
+      <workItem from="1633836089575" duration="24015000" />
     </task>
     <task id="LOCAL-00001" summary="added services tab">
       <created>1633456748934</created>
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633666306326</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="complected responsive">
+      <created>1633860282262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633860282262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,7 @@
     <MESSAGE value="Edited services tab" />
     <MESSAGE value="added small phone responsive" />
     <MESSAGE value="complected small phone responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="complected small phone responsive" />
+    <MESSAGE value="complected responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="complected responsive" />
   </component>
 </project>
