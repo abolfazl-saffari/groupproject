@@ -8,6 +8,7 @@
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
 =======
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
     </list>
 >>>>>>> Maryam
@@ -79,6 +80,10 @@
       <workItem from="1633662381297" duration="14629000" />
       <workItem from="1633755934344" duration="13816000" />
       <workItem from="1633836089575" duration="24015000" />
+<<<<<<< HEAD
+>>>>>>> Maryam
+=======
+      <workItem from="1633923206837" duration="10611000" />
 >>>>>>> Maryam
     </task>
     <task id="LOCAL-00001" summary="team tab v03">

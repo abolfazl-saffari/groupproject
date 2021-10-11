@@ -55,7 +55,7 @@ body {
     color: #fff;
     box-sizing: border-box;
     margin-left: 11vw;
-    margin-top: 16rem;
+    padding-top: 1rem;
 }
 
 .header-title h1 {
@@ -100,7 +100,6 @@ header.sticky {
 
 header dl {
     display: flex;
-    /*margin-top: 1rem;*/
 }
 
 header dl dt:last-child a {
@@ -133,10 +132,11 @@ header .current {
 
 .content1 {
     margin-top: 8rem;
+    margin-bottom: 6rem;
     width: 100%;
     display: grid;
     grid-template-columns: 50% 40%;
-    grid-template-areas: "left right "
+    grid-template-areas: "left right ";
 }
 
 .left-section {
@@ -195,7 +195,7 @@ header .current {
     margin-left: 16%;
     grid-area: right;
     display: grid;
-    grid-template-rows: 105vh 48vh;
+    grid-template-rows: max-content max-content;
     grid-template-areas: "pic" "book";
 }
 
@@ -249,7 +249,6 @@ header .current {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
 }
 
 .content2 h5, h2 {
@@ -296,6 +295,7 @@ header .current {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .footerTop {
@@ -303,8 +303,8 @@ header .current {
     justify-content: right;
     width: max-content;
     height: max-content;
-    padding-bottom: 6vw;
-    margin-top: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
 }
 
 .footerTop > div {
@@ -313,7 +313,7 @@ header .current {
 }
 
 .icon-number {
-    margin-left: 9vw;
+    padding-left: 6vw;
     margin-bottom: 0;
 }
 
@@ -324,7 +324,6 @@ header .current {
 .icon-number p {
     color: #8C8C8C;
     font-size: 1.1vw;
-    margin: 3vw 0 0.8vw 0;
 }
 
 .icon-number h3 {
@@ -337,8 +336,7 @@ header .current {
 .content-left h3,
 .content-right h3 {
     font-weight: 400;
-    font-size: 1.8vw;
-    /*margin: 0 0 1.6vw 0;*/
+    font-size: 2.6vw;
 }
 
 .content-left div span,
@@ -350,7 +348,7 @@ header .current {
 .content-left div a p,
 .content-right div a p {
     display: inline;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
 }
 
 .content-left div,
@@ -365,8 +363,7 @@ header .current {
     color: #5E5E5E;
 }
 
-.content-right,
-.content-left {
+.content-right {
     margin-left: 8vw;
 }
 
@@ -397,7 +394,7 @@ header .current {
 .footerBottom a:first-of-type {
     float: right;
     font-size: 2.5vw;
-    padding: 0;
+    padding-left: 3vw;
     vertical-align: middle;
     font-weight: lighter;
 }
@@ -1369,7 +1366,7 @@ header .current {
     .left-section__title img {
         width: 10vw;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.2rem;
     }
 
     .left-section__title h1 {
@@ -1419,7 +1416,6 @@ header .current {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
     }
 
     .right-section__pic img {
@@ -1603,12 +1599,11 @@ header .current {
     }
 
     .hamburger-menu {
-        background-color: #001B37;
+        background-color: rgba(0, 27, 55, 0.98);
         display: block;
         width: 100%;
-        /*min-height: 13vw;*/
+        min-height: 10vw;
         z-index: 100;
-
     }
 
     .hamburger-menu a {
@@ -1621,7 +1616,7 @@ header .current {
     }
 
     .hamburger-menu ion-icon {
-        font-size: 4vw;
+        font-size: 3.5vw;
         color: #00c19f;
         float: right;
         padding-top: 3rem;
@@ -1785,18 +1780,18 @@ header .current {
     .right-section__online {
         width: 19vw;
         height: 22rem;
+        padding: 2rem 0 0 4.4vw;
     }
 
     .right-section__online h3 {
         font-size: 3vw;
-        padding-left: 2vw;
-        padding-top: 0.2rem;
+        padding-right: 3vw;
     }
 
     .right-section__online p {
         font-size: 2vw;
-        padding-left: 2vw;
         padding-right: 3vw;
+        margin-bottom: 2rem;
         letter-spacing: 0.2vw;
     }
 
@@ -1804,7 +1799,6 @@ header .current {
         width: 60%;
         height: 4.5rem;
         font-size: 1.5vw;
-        margin-left: 2vw;
         text-align: left;
         padding-left: 2vw;
     }
@@ -1818,8 +1812,6 @@ header .current {
     .content2 {
         width: 100%;
         height: 32rem;
-        margin: 0;
-        padding: 0;
     }
 
     .content2 h5 {
@@ -1839,8 +1831,6 @@ header .current {
         font-size: 1.5vw;
         line-height: 1.6rem;
         padding: 0 25vw;
-        margin-top: 0;
-
     }
 
     .content2 button {
@@ -1848,24 +1838,30 @@ header .current {
         height: 3rem;
         font-size: 1.5vw;
         font-weight: 100;
-        /*margin-top: 6vh;*/
+        margin-top: 0.8rem;
     }
 
     /***** footer *****/
     .mainFooter {
         width: 100%;
-        height: 30rem;
         display: flex;
         flex-direction: column;
+        margin-top: 2rem;
     }
 
     .footerTop {
         margin-top: 7rem;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
 
+    .footerTop > div {
+        margin: 0 4vw;
+        vertical-align: middle;
+    }
+
+
     .icon-number {
-        margin-left: 5vw;
+        padding-left: 5vw;
     }
 
     .icon-number img {
@@ -1874,20 +1870,16 @@ header .current {
 
     .icon-number p {
         font-size: 1.5vw;
-        margin-left: 3vw;
     }
 
     .icon-number h3 {
         font-size: 2.4vw;
-        margin-left: 3vw;
         margin-top: 0;
     }
 
     .content-left h3,
     .content-right h3 {
-        /*font-weight: 400;*/
         font-size: 2.2vw;
-        margin: 0 0 1.6vw 0;
     }
 
     .content-left div span,
@@ -1908,22 +1900,22 @@ header .current {
     }
 
     .content-right {
-        margin-left: 6vw;
+        padding-left: 8vw;
     }
 
     .footerBottom {
         padding: 1.5rem 6vw;
-        font-size: 1.5vw;
+        font-size: 1.4vw;
     }
 
     .footerBottom a {
-        font-size: 1.6vw;
+        font-size: 1.5vw;
     }
 
 
     .footerBottom a:first-of-type {
         font-size: 3vw;
-        padding-left: 7vw;
+        padding-left: 3vw;
     }
 
     /********* sticky button **********/
@@ -1968,18 +1960,18 @@ header .current {
     /*****  Header *****/
     .header {
         width: 100%;
+        height: 23rem;
         background-size: 140%;
     }
 
     .header-title {
         margin-left: 11vw;
-        margin-top: 12rem;
+        padding-top: 9rem;
     }
 
     .header-title h1 {
         font-weight: 700;
         font-size: 5vw;
-        padding-bottom: 3rem;
     }
 
     .hamburger-menu {
@@ -1999,39 +1991,27 @@ header .current {
         margin-top: 6.5rem;
         margin-bottom: 6.5rem;
         width: 100%;
-        /*display: grid;*/
-        /*grid-template-columns: 50% 40%;*/
-        /*grid-template-areas: "left right "*/
     }
 
     .left-section {
-        /*grid-area: left;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: right;*/
-        margin-left: 24%;
+        margin-left: 22%;
     }
 
     .left-section__title img {
         margin-bottom: 1.2rem;
-        /*width: 3vw;*/
+        width: 4vw;
     }
 
-    /*.left-section__title h1 {*/
-    /*    font-size: 4.2vw;*/
-    /*    font-weight: 700;*/
-    /*    margin: 0;*/
-    /*}*/
+    .left-section__title h1 {
+        font-size: 4.2vw;
+        padding-right: 2vw;
+    }
+
     .left-section__title p {
         font-size: 1.4vw;
         letter-spacing: 0.05vw;
     }
 
-    /*.left-section__card {*/
-    /*    display: block;*/
-    /*    !*justify-items: center;*!*/
-    /*    !*margin-top: 4vh;*!*/
-    /*}*/
     .card-pic img {
         width: 6vw;
         height: 5rem;
@@ -2045,6 +2025,8 @@ header .current {
     .card-text p {
         font-size: 1.09vw;
         line-height: 1.8rem;
+        margin-top: 1.2rem;
+        padding-right: 2.2vw;
     }
 
     .right-section {
@@ -2059,34 +2041,26 @@ header .current {
     }
 
     .right-section__online {
-        /*grid-area: book;*/
-        width: 15vw;
-        height: 15rem;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*align-content: flex-start;*/
-        /*padding: 8vh 0 6vh 3.5vw;*/
+        width: 17vw;
+        height: 17rem;
+        padding-left: 4vw;
     }
 
-    /*.right-section__online h3 {*/
-    /*    font-size: 2.2vw;*/
-    /*    font-weight: 700;*/
-    /*    margin: 0;*/
-    /*    padding-right: 10vw;*/
-    /*}*/
+    .right-section__online h3 {
+        font-size: 2.2vw;
+        font-weight: 700;
+        padding-right: 10vw;
+    }
+
     .right-section__online p {
         font-size: 1.3vw;
-        /*letter-spacing: 0.1vw;*/
-        /*margin: 3vh 0 5vh 0;*/
+        padding-right: 3vw;
         margin-bottom: 2rem;
     }
 
     .right-section__online button {
         width: 60%;
         height: 3rem;
-        /*background: #000;*/
-        /*border: 0 solid #000;*/
-        /*font-size: 1.08vw;*/
     }
 
     .right-section__online a {
@@ -2102,37 +2076,48 @@ header .current {
 
     .content2 h5 {
         font-size: 1.5vw;
-        margin-top: 5vh;
+        margin-top: 1.5rem;
         font-weight: 300;
     }
 
     .content2 h2 {
         font-size: 3.4vw;
-        margin-top: 0.1vh;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
     }
 
     .content2 p {
-        color: #a1abb5;
         font-size: 1.1vw;
         text-align: center;
-        line-height: 4vh;
+        line-height: 1.6rem;
         padding: 0 25vw;
-        margin-top: 0.6vh;
     }
 
     .content2 button {
         width: 9%;
         height: 3rem;
+        font-size: 1.3vw;
+        margin-top: 1rem;
     }
 
     /***** footer *****/
     .mainFooter {
         width: 100%;
+        margin-top: 0.8rem;
+    }
+
+    .footerTop {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .icon-number {
-        margin-left: 13vw;
+        padding-left: 3vw;
         margin-bottom: 0;
+    }
+
+    .icon-number img {
+        width: 16vw;
     }
 
     .icon-number p {
@@ -2146,7 +2131,7 @@ header .current {
 
     .content-left h3,
     .content-right h3 {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .content-left div span,
@@ -2156,27 +2141,31 @@ header .current {
 
     .content-left div a p,
     .content-right div a p {
-        display: inline;
-        font-size: 1vw;
+        font-size: 1.2vw;
+    }
+
+    .content-left div,
+    .content-right div {
+        margin: 1rem 0;
     }
 
     .footerBottom {
-        padding: 2.1rem 14vw;
-        font-size: 1.08vw;
-    }
-
-    .footerBottom a {
+        padding: 2.1rem 16vw;
         font-size: 1.1vw;
     }
 
+    .footerBottom a {
+        font-size: 1.2vw;
+    }
+
     .footerBottom a:first-of-type {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .stickyButton-up {
         width: 4rem;
         height: 4rem;
-        top: 72%;
+        top: 25rem;
     }
 
     .stickyButton-up span:first-child {
@@ -2191,12 +2180,12 @@ header .current {
     .stickyButton-down {
         width: 4rem;
         height: 4rem;
-        top: 85%;
+        top: 29.5rem;
     }
 
     .stickyButton-down img {
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     .stickyButton-down span {
@@ -2207,33 +2196,33 @@ header .current {
 /**********  Responsive for Laptop 2560 **********/
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
     .container {
-        grid-template-rows: 23rem max-content max-content max-content;
+        grid-template-rows: max-content max-content max-content max-content;
     }
 
     /*****  Header *****/
     .header {
         width: 100%;
-        background-position: center top;
+        height: 23rem;
         background-size: 75%;
     }
 
     .header-title {
         margin-left: 29vw;
-        margin-top: 8rem;
+        padding-top: 10rem;
     }
 
     .header-title h1 {
-        font-weight: 700;
         font-size: 2.8vw;
-        padding-top: 4rem;
     }
 
-    /*.hamburger-menu {*/
-    /*    display: none;*/
-    /*}*/
-    /*.hamburger-content {*/
-    /*    display: none;*/
-    /*}*/
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-content {
+        display: none;
+    }
+
     header {
         position: fixed;
         top: 0;
@@ -2242,10 +2231,6 @@ header .current {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        /*align-items: center;*/
-        /*transition: 0.6s;*/
-        /*padding: 1rem 10vw;*/
-        /*z-index: 1000;*/
     }
 
     header .logo {
@@ -2260,45 +2245,27 @@ header .current {
     header.sticky {
         width: 100%;
         padding: 0.2rem 12vw;
-        /*position: fixed;*/
-        /*background: rgba(10, 22, 34, 0.95);*/
     }
 
     header dl {
-        display: flex;
         margin-top: 1rem;
     }
 
-    /*header dl dt:last-child a {*/
-    /*    color: #08F1C9;*/
-    /*}*/
     header dl dt a {
         font-weight: 600;
         font-size: 0.8vw;
-        /*color: #B5BDC4;*/
-        /*text-decoration: none;*/
         position: relative;
         margin: 0.5rem 1.4vw;
-        /*transition: 0.6s;*/
     }
 
     /*****content1*****/
     .content1 {
-        /*margin-top: 8vw;*/
         width: 100%;
-        display: grid;
-        grid-template-columns: 50% 40%;
         margin-top: 6rem;
         margin-bottom: 6rem;
-
-        /*margin-right: 20vw;*/
-        /*grid-template-areas: "left right "*/
     }
 
     .left-section {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: right;*/
         margin-right: 0;
         margin-left: 58%;
     }
@@ -2310,7 +2277,6 @@ header .current {
 
     .left-section__title h1 {
         font-size: 2.4vw;
-        font-weight: 700;
         padding-right: 1vw;
         margin: 0;
     }
@@ -2319,12 +2285,6 @@ header .current {
         font-size: 0.75vw;
         margin-top: 2rem;
         letter-spacing: 0.08vw;
-    }
-
-    .left-section__card {
-        display: flex;
-        /*justify-items: center;*/
-        /*margin-top: 4vh;*/
     }
 
     .card-pic img {
@@ -2339,8 +2299,6 @@ header .current {
 
     .card-text h4 {
         font-size: 0.9vw;
-        /*font-weight: 400;*/
-        letter-spacing: 0.08vw;
         margin-bottom: 0;
     }
 
@@ -2353,7 +2311,6 @@ header .current {
     .right-section {
         margin-left: 11%;
         grid-template-rows: max-content max-content;
-        /*grid-template-areas: "pic" "book";*/
     }
 
     .right-section__pic img {
@@ -2363,53 +2320,38 @@ header .current {
     .right-section__online {
         width: 11vw;
         height: 20rem;
-        /*display: flex;*/
-        padding: 0;
+        padding-left: 2vw;
+
     }
 
     .right-section__online h3 {
         font-size: 1.2vw;
-        /*font-weight: 700;*/
         margin: 0;
         padding-top: 2.5rem;
         padding-right: 4vw;
-        padding-left: 2vw;
     }
 
     .right-section__online p {
         font-size: 0.7vw;
         letter-spacing: 0.08vw;
         margin-top: 2rem;
-        padding-left: 2vw;
     }
 
     .right-section__online button {
         width: 50%;
-        margin-left: 2vw;
         height: 3rem;
-    }
-
-    .right-section__online a {
         font-size: 0.7vw;
     }
 
     /****** content2 ******/
     .content2 {
         width: 100%;
-        /*background: #001B37;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
+        height: 32rem;
     }
 
-    /*.content2 h5, h2 {*/
-    /*    color: #fff;*/
-    /*}*/
     .content2 h5 {
         font-size: 0.9vw;
-        margin-top: 7rem;
-        /*font-weight: 300;*/
+        margin-top: 2.5rem;
     }
 
     .content2 h2 {
@@ -2422,43 +2364,34 @@ header .current {
         font-size: 0.6vw;
         line-height: 1.5rem;
         padding: 0 38vw;
-        /*margin-top: 0.1rem;*/
     }
 
     .content2 button {
-        width: 6%;
-        height: 3.5rem;
-        font-size: 0.7vw;
-        margin-top: 4rem;
-        margin-bottom: 8rem;
+        width: 4.5%;
+        height: 3rem;
+        font-size: 0.6vw;
+        margin-top: 2rem;
     }
 
     /***** footer *****/
     .mainFooter {
         width: 50%;
         margin-left: 18%;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*margin-top: 10rem;*/
+        margin-top: 0;
     }
 
     .footerTop {
-        /*display: flex;*/
-        /*flex-direction: row;*/
         justify-content: right;
-        /*width: max-content;*/
-        /*height: max-content;*/
-        padding-bottom: 6vw;
         margin-top: 10rem;
+        padding-bottom: 1rem;
     }
 
     .footerTop > div {
         margin: 0 3.5vw;
-        /*vertical-align: middle;*/
     }
 
     .icon-number {
-        /*margin-left: 9vw;*/
+        padding-left: 6vw;
         margin-bottom: 0;
     }
 
@@ -2473,12 +2406,11 @@ header .current {
 
     .icon-number h3 {
         font-size: 1vw;
-        /*font-weight: 400;*/
+        margin-top: 0.8rem;
     }
 
     .content-left h3,
     .content-right h3 {
-        /*font-weight: 400;*/
         font-size: 0.9vw;
         margin: 0;
     }
@@ -2486,12 +2418,10 @@ header .current {
     .content-left div span,
     .content-right div span {
         font-size: 0.5vw;
-        font-weight: 200;
     }
 
     .content-left div a p,
     .content-right div a p {
-        display: inline;
         font-size: 0.6vw;
     }
 
@@ -2501,28 +2431,32 @@ header .current {
     }
 
     .content-right {
-        /*color: #000;*/
         margin-left: 2vw;
     }
 
     .footerBottom {
-        /*padding: 2.2rem 11vw;*/
-        padding: 0;
-        font-size: 0.8vw;
+        font-size: 0.6vw;
+        padding: 2rem 4vw;
+        margin-left: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .footerBottom a {
-        font-size: 0.8vw;
+        font-size: 0.7vw;
     }
 
     .footerBottom a:first-of-type {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
+        padding-left: 10vw;
     }
 
     .stickyButton-up {
         width: 4rem;
         height: 4rem;
-        top: 35%;
+        top: 25rem;
     }
 
     .stickyButton-up span:first-child {
@@ -2538,7 +2472,7 @@ header .current {
     .stickyButton-down {
         width: 4rem;
         height: 4rem;
-        top: 41%;
+        top: 29.5rem;
     }
 
     .stickyButton-down img {
