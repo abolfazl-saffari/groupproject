@@ -431,10 +431,11 @@ header .current {
 
     .left-section h4 {
         font-size: 1rem;
+        margin: revert;
     }
 
     .left-section p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 400;
     }
 
@@ -446,14 +447,14 @@ header .current {
     }
 
     .right-section img {
-        margin-left: 10%;
+        margin-left: 15%;
         width: 75vw;
     }
 
     .book-online {
-        margin-left: 10%;
+        margin-left: 15%;
         width: 75vw;
-        height: 42vh;
+        height: 32vh;
         margin-bottom: 10vh;
     }
 
@@ -473,9 +474,9 @@ header .current {
     }
 
     .book-online button {
-        width: 30%;
-        height: 7vh;
-        font-size: 2.5vw;
+        width: 32%;
+        height: 6vh;
+        font-size: 3vw;
         margin-left: 5.2vw;
     }
 
@@ -1019,6 +1020,11 @@ header .current {
     #left-video {
         width: 28rem;
     }
+
+    .header h1 {
+        margin-left: 10vw;
+    }
+
 }
 
 @media screen and (max-width: 470px){
@@ -1047,6 +1053,10 @@ header .current {
 
     #right-video h2 {
         width: 15rem;
+    }
+
+    .hamburger-menu a img {
+        padding-left: 15vw;
     }
 }
 
@@ -1095,5 +1105,15 @@ header .current {
 
     .left:nth-of-type(1) h2 {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .left {
+        width: 90vw;
+    }
+
+    .right {
+        width: 90vw;
     }
 }
