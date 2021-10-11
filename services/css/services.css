@@ -213,7 +213,8 @@ header .current {
     background-color: #00F1C7;
     width: 16vw;
     height: 24rem;
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
+    margin-top: 0;
     padding-left: 3vw;
 }
 
@@ -1582,13 +1583,14 @@ header .current {
     }
 
     .header {
-        height: 16rem;
+        height: 23rem;
         background-size: 180%;
     }
 
     .header-title {
         margin-left: 6vw;
         margin-top: 4.5rem;
+        padding-top: 5rem;
     }
 
     .header-title h1 {
@@ -1601,11 +1603,11 @@ header .current {
     }
 
     .hamburger-menu {
-        background-color: rgba(0, 27, 55, 0.98);
         display: block;
         width: 100%;
         min-height: 10vw;
         z-index: 100;
+        position: fixed;
     }
 
     .hamburger-menu a {
@@ -1710,10 +1712,11 @@ header .current {
     }
 
     .sticky {
+        background-color: rgba(0, 27, 55, 0.90);
         position: fixed;
         min-height: 3.2rem;
         width: 100%;
-        transition: ease-in 1.5s;
+        transition: ease-in 1s;
     }
 
     /********* Content1 **********/
