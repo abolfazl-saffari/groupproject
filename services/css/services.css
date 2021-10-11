@@ -75,6 +75,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: max-content;
     display: flex;
     justify-content: space-between;
@@ -94,7 +95,7 @@ header .logo img {
 
 header.sticky {
     width: max-content;
-    padding: 0.6rem 12vw;
+    padding: 0.6rem 13vw;
     background: rgba(10, 22, 34, 0.95);
 }
 
@@ -212,7 +213,8 @@ header .current {
     background-color: #00F1C7;
     width: 16vw;
     height: 24rem;
-    padding: 2rem 0 0 3vw;
+    padding-top: 1rem;
+    padding-left: 3vw;
 }
 
 .right-section__online h3 {
@@ -1984,6 +1986,9 @@ header .current {
 
     header dl dt a {
         font-size: 1.1vw;
+    }
+    header.sticky {
+        padding: 0.6rem 14vw;
     }
 
     /*****content1*****/
