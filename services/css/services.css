@@ -2441,7 +2441,6 @@ header .current {
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .footerBottom a {
@@ -2482,6 +2481,5 @@ header .current {
 
     .stickyButton-down span {
         font-size: 0.7rem;
-        /*margin-top: 0.21rem;*/
     }
 }
