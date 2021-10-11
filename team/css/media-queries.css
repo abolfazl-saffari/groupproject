@@ -42,7 +42,7 @@ and  (max-device-width: 425px) {
     }
 
     .hambergure-menu {
-        background-color: #020e1b;
+        background-color: #020e1b !important;
         display: block;
         width: 100vw;
         z-index: 100;
@@ -156,6 +156,7 @@ and  (max-device-width: 425px) {
     .moveOn-container {
         transform: translate(-30vw);
         filter: grayscale(50%);
+        background-color: rgba(27, 68, 179, 0.1);
         transition: 1s 0.5s;
     }
 
