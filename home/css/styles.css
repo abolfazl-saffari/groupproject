@@ -452,7 +452,76 @@ body {
 
 /*================= Movable Navbar ==================*/
 
-@media screen and (min-width: 427px) {
+@media screen and (min-width: 1441px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 1.5vw 12vw;
+        z-index: 1000;
+    }
+
+    header .logo {
+        margin-right: 16.5rem;
+        margin-left: 29rem;
+    }
+
+    header .logo img {
+        width: 10rem;
+        margin-top: 0.5rem;
+    }
+
+    header.sticky {
+        width: max-content;
+        padding: 0.2rem 12vw;
+        background: rgba(10, 22, 34, 0.95);
+        position: fixed;
+        min-height: 3rem;
+        padding-top: 1rem !important;
+        transition: ease-in 1s;
+    }
+
+    header dl {
+        display: flex;
+        margin-top: 1rem;
+        float: left;
+        margin-right: 65rem;
+    }
+
+    header dl dt:last-child a {
+        color: #08F1C9;
+    }
+
+    header dl dt a {
+        font-weight: 700;
+        color: #B5BDC4;
+        text-decoration: none;
+        position: relative;
+        transition: 0.6s;
+        font-size: 0.7vw;
+        margin: 1rem;
+    }
+
+    header dl dt a:hover {
+        color: #fff;
+    }
+
+    header dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    header .current {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 1238px) and (max-width: 1440px) {
     header {
         position: fixed;
         top: 0;
@@ -513,79 +582,228 @@ body {
     }
 }
 
-@media screen and (max-width: 427px) {
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .container header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
     header {
         display: none;
     }
 }
 
 /*================= Header ==================*/
+@media screen and (min-width: 1441px) {
 
-.header {
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    height: 53rem;
-    margin: 0;
-    background-image: url("../images/slidebar.jpg");
-    background-position: -4.5vw 0vw;
-    background-size: 108vw;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    .header {
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        height: 53rem;
+        margin: 0;
+        background-image: url("../images/slidebar.jpg");
+        background-position: 0 -20rem;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .header {
+        user-select: none;
+    }
+
+    #welcome {
+        box-sizing: border-box;
+        margin-left: 30vw;
+        margin-top: 12vw;
+        color: white;
+        line-height: 3vw;
+    }
+
+    #welcome h1 {
+        font-weight: 600;
+        font-size: 3vw;
+        line-height: 1.5vw;
+    }
+
+    #welcome h1:nth-child(2) {
+        color: #00f1c7;
+    }
+
+    #welcome h4 {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 0;
+        font-weight: 400;
+        text-shadow: white;
+        font-size: 0.8vw;
+    }
+
+    .btnMore {
+        margin-top: 0;
+        margin-bottom: 7vw;
+        display: inline-block;
+        padding: 0;
+        border: none;
+        width: 7vw;
+        height: 2.5vw;
+        letter-spacing: 0.1vw;
+        box-sizing: content-box;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.8vw;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        background-color: white;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    a.btnMore:hover {
+        color: white;
+        background-color: black;
+    }
 }
 
-.header {
-    user-select: none;
+@media screen and (max-width: 1441px) {
+    .header {
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        height: 53rem;
+        margin: 0;
+        background-image: url("../images/slidebar.jpg");
+        background-position: -4.5vw 0vw;
+        background-size: 108vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .header {
+        user-select: none;
+    }
+
+    #welcome {
+        box-sizing: border-box;
+        margin-left: 14vw;
+        margin-top: 24.5vw;
+        color: white;
+        line-height: 1.8vw;
+    }
+
+    #welcome h1 {
+        font-weight: 600;
+        font-size: 5.8vw;
+    }
+
+    #welcome h1:nth-child(2) {
+        color: #00f1c7;
+    }
+
+    #welcome h4 {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 4.6vw;
+        font-weight: 400;
+        text-shadow: white;
+        font-size: 1.5vw;
+    }
+
+    .btnMore {
+        margin-top: 1vw;
+        margin-bottom: 10vw;
+        display: inline-block;
+        padding: 1vw 1.1vw;
+        border: none;
+        width: 11.5vw;
+        height: 3.7vw;
+        letter-spacing: 0.1vw;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.4vw;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        background-color: white;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    a.btnMore:hover {
+        color: white;
+        background-color: black;
+    }
 }
 
-#welcome {
-    box-sizing: border-box;
-    margin-left: 14vw;
-    margin-top: 24.5vw;
-    color: white;
-    line-height: 1.8vw;
-}
+@media screen and (min-width: 426px) and (max-width: 1238px) {
 
-#welcome h1 {
-    font-weight: 600;
-    font-size: 5.8vw;
-}
+    .header {
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        height: 50.5rem;
+        margin: 0;
+        background-image: url("../images/slidebar.jpg");
+        background-position: -20vw -2vw;
+        background-size: 145vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 
-#welcome h1:nth-child(2) {
-    color: #00f1c7;
-}
+    .header {
+        user-select: none;
+    }
 
-#welcome h4 {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 4.6vw;
-    font-weight: 400;
-    text-shadow: white;
-    font-size: 1.5vw;
-}
+    #welcome {
+        box-sizing: border-box;
+        margin-left: 5vw;
+        margin-top: 30.5vw;
+        color: white;
+        line-height: 3vw;
+    }
 
-.btnMore {
-    margin-top: 1vw;
-    margin-bottom: 10vw;
-    display: inline-block;
-    padding: 1vw 1.1vw;
-    border: none;
-    width: 11.5vw;
-    height: 3.7vw;
-    letter-spacing: 0.1vw;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.4vw;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    background-color: white;
-    text-align: center;
-    transition: all 0.2s;
-}
+    #welcome h1 {
+        font-weight: 600;
+        font-size: 7.5vw;
+    }
 
-a.btnMore:hover {
-    color: white;
-    background-color: black;
+    #welcome h1:nth-child(2) {
+        color: #00f1c7;
+    }
+
+    #welcome h4 {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 4.6vw;
+        font-weight: 400;
+        text-shadow: white;
+        font-size: 1.5vw;
+    }
+
+    .btnMore {
+        margin-top: 1vw;
+        margin-bottom: 10vw;
+        display: inline-block;
+        padding: 1vw 1.1vw;
+        border: none;
+        width: 15vw;
+        height: 4.8vw;
+        letter-spacing: 0.1vw;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.7vw;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        background-color: white;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    a.btnMore:hover {
+        color: white;
+        background-color: black;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -663,13 +881,104 @@ a.btnMore:hover {
         font-size: 0.45rem;
         padding: 1.8vw;
         letter-spacing: 0;
-
     }
-
 }
 
 /*================= Section 1 ==================*/
-@media screen and (min-width: 427px) {
+
+@media screen and (min-width: 1441px) {
+
+    .services {
+        padding-left: 30vw;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns:10vw 10vw 10vw 10vw;
+        column-gap: 0.5vw;
+        row-gap: 1vw;
+        grid-template-areas: "top top top top"
+                         "cell1 cell2 cell3 cell4"
+                         "view-button view-button view-button view-button";
+    }
+
+    .services-top {
+        grid-area: top;
+        padding-left: 0;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .services-top h2 {
+        font-size: 2vw;
+        line-height: 4rem;
+        font-weight: 700;
+    }
+
+    .cell h4 {
+        color: #000;
+        font-weight: 400;
+        font-size: 1vw;
+        margin-top: 3vw;
+    }
+
+    .cell p {
+        color: #7a7c7e;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 0.5vw;
+        line-height: 1vw;
+        width: 13rem;
+    }
+
+    .cell {
+        padding: 0;
+    }
+
+
+    .cell1 {
+        grid-area: cell1;
+    }
+
+    .cell2 {
+        grid-area: cell2;
+    }
+
+    .cell3 {
+        grid-area: cell3;
+    }
+
+    .cell4 {
+        grid-area: cell4;
+    }
+
+    .view {
+        grid-area: view-button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0vw;
+    }
+
+    .btnViewall {
+        margin-top: 4rem;
+        margin-bottom: 7vw;
+        display: inline-block;
+        padding: 0.6vw 0 0;
+        border: none;
+        width: 14vw;
+        height: 1.2vw;
+        letter-spacing: 0.1vw;
+        box-sizing: content-box;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1238px) and (max-width: 1441px) {
     .services {
         padding-left: 8vw;
         display: grid;
@@ -753,6 +1062,96 @@ a.btnMore:hover {
         background-color: black;
         text-align: center;
         margin-bottom: 10vw;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .services {
+        padding-left: 5vw;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns:20vw 20vw 20vw 20vw;
+        column-gap: 2vw;
+        row-gap: 1vw;
+        grid-template-areas: "top top top top"
+                         "cell1 cell2 cell3 cell4"
+                         "view-button view-button view-button view-button";
+    }
+
+    .services-top {
+        grid-area: top;
+        padding-left: 0;
+        margin-top: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .services-top h2 {
+        font-size: 5vw;
+        line-height: 4rem;
+        font-weight: 700;
+    }
+
+    .cell h4 {
+        color: #000;
+        font-weight: 400;
+        font-size: 2.3vw;
+        margin-top: 6vw;
+    }
+
+    .cell p {
+        color: #7a7c7e;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 1.4vw;
+        line-height: 2.5vw;
+        width: 10rem;
+    }
+
+    .cell {
+        padding: 0;
+    }
+
+
+    .cell1 {
+        grid-area: cell1;
+    }
+
+    .cell2 {
+        grid-area: cell2;
+    }
+
+    .cell3 {
+        grid-area: cell3;
+    }
+
+    .cell4 {
+        grid-area: cell4;
+    }
+
+    .view {
+        grid-area: view-button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .btnViewall {
+        display: inline-block;
+        padding: 1.3vw 1vw;
+        border: none;
+        width: 28vw;
+        height: 4.5vw;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.3vw;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
+        margin: 10vw 0;
     }
 }
 
@@ -903,7 +1302,198 @@ a.btnMore:hover {
 }
 
 /*================= Section 2 ==================*/
-@media screen and (min-width: 427px) {
+
+@media screen and (min-width: 1441px) {
+
+    .pics {
+        padding-left: 30vw;
+        display: grid;
+        grid-template-rows: 44rem 15rem 0.5rem;
+        grid-template-columns: 27vw 13vw;
+        grid-template-areas: "left-pic right-pic"
+                         "book opening"
+                         "line line";
+    }
+
+    .left-pic {
+        grid-area: left-pic;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic10.jpg");
+        background-repeat: no-repeat;
+        background-size: 28vw;
+        background-position: -0.9vw 0;
+        padding: 14.5rem 2.5vw;
+        font-family: Montserrat, serif;
+    }
+
+    .left-pic h1 {
+        font-size: 2.1vw;
+        margin-top: 2.8rem;
+        font-weight: 600;
+    }
+
+    .left-pic h3 {
+        font-size: 0.8vw;
+        margin: 0.3rem 0 1.5rem 0;
+        font-weight: 400;
+    }
+
+    .left-pic a {
+        font-size: 0.6vw;
+        padding: 0.36rem 1.1vw;
+        background-color: #fff;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .left-pic a:hover {
+        background-color: #EEEEEE;
+    }
+
+
+    .right-pic {
+        grid-area: right-pic;
+        background-image: url("../images/home_clinic3_pic11.jpg");
+        background-repeat: no-repeat;
+        background-size: 28vw;
+        background-position: -7.5vw 0;
+        background-position-y: 2.5vw;
+        padding: 14.5rem 2vw;
+        font-family: Montserrat, Arial, serif;
+        color: #ffffff;
+    }
+
+    .right-pic img {
+        width: 1.5vw;
+        margin: 5.6rem 0 1.25rem 0.7vw;
+    }
+
+    .right-pic h3 {
+        font-size: 1.2vw;
+        font-weight: 600;
+        text-shadow: 0 0 1.25vw rgba(0, 0, 0, 1);
+        margin: 0 0 1.25rem 0.7vw;
+
+    }
+
+    .btn-ourteam {
+        position: relative;
+        padding: 0.8vw 0.45vw 0.6vw 0.45vw;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 0.55vw;
+        font-weight: 700;
+        margin: 0.5vw 0.4vw;
+        color: white;
+    }
+
+    .btn-ourteam:after, .btn-ourteam:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.15vw;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        transform: scale(0.9);
+    }
+
+    .btn-ourteam:hover:before {
+        top: 0.25vw;
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .btn-ourteam:hover:after {
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .book-online {
+        grid-area: book;
+        float: right;
+        width: 14.5vw;
+        height: 7.5vw;
+        margin-left: 7vw;
+        padding: 2rem 2.75vw;
+        background-color: #00F1C7;
+        color: #000000;
+    }
+
+    .book-online h3 {
+        font-size: 1.65vw;
+        font-weight: 600;
+        margin: 0.75rem 0;
+    }
+
+    .book-online h4 {
+        font-size: 0.85vw;
+        font-weight: 400;
+        margin: 1rem 0 1.8rem 0;
+    }
+
+    .book-online a {
+        font-size: 0.55vw;
+        padding: 0.5rem 0.75vw;
+        background-color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .opening-time {
+        grid-area: opening;
+        padding: 1.12rem 2.85vw;
+    }
+
+    .opening-time hr {
+        border: none;
+        border-bottom: 0.05vw solid #656565;
+        margin: 1.12rem 0;
+        width: 5vw;
+    }
+
+    .opening-time h5:first-of-type {
+        font-size: 0.65vw;
+        font-weight: 400;
+        color: #B1B1B1;
+        margin: 1.4rem 0;
+    }
+
+    .opening-time h5:last-of-type {
+        font-size: 0.65vw;
+        font-weight: 400;
+        margin: 0 0 0.75rem 0;
+    }
+
+    .opening-time p {
+        font-size: 0.55vw;
+        font-weight: 400;
+        margin: 0;
+        color: #7A7C7E;
+    }
+
+    .opening-time a img {
+        width: 0.7vw;
+    }
+
+    .seperator {
+        grid-area: line;
+        width: 100vw;
+        margin-top: 6rem;
+        margin-left: -30vw;
+        border: none;
+        border-bottom: 0.01vw solid #e2e2e2;
+    }
+}
+
+@media screen and (min-width: 1238px)  and (max-width: 1441px) {
     .pics {
         padding-left: 10vw;
         display: grid;
@@ -999,7 +1589,7 @@ a.btnMore:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        height: 0.5vw;
+        height: 0.2vw;
         background-color: rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         transform: scale(0.9);
@@ -1090,6 +1680,202 @@ a.btnMore:hover {
         margin-left: -10vw;
         border: none;
         border-bottom: 0.01vw solid #e2e2e2;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .pics {
+        padding: 0 4vw;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: max-content max-content;
+        grid-template-areas: "left-pic right-pic"
+                         "book opening"
+                         "line line";
+    }
+
+    .left-pic {
+        grid-area: left-pic;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic10.jpg");
+        background-repeat: no-repeat;
+        background-size: 75vw;
+        background-position: -7.8vw 0;
+        padding: 17rem 5vw;
+        font-family: Montserrat, serif;
+        width: 32rem;
+        height: 11rem;
+        margin-top: 2rem;
+    }
+
+    .left-pic h1 {
+        font-size: 6vw;
+        margin-top: 0;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .left-pic h3 {
+        font-size: 2.5vw;
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+
+    .left-pic a {
+        font-size: 1.4vw;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .left-pic a:hover {
+        background-color: #EEEEEE;
+    }
+
+    .right-pic {
+        grid-area: right-pic;
+        background-image: url("../images/home_clinic3_pic11.jpg");
+        background-repeat: no-repeat;
+        background-size: 76vw;
+        background-position: -23vw 0;
+        background-position-y: 5vw;
+        padding: 20rem 6vw;
+        font-family: Montserrat, Arial, serif;
+        color: #ffffff;
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .right-pic img {
+        width: 4vw;
+        margin: 0;
+    }
+
+    .right-pic h3 {
+        font-size: 3.2vw;
+        font-weight: 600;
+        text-shadow: 0 0 2.5vw rgba(0, 0, 0, 1);
+        margin: 3vw 0;
+        width: 12rem;
+    }
+
+    .btn-ourteam {
+        position: relative;
+        padding: 1.6vw 0.9vw 1.2vw 0.9vw;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 1.3vw;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .btn-ourteam:after, .btn-ourteam:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.3vw;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        transform: scale(0.9);
+    }
+
+    .btn-ourteam:hover:before {
+        top: 0;
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .btn-ourteam:hover:after {
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .book-online {
+        grid-area: book;
+        float: right;
+        width: 36vw;
+        height: 32vw;
+        margin-left: 13vw;
+        padding: 1rem 5.5vw;
+        background-color: #00F1C7;
+        color: #000000;
+    }
+
+    .book-online h3 {
+        font-size: 3.3vw;
+        font-weight: 600;
+        margin: 3rem 0 1rem;
+    }
+
+    .book-online h4 {
+        font-size: 2.5vw;
+        font-weight: 400;
+        margin: 1.5rem 0 4rem 0;
+    }
+
+    .book-online a {
+        font-size: 1.5vw;
+        padding: 1.5vw 2.5vw;
+        background-color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .opening-time {
+        grid-area: opening;
+        padding: 0 4rem;
+    }
+
+    .opening-time hr {
+        border: none;
+        border-bottom: 0.05vw solid #656565;
+        margin: 1rem 0;
+        width: 10vw;
+    }
+
+    .opening-time h5:first-of-type {
+        font-size: 1.8vw;
+        font-weight: 400;
+        color: #B1B1B1;
+        margin: 7vw 0 4vw;
+    }
+
+    .opening-time h5:last-of-type {
+        font-size: 1.8vw;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .opening-time p {
+        font-size: 1.5vw;
+        font-weight: 400;
+        margin: 2rem 0;
+        color: #7A7C7E;
+    }
+
+    .opening-time a img {
+        width: 1.8vw;
+    }
+
+    .seperator {
+        grid-area: line;
+        width: 100%;
+        margin-top: 6rem;
+        margin-left: 0;
+        border: none;
+        border-bottom: 0.01vw solid rgba(226, 226, 226, 0.6);
     }
 }
 
@@ -1437,6 +2223,45 @@ a.btnMore:hover {
         font-size: 0.9rem;
     }
 
+
+    .btn-ourteam {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 700;
+        color: white;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        margin: 3rem;
+        text-shadow: 0 0 30px black;
+        text-decoration: none;
+    }
+
+    .btn-ourteam:after, .btn-ourteam:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.5vw;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        transform: scale(0.9);
+    }
+
+    .btn-ourteam:hover:before {
+        top: 0.5vw;
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .btn-ourteam:hover:after {
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
     .book-online {
         width: 68vw;
         height: 75vw;
@@ -1465,124 +2290,379 @@ a.btnMore:hover {
 
 /*================= Section 3 ==================*/
 
-.videos {
-    padding-left: 3vw;
-    margin-top: 6vw;
-    display: grid;
-    height: 61rem;
-    grid-template-columns: 46vw 40vw;
-    grid-template-areas: "left right";
-}
+@media screen and (min-width: 1441px) {
+
+    .videos {
+        padding-left: 27vw;
+        margin-top: 6vw;
+        display: grid;
+        height: 57rem;
+        grid-template-columns: 24vw 22vw;
+        grid-template-areas: "left right";
+    }
 
 
-.right {
-    grid-area: right;
-}
+    .right {
+        grid-area: right;
+    }
 
-.left {
-    grid-area: left;
-    display: grid;
-    grid-template-rows: 0% 88%;
-    grid-template-areas: "text"
+    .left {
+        grid-area: left;
+        display: grid;
+        grid-template-rows: 0% 88%;
+        grid-template-areas: "text"
                          "video";
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
 
-.left:nth-of-type(1) h2 {
-    grid-area: text;
-    margin-left: 6vw;
-    margin-top: 2.8vw;
-    font-size: 3.6vw;
-    text-align: start;
-    color: black;
-}
+    .left:nth-of-type(1) h2 {
+        grid-area: text;
+        margin-left: 3vw;
+        margin-top: 0;
+        font-size: 2.25vw;
+        text-align: start;
+        color: black;
+    }
 
-#left-video {
-    grid-area: video;
-    background-color: #00f1c7;
-    flex-direction: column;
-    justify-content: right;
-    align-items: start;
-    background-image: url("../images/home_clinic3_pic12.jpg");
-    background-repeat: no-repeat;
-    background-size: 57.5vw;
-    align-items: center;
-    margin-left: 5.62vw;
-    margin-top: 10vw;
-    background-position: -8vw 0;
-}
+    #left-video {
+        grid-area: video;
+        background-color: #00f1c7;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic12.jpg");
+        background-repeat: no-repeat;
+        background-size: 30vw;
+        align-items: center;
+        margin-left: 2.5vw;
+        margin-top: 6.5vw;
+        background-position: -5vw 0;
+        width: 34.5rem;
+    }
 
-.btns {
-    cursor: pointer;
-    display: inline-block;
-    transform: translateX(6vw);
-    z-index: 10;
-    margin-top: 17vw;
-}
+    .btns {
+        cursor: pointer;
+        display: inline-block;
+        transform: translateX(3vw);
+        z-index: 10;
+        margin-top: 8.5vw;
+    }
 
-.pauseBtn {
-    margin-left: 4vw;
-    opacity: 0;
-}
+    .pauseBtn {
+        margin-left: 2vw;
+        opacity: 0;
+    }
 
-.btns:hover .playBtn {
-    opacity: 0;
-    transition: 0.5s ease-in;
-}
+    .btns:hover .playBtn {
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
 
-.btns:hover .pauseBtn {
-    opacity: 1;
-    transition: 0.5s ease-out;
-}
+    .btns:hover .pauseBtn {
+        opacity: 1;
+        transition: 0.5s ease-out;
+    }
 
-#left-video h2 {
-    font-weight: 600;
-    color: white;
-    margin: 4vw 0 0 5vw;
-    font-size: 4.4vw;
-    text-align: start;
-}
+    #left-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 2vw 0 0 2.5vw;
+        font-size: 2vw;
+        text-align: start;
+    }
 
-#left-video p {
-    font-size: 1.5vw;
-    font-weight: 400;
-    margin-left: 5vw;
-}
+    #left-video p {
+        font-size: 0.8vw;
+        font-weight: 400;
+        margin-left: 2.5vw;
+    }
 
-.right {
-    grid-area: right;
-    display: grid;
-    grid-template-rows: 81% 0%;
-    grid-template-areas: "video"
+
+    .right {
+        grid-area: right;
+        display: grid;
+        grid-template-rows: 81% 0%;
+        grid-template-areas: "video"
                          "blank";
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    #right-video {
+        grid-area: video;
+        grid-template-areas: "rightPicture";
+        background-image: url("../images/home_clinic3_pic13.jpg");
+        background-repeat: no-repeat;
+        background-size: 30vw;
+        align-items: center;
+        background-position: -5vw 0;
+    }
+
+    #right-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 2vw 0 0 2.5vw;
+        width: 10vw;
+        font-size: 2vw;
+        text-align: start;
+    }
+
+    #right-video p {
+        font-size: 0.8vw;
+        font-weight: 400;
+        margin-left: 2.5vw;
+    }
 }
 
-#right-video {
-    grid-area: video;
-    grid-template-areas: "rightPicture";
-    background-image: url("../images/home_clinic3_pic13.jpg");
-    background-repeat: no-repeat;
-    background-size: 57vw;
-    align-items: center;
-    background-position: -8.5vw 0;
-}
+@media screen and (max-width: 1441px) {
 
-#right-video h2 {
-    font-weight: 600;
-    color: white;
-    margin: 4vw 0 0 5vw;
-    width: 20vw;
-    font-size: 4.4vw;
-    text-align: start;
-}
+    .videos {
+        padding-left: 3vw;
+        margin-top: 6vw;
+        display: grid;
+        height: 61rem;
+        grid-template-columns: 46vw 40vw;
+        grid-template-areas: "left right";
+    }
 
-#right-video p {
-    font-size: 1.5vw;
-    font-weight: 400;
-    margin-left: 5vw;
+
+    .right {
+        grid-area: right;
+    }
+
+    .left {
+        grid-area: left;
+        display: grid;
+        grid-template-rows: 0% 88%;
+        grid-template-areas: "text"
+                         "video";
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .left:nth-of-type(1) h2 {
+        grid-area: text;
+        margin-left: 6vw;
+        margin-top: 2.8vw;
+        font-size: 3.6vw;
+        text-align: start;
+        color: black;
+    }
+
+    #left-video {
+        grid-area: video;
+        background-color: #00f1c7;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic12.jpg");
+        background-repeat: no-repeat;
+        background-size: 57.5vw;
+        align-items: center;
+        margin-left: 5.62vw;
+        margin-top: 10vw;
+        background-position: -8vw 0;
+    }
+
+    .btns {
+        cursor: pointer;
+        display: inline-block;
+        transform: translateX(6vw);
+        z-index: 10;
+        margin-top: 17vw;
+    }
+
+    .pauseBtn {
+        margin-left: 4vw;
+        opacity: 0;
+    }
+
+    .btns:hover .playBtn {
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+
+    .btns:hover .pauseBtn {
+        opacity: 1;
+        transition: 0.5s ease-out;
+    }
+
+    #left-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 4vw 0 0 5vw;
+        font-size: 4.4vw;
+        text-align: start;
+    }
+
+    #left-video p {
+        font-size: 1.5vw;
+        font-weight: 400;
+        margin-left: 5vw;
+    }
+
+    .right {
+        grid-area: right;
+        display: grid;
+        grid-template-rows: 81% 0%;
+        grid-template-areas: "video"
+                         "blank";
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    #right-video {
+        grid-area: video;
+        grid-template-areas: "rightPicture";
+        background-image: url("../images/home_clinic3_pic13.jpg");
+        background-repeat: no-repeat;
+        background-size: 57vw;
+        align-items: center;
+        background-position: -8.5vw 0;
+    }
+
+    #right-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 4vw 0 0 5vw;
+        width: 20vw;
+        font-size: 4.4vw;
+        text-align: start;
+    }
+
+    #right-video p {
+        font-size: 1.5vw;
+        font-weight: 400;
+        margin-left: 5vw;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .videos {
+        padding-left: 0;
+        margin-top: 6vw;
+        display: grid;
+        height: max-content;
+        grid-template-columns: max-content max-content;
+        grid-template-areas: "left right";
+    }
+
+
+    .right {
+        grid-area: right;
+    }
+
+    .left {
+        grid-area: left;
+        display: grid;
+        grid-template-rows: 0% 88%;
+        grid-template-areas: "text"
+                         "video";
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .left:nth-of-type(1) h2 {
+        grid-area: text;
+        margin-left: 6vw;
+        margin-top: 2.8vw;
+        font-size: 4.5vw;
+        text-align: start;
+        color: black;
+    }
+
+    #left-video {
+        grid-area: video;
+        background-color: #00f1c7;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic12.jpg");
+        background-repeat: no-repeat;
+        background-size: 74.5vw;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 15vw;
+        background-position: -15vw 0rem;
+        width: 29rem;
+        height: 42rem;
+    }
+
+    .btns {
+        cursor: pointer;
+        display: inline-block;
+        transform: translateX(6vw);
+        z-index: 10;
+        margin-top: 24vw;
+    }
+
+    .pauseBtn {
+        margin-left: 4vw;
+        opacity: 0;
+    }
+
+    .btns:hover .playBtn {
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+
+    .btns:hover .pauseBtn {
+        opacity: 1;
+        transition: 0.5s ease-out;
+    }
+
+    #left-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 4vw 0 0 5vw;
+        font-size: 5vw;
+        text-align: start;
+    }
+
+    #left-video p {
+        font-size: 2vw;
+        font-weight: 400;
+        margin-left: 5vw;
+    }
+
+
+    .right {
+        grid-area: right;
+        display: grid;
+        grid-template-rows: 81% 0%;
+        grid-template-areas: "video"
+                         "blank";
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    #right-video {
+        grid-area: video;
+        grid-template-areas: "rightPicture";
+        background-image: url("../images/home_clinic3_pic13.jpg");
+        background-repeat: no-repeat;
+        background-size: 77vw;
+        align-items: center;
+        background-position: -16.5vw 0;
+        width: 29rem;
+        height: 47rem;
+    }
+
+    #right-video h2 {
+        font-weight: 600;
+        color: white;
+        margin: 4vw 0 0 5vw;
+        width: 35vw;
+        font-size: 6vw;
+        text-align: start;
+    }
+
+    #right-video p {
+        font-size: 2.2vw;
+        font-weight: 400;
+        margin-left: 5vw;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -1788,146 +2868,430 @@ a.btnMore:hover {
 
 /*================= Footer ==================*/
 
-.allfooter {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 1441px) {
+
+    .allfooter {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: max-content;
+        height: max-content;
+        font-family: Montserrat, Arial, serif;
+        padding-bottom: 3vw;
+    }
+
+    #company div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    #help div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    .footer > div {
+        margin: 0 3.25vw;
+        vertical-align: middle;
+    }
+
+    #icon-number {
+        margin-left: 2rem;
+        margin-bottom: 0;
+    }
+
+    #icon-number img {
+        width: 8vw;
+    }
+
+    #icon-number p {
+        color: #8C8C8C;
+        font-size: 0.7vw;
+        margin: 1.5vw 0 0.5vw 0;
+    }
+
+    #icon-number h3 {
+        color: #00F1C7;
+        font-size: 1.25vw;
+        font-weight: 400;
+    }
+
+    #company h3 {
+        font-weight: 400;
+        font-size: 1.2vw;
+        margin: 0 0 0.8vw 0;
+    }
+
+    #company div span {
+        font-size: 0.5vw;
+        font-weight: 200;
+    }
+
+
+    #company div a p {
+        display: inline;
+        font-size: 0.65vw;
+    }
+
+    #company div {
+        margin: 0.6vw 0;
+        color: #5E5E5E;
+    }
+
+    #company div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    #help {
+        color: #000000;
+        margin-left: 4vw;
+    }
+
+    #help h3 {
+        font-weight: 400;
+        font-size: 1.2vw;
+        margin: 0 0 0.8vw 0;
+    }
+
+    #help div span {
+        font-size: 0.5vw;
+        font-weight: 200;
+    }
+
+    #help div a p {
+        display: inline;
+        font-size: 0.65vw;
+    }
+
+    #help div {
+        margin: 0.6vw 0;
+        color: #5E5E5E;
+    }
+
+    #help div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    .subfooter {
+        border-top: 0.07vw solid #e2e2e2;
+        padding: 1.3vw 2rem;
+        font-size: 0.75vw;
+        font-family: Montserrat, Arial, serif;
+        color: #8C8C8C;
+        width: 40vw;
+    }
+
+    .subfooter a {
+        text-decoration: none;
+        font-size: 0.6vw;
+        color: #5E5E5E;
+    }
+
+    .footer-hover-a:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+
+    .subfooter a:first-of-type {
+        float: right;
+        font-size: 1.25vw;
+        padding: 0 0 0 4vw;
+        vertical-align: middle;
+        font-weight: lighter;
+    }
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    width: max-content;
-    height: max-content;
-    font-family: Montserrat, Arial, serif;
-    padding-bottom: 6vw;
+@media screen and (max-width: 1441px) {
+
+    .allfooter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: max-content;
+        height: max-content;
+        font-family: Montserrat, Arial, serif;
+        padding-bottom: 6vw;
+    }
+
+    #company div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    #help div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    .footer > div {
+        margin: 0 6.5vw;
+        vertical-align: middle;
+    }
+
+    #icon-number {
+        margin-left: 9vw;
+        margin-bottom: 0;
+    }
+
+    #icon-number img {
+        width: 12vw;
+    }
+
+    #icon-number p {
+        color: #8C8C8C;
+        font-size: 1.2vw;
+        margin: 3vw 0 1vw 0;
+    }
+
+    #icon-number h3 {
+        color: #00F1C7;
+        font-size: 1.6vw;
+        font-weight: 400;
+    }
+
+    #company h3 {
+        font-weight: 400;
+        font-size: 1.8vw;
+        margin: 0 0 1.6vw 0;
+    }
+
+    #company div span {
+        font-size: 1vw;
+        font-weight: 200;
+    }
+
+
+    #company div a p {
+        display: inline;
+        font-size: 1.1vw;
+    }
+
+    #company div {
+        margin: 1.2vw 0;
+        color: #5E5E5E;
+    }
+
+    #company div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    #help {
+        color: #000000;
+        margin-left: 8vw;
+    }
+
+    #help h3 {
+        font-weight: 400;
+        font-size: 1.8vw;
+        margin: 0 0 1.6vw 0;
+    }
+
+    #help div span {
+        font-size: 1vw;
+        font-weight: 200;
+    }
+
+    #help div a p {
+        display: inline;
+        font-size: 1.1vw;
+    }
+
+    #help div {
+        margin: 1.2vw 0;
+        color: #5E5E5E;
+    }
+
+    #help div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    .subfooter {
+        border-top: 0.07vw solid #e2e2e2;
+        padding: 1.4vw 11.7vw;
+        font-size: 1.1vw;
+        font-family: Montserrat, Arial, serif;
+        color: #8C8C8C;
+    }
+
+    .subfooter a {
+        text-decoration: none;
+        font-size: 1.2vw;
+        color: #5E5E5E;
+    }
+
+    .footer-hover-a:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+
+    .subfooter a:first-of-type {
+        float: right;
+        font-size: 2.5vw;
+        padding: 0;
+        vertical-align: middle;
+        font-weight: lighter;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .allfooter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: max-content;
+        height: max-content;
+        font-family: Montserrat, Arial, serif;
+        padding-bottom: 6vw;
+    }
+
+    #company div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    #help div a p:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+    .footer > div {
+        margin: 0 6.5vw;
+        vertical-align: middle;
+    }
+
+    #icon-number {
+        margin-left: 4rem;
+        margin-bottom: 0;
+    }
+
+    #icon-number img {
+        width: 16vw;
+    }
+
+    #icon-number p {
+        color: #8C8C8C;
+        font-size: 1.2vw;
+        margin: 3vw 0 1vw 0;
+    }
+
+    #icon-number h3 {
+        color: #00F1C7;
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+
+    #company h3 {
+        font-weight: 400;
+        font-size: 2.4vw;
+        margin: 0 0 1.6vw 0;
+    }
+
+    #company div span {
+        font-size: 1vw;
+        font-weight: 200;
+    }
+
+
+    #company div a p {
+        display: inline;
+        font-size: 1.3vw;
+    }
+
+    #company div {
+        margin: 1.2vw 0;
+        color: #5E5E5E;
+    }
+
+    #company div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    #help {
+        color: #000000;
+        margin-left: 8vw;
+    }
+
+    #help h3 {
+        font-weight: 400;
+        font-size: 2.4vw;
+        margin: 0 0 1.6vw 0;
+    }
+
+    #help div span {
+        font-size: 1vw;
+        font-weight: 200;
+    }
+
+    #help div a p {
+        display: inline;
+        font-size: 1.3vw;
+    }
+
+    #help div {
+        margin: 1.2vw 0;
+        color: #5E5E5E;
+    }
+
+    #help div a {
+        text-decoration: none;
+        color: #5E5E5E;
+    }
+
+    .subfooter {
+        border-top: 0.07vw solid #e2e2e2;
+        padding: 2.6vw 11.7vw;
+        font-size: 1.5vw;
+        font-family: Montserrat, Arial, serif;
+        color: #8C8C8C;
+    }
+
+    .subfooter a {
+        text-decoration: none;
+        font-size: 1.2vw;
+        color: #5E5E5E;
+    }
+
+    .footer-hover-a:hover {
+        text-decoration: underline;
+        color: #00F1C7;
+    }
+
+
+    .subfooter a:first-of-type {
+        float: right;
+        font-size: 2.5vw;
+        padding: 0;
+        vertical-align: middle;
+        font-weight: lighter;
+    }
 }
 
-#company div a p:hover {
-    text-decoration: underline;
-    color: #00F1C7;
-}
-
-#help div a p:hover {
-    text-decoration: underline;
-    color: #00F1C7;
-}
-
-.footer > div {
-    margin: 0 6.5vw;
-    vertical-align: middle;
-}
-
-#icon-number {
-    margin-left: 9vw;
-    margin-bottom: 0;
-}
-
-#icon-number img {
-    width: 12vw;
-}
-
-#icon-number p {
-    color: #8C8C8C;
-    font-size: 1.2vw;
-    margin: 3vw 0 1vw 0;
-}
-
-#icon-number h3 {
-    color: #00F1C7;
-    font-size: 1.6vw;
-    font-weight: 400;
-}
-
-#company h3 {
-    font-weight: 400;
-    font-size: 1.8vw;
-    margin: 0 0 1.6vw 0;
-}
-
-#company div span {
-    font-size: 1vw;
-    font-weight: 200;
-}
-
-
-#company div a p {
-    display: inline;
-    font-size: 1.1vw;
-}
-
-#company div {
-    margin: 1.2vw 0;
-    color: #5E5E5E;
-}
-
-#company div a {
-    text-decoration: none;
-    color: #5E5E5E;
-}
-
-#help {
-    color: #000000;
-    margin-left: 8vw;
-}
-
-#help h3 {
-    font-weight: 400;
-    font-size: 1.8vw;
-    margin: 0 0 1.6vw 0;
-}
-
-#help div span {
-    font-size: 1vw;
-    font-weight: 200;
-}
-
-#help div a p {
-    display: inline;
-    font-size: 1.1vw;
-}
-
-#help div {
-    margin: 1.2vw 0;
-    color: #5E5E5E;
-}
-
-#help div a {
-    text-decoration: none;
-    color: #5E5E5E;
-}
-
-.subfooter {
-    border-top: 0.07vw solid #e2e2e2;
-    padding: 1.4vw 11.7vw;
-    font-size: 1.1vw;
-    font-family: Montserrat, Arial, serif;
-    color: #8C8C8C;
-}
-
-.subfooter a {
-    text-decoration: none;
-    font-size: 1.2vw;
-    color: #5E5E5E;
-}
-
-.footer-hover-a:hover {
-    text-decoration: underline;
-    color: #00F1C7;
-}
-
-
-.subfooter a:first-of-type {
-    float: right;
-    font-size: 2.5vw;
-    padding: 0;
-    vertical-align: middle;
-    font-weight: lighter;
-}
-
-
-/*======= Footer ==> queries == */
 @media screen and (max-width: 426px) {
 
     .footer {
@@ -2018,10 +3382,8 @@ a.btnMore:hover {
     .subfooter a {
         font-size: 0.8rem;
         line-height: 1.1rem;
-
     }
 }
-
 
 @media screen and (max-width: 376px) {
 
@@ -2192,7 +3554,6 @@ a.btnMore:hover {
     .subfooter a {
         font-size: 3.7vw;
         line-height: 8vw;
-
     }
 }
 
