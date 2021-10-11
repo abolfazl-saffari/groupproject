@@ -43,7 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 4.5vw 12vw;
+    padding: 4.5vw 16vw;
     z-index: 1000;
 }
 
@@ -118,11 +118,11 @@ header .current {
     }
 
     .hamburger-menu {
-        background-color: #020e1b;
         position: fixed;
         top: 0;
         left: 0;
-        display: block;
+        display: flex;
+        justify-content: space-between;
         width: 100vw;
         min-height: 6rem;
         z-index: 100;
@@ -130,7 +130,10 @@ header .current {
     }
 
     .hamburger-menu a {
-        display: inline-block;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /*margin: 2rem;*/
     }
 
@@ -142,8 +145,8 @@ header .current {
     .hamburger-menu ion-icon {
         font-size: 2rem;
         color: #00c19f;
-        float: right;
-
+        width: 20vw;
+        align-self: center;
     }
 
     .hamburger-menu ion-icon:hover {
@@ -266,7 +269,7 @@ header .current {
     box-sizing: border-box;
     font-size: 4.4rem;
     font-weight: 700;
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-top: 15vw;
     color: white;
 }
@@ -436,17 +439,19 @@ header .current {
     }
 
     .right-section {
-        margin-left: 10%;
+        margin-left: 0;
         width: 100%;
         justify-content: center;
         margin-top: 6vh;
     }
 
     .right-section img {
+        margin-left: 10%;
         width: 75vw;
     }
 
     .book-online {
+        margin-left: 10%;
         width: 75vw;
         height: 42vh;
         margin-bottom: 10vh;
@@ -628,7 +633,7 @@ header .current {
     }
 
     #left-video {
-        padding: 15rem 0 10rem;
+        padding: 15rem 0 5rem;
         height: 25rem;
         width: 35rem;
         background-size: cover;
@@ -659,7 +664,7 @@ header .current {
 
     #right-video {
         margin-top: 0;
-        padding: 10rem 0 15rem;
+        padding: 10rem 0 5rem;
         width: 35rem;
         height: 25rem;
         background-size: cover;
