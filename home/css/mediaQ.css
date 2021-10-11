@@ -4,28 +4,25 @@
         display: none;
     }
 
-/*.container header dl {*/
-/*    display: none;*/
-/*}*/
-/*    .container header {*/
-/*        width: 80vw;*/
-/*        margin-top: 0;*/
-/*    }*/
-/**/
-/*    .container a img{*/
-/*        width: 10rem;*/
-/*        margin: 0.5rem;*/
-/*    }*/
-/*    .container ion-icon {*/
-/*        display: block;*/
-/*        font-size: 2.12rem;*/
-/*        color: #00c19f;*/
-/*        float: right;*/
-/*    }*/
-
+    /*.container header dl {*/
+    /*    display: none;*/
+    /*}*/
+    /*    .container header {*/
+    /*        width: 80vw;*/
+    /*        margin-top: 0;*/
+    /*    }*/
+    /**/
+    /*    .container a img{*/
+    /*        width: 10rem;*/
+    /*        margin: 0.5rem;*/
+    /*    }*/
+    /*    .container ion-icon {*/
+    /*        display: block;*/
+    /*        font-size: 2.12rem;*/
+    /*        color: #00c19f;*/
+    /*        float: right;*/
+    /*    }*/
     /*======== header =========*/
-
-
     .header {
         padding: 0;
         width: 100%;
@@ -94,10 +91,7 @@
     }
 
 
-
-/*========services ========*/
-
-
+    /*========services ========*/
     .services {
         padding-left: 5vw;
         display: grid;
@@ -187,8 +181,6 @@
 
 
     /*=======================================*/
-
-
     .pics {
         padding: 0 4vw;
         display: grid;
@@ -385,7 +377,6 @@
 
 
     /*================= Section 3 ==================*/
-
     .videos {
         padding-left: 0;
         margin-top: 6vw;
@@ -513,8 +504,6 @@
 
 
     /*============= footer ============*/
-
-
     .allfooter {
         width: 100%;
         display: flex;
@@ -652,80 +641,4 @@
         vertical-align: middle;
         font-weight: lighter;
     }
-
-
-    /*================= sticky button ==================*/
-
-    /*sti = sticky*/
-    /*btn = button*/
-
-    .sti-btn-up {
-        display: flex;
-        flex-flow: column;
-        width: 3.8rem;
-        height: 3.8rem;
-        position: fixed;
-        top: 24.5rem;
-        right: 0;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 0.2rem 0 0 0.2rem;
-        background-color: #06070C;
-        color: #ffffff;
-    }
-
-    .sti-btn-up span:first-child {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-left: 0.2rem;
-
-    }
-
-    .sti-btn-up span:last-child {
-        font-size: 0.64rem;
-
-    }
-
-    .sti-btn-down {
-        display: flex;
-        flex-flow: column;
-        width: 3.8rem;
-        height: 3.8rem;
-        position: fixed;
-        top: 29rem;
-        right: 0;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 0.2rem 0 0 0.2rem;
-        background-color: #80B541;
-        color: #F3F5F2;
-
-    }
-
-    .sti-btn-down img {
-        width: 1.5rem;
-        height: 1.6rem;
-    }
-
-    .sti-btn-down span {
-        font-size: 0.64rem;
-        margin-top: 0.21rem;
-    }
-
-    .blink {
-        animation: blinker 4s infinite;
-    }
-
-    @keyframes blinker {
-        0%, 100%, 50% {
-            opacity: 1
-        }
-        25%, 75% {
-            opacity: .2
-        }
-    }
-
 }
-

@@ -56,5 +56,5 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
     let scrollmenu = document.querySelector("#hambergure-menu");
-    scrollmenu.classList.toggle("sticky", window.scrollY > 110);
+    scrollmenu.classList.toggle("sticky", window.scrollY > 10);
 })
