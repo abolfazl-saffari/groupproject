@@ -1,6 +1,6 @@
 
 function openMenu() {
-    let menoBox = document.getElementById("hambergure-content");
+    let menoBox = document.getElementById("hamburger-content");
 
 
     menoBox.classList.add("open-menu");
@@ -12,13 +12,13 @@ function openMenu() {
     bodyBox.classList.remove("moveBack-container");
 
 
-    let menunav = document.getElementById('hambergure-menu')
+    let menunav = document.getElementById('hamburger-menu')
 
     menunav.classList.add("moveOn-container");
     menunav.classList.remove("moveBack-container");
 }
 function closeMenu() {
-    let menoBox = document.getElementById("hambergure-content");
+    let menoBox = document.getElementById("hamburger-content");
     menoBox.classList.remove("open-menu");
     menoBox.classList.add("close-menu");
 
@@ -26,16 +26,16 @@ function closeMenu() {
     bodyBox.classList.remove("moveOn-container");
     bodyBox.classList.add("moveBack-container");
 
-    let menunav = document.getElementById('hambergure-menu')
+    let menunav = document.getElementById('hamburger-menu')
 
     menunav.classList.remove("moveOn-container");
     menunav.classList.add("moveBack-container");
 
 }
 function closeMenuBody() {
-    let menoBox = document.getElementById("hambergure-content");
+    let menoBox = document.getElementById("hamburger-content");
     let bodyBox = document.getElementById("container");
-    let menunav = document.getElementById('hambergure-menu')
+    let menunav = document.getElementById('hamburger-menu')
 
 
     if (menoBox.classList.contains("open-menu")){
@@ -55,6 +55,6 @@ window.addEventListener("scroll", function () {
 
 
 window.addEventListener("scroll", function () {
-    let scrollmenu = document.querySelector("#hambergure-menu");
+    let scrollmenu = document.querySelector("#hamburger-menu");
     scrollmenu.classList.toggle("sticky2", window.scrollY > 50);
 })

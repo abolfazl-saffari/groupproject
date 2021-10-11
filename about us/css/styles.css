@@ -28,7 +28,7 @@ body {
 @media screen and (max-width: 765px) {
 
     .container {
-        grid-template-rows:  80vh max-content max-content max-content max-content;
+        grid-template-rows:  60vh max-content max-content max-content max-content;
     }
 }
 
@@ -43,7 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 4.5vw 12vw;
+    padding: 4.5vw 16vw;
     z-index: 1000;
 }
 
@@ -93,7 +93,7 @@ header .current {
     color: #fff;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1200px) {
 
     .container header {
         display: none;
@@ -103,68 +103,69 @@ header .current {
 
 /*================ burger menu ===================*/
 
-.hambergure-menu {
+.hamburger-menu {
     display: none;
 }
 
-.hambergure-content {
+.hamburger-content {
     display: none;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1200px) {
 
-    .hambergure-content {
+    .hamburger-content {
         display: block;
     }
 
-    .hambergure-menu {
-        background-color: #020e1b;
+    .hamburger-menu {
         position: fixed;
         top: 0;
         left: 0;
-        display: block;
-        width: 100%;
-        min-height: 14vh;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        min-height: 6rem;
         z-index: 100;
-        padding-top: 2vw;
+        padding-top: 1rem;
     }
 
-    .hambergure-menu a {
-        display: inline-block;
+    .hamburger-menu a {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /*margin: 2rem;*/
-        padding-left: 28vw;
     }
 
-    .hambergure-menu a img {
+    .hamburger-menu a img {
         margin: auto;
-        width: 25vw;
+        height: 2.4rem;
     }
 
-    .hambergure-menu ion-icon {
+    .hamburger-menu ion-icon {
         font-size: 2rem;
         color: #00c19f;
-        float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+        width: 20vw;
+        align-self: center;
     }
 
-    .hambergure-menu ion-icon:hover {
+    .hamburger-menu ion-icon:hover {
         cursor: pointer;
     }
 
-    .hambergure-content ion-icon:hover {
+    .hamburger-content ion-icon:hover {
         color: white;
         cursor: pointer;
     }
 
-    .hambergure-content ion-icon {
+    .hamburger-content ion-icon {
         font-size: 2rem;
         padding: 1rem;
         float: right;
         color: #a6a6a6;
     }
 
-    .hambergure-content {
+    .hamburger-content {
         background-color: #191919;
         width: 250px;
         height: 105vh;
@@ -177,17 +178,17 @@ header .current {
     }
 
 
-    .hambergure-content dl {
+    .hamburger-content dl {
         display: flex;
         flex-direction: column;
         margin-top: 3.6rem;
     }
 
-    .hambergure-content dl dt:last-child a {
+    .hamburger-content dl dt:last-child a {
 
     }
 
-    .hambergure-content dl dt a {
+    .hamburger-content dl dt a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
         width: 100%;
@@ -201,21 +202,21 @@ header .current {
     }
 
 
-    .hambergure-content dl dt:last-child a {
+    .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
 
-    .hambergure-content dl dt a:hover {
+    .hamburger-content dl dt a:hover {
         color: #fff;
     }
 
-    .hambergure-content dl dt:last-child a:hover {
+    .hamburger-content dl dt:last-child a:hover {
         color: #08F1C9;
     }
 
-    .hambergure-content .current {
+    .hamburger-content .current {
         color: #fff;
     }
 
@@ -247,8 +248,8 @@ header .current {
     .sticky2 {
         position: fixed;
         min-height: 3rem;
-        /*padding-top: 6vw;*/
         transition: ease-in 0.25s;
+        background: black;
     }
 
 }
@@ -268,7 +269,7 @@ header .current {
     box-sizing: border-box;
     font-size: 4.4rem;
     font-weight: 700;
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-top: 15vw;
     color: white;
 }
@@ -278,7 +279,7 @@ header .current {
     .header {
         background-position: -47rem 0;
         width: 100vw;
-        height: 53.5vh;
+        height: 45.5vh;
     }
 
 
@@ -286,6 +287,10 @@ header .current {
         font-size: 3rem;
         margin-top: 12rem;
         margin-left: 6rem;
+    }
+
+    .hamburger-menu {
+        background: black;
     }
 }
 
@@ -336,6 +341,10 @@ header .current {
     font-weight: 300;
     line-height: 5vh;
     margin-top: 3vh;
+}
+
+.left-section h2 {
+    font-size: 3rem;
 }
 
 .left-section button {
@@ -430,27 +439,30 @@ header .current {
 
     .left-section h4 {
         font-size: 1rem;
+        margin: revert;
     }
 
     .left-section p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 400;
     }
 
     .right-section {
-        margin-left: 10%;
+        margin-left: 0;
         width: 100%;
         justify-content: center;
         margin-top: 6vh;
     }
 
     .right-section img {
+        margin-left: 15%;
         width: 75vw;
     }
 
     .book-online {
+        margin-left: 15%;
         width: 75vw;
-        height: 42vh;
+        height: 40vh;
         margin-bottom: 10vh;
     }
 
@@ -470,9 +482,9 @@ header .current {
     }
 
     .book-online button {
-        width: 30%;
-        height: 7vh;
-        font-size: 2.5vw;
+        width: 32%;
+        height: 6vh;
+        font-size: 3vw;
         margin-left: 5.2vw;
     }
 
@@ -630,7 +642,7 @@ header .current {
     }
 
     #left-video {
-        padding: 15rem 0 10rem;
+        padding: 15rem 0 5rem;
         height: 25rem;
         width: 35rem;
         background-size: cover;
@@ -661,7 +673,7 @@ header .current {
 
     #right-video {
         margin-top: 0;
-        padding: 10rem 0 15rem;
+        padding: 10rem 0 5rem;
         width: 35rem;
         height: 25rem;
         background-size: cover;
@@ -989,6 +1001,40 @@ header .current {
     }
 }
 
+@media screen and (max-width: 1050px) and (min-width: 766px) {
+    .header h1 {
+        margin-left: 10vw;
+    }
+
+    .hamburger-menu a {
+        width: 40vw;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .left-section h4 {
+        font-size: 1.5rem;
+    }
+
+    .left-section h1 {
+        margin: revert;
+    }
+
+    #icon-number img {
+        width: 10rem;
+    }
+
+    #icon-number {
+        margin-left: 13vw;
+    }
+
+    #icon-number h3 {
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 765px) {
 
     .sti-btn {
@@ -1016,6 +1062,11 @@ header .current {
     #left-video {
         width: 28rem;
     }
+
+    .header h1 {
+        margin-left: 10vw;
+    }
+
 }
 
 @media screen and (max-width: 470px){
@@ -1044,6 +1095,14 @@ header .current {
 
     #right-video h2 {
         width: 15rem;
+    }
+
+    .hamburger-menu a img {
+        padding-left: 15vw;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -1092,5 +1151,15 @@ header .current {
 
     .left:nth-of-type(1) h2 {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .left {
+        width: 90vw;
+    }
+
+    .right {
+        width: 90vw;
     }
 }
