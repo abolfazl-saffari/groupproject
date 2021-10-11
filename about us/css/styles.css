@@ -93,7 +93,7 @@ header .current {
     color: #fff;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1200px) {
 
     .container header {
         display: none;
@@ -103,68 +103,66 @@ header .current {
 
 /*================ burger menu ===================*/
 
-.hambergure-menu {
+.hamburger-menu {
     display: none;
 }
 
-.hambergure-content {
+.hamburger-content {
     display: none;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1200px) {
 
-    .hambergure-content {
+    .hamburger-content {
         display: block;
     }
 
-    .hambergure-menu {
+    .hamburger-menu {
         background-color: #020e1b;
         position: fixed;
         top: 0;
         left: 0;
         display: block;
-        width: 100%;
-        min-height: 14vh;
+        width: 100vw;
+        min-height: 6rem;
         z-index: 100;
-        padding-top: 2vw;
+        padding-top: 1rem;
     }
 
-    .hambergure-menu a {
+    .hamburger-menu a {
         display: inline-block;
         /*margin: 2rem;*/
-        padding-left: 28vw;
     }
 
-    .hambergure-menu a img {
+    .hamburger-menu a img {
         margin: auto;
-        width: 25vw;
+        height: 2.4rem;
     }
 
-    .hambergure-menu ion-icon {
+    .hamburger-menu ion-icon {
         font-size: 2rem;
         color: #00c19f;
         float: right;
-        margin: -11.5vw 4.5vw 0 0;
-        padding-top: 12vw;
+
     }
 
-    .hambergure-menu ion-icon:hover {
+    .hamburger-menu ion-icon:hover {
         cursor: pointer;
     }
 
-    .hambergure-content ion-icon:hover {
+    .hamburger-content ion-icon:hover {
         color: white;
         cursor: pointer;
     }
 
-    .hambergure-content ion-icon {
+    .hamburger-content ion-icon {
         font-size: 2rem;
         padding: 1rem;
         float: right;
         color: #a6a6a6;
     }
 
-    .hambergure-content {
+    .hamburger-content {
         background-color: #191919;
         width: 250px;
         height: 105vh;
@@ -177,17 +175,17 @@ header .current {
     }
 
 
-    .hambergure-content dl {
+    .hamburger-content dl {
         display: flex;
         flex-direction: column;
         margin-top: 3.6rem;
     }
 
-    .hambergure-content dl dt:last-child a {
+    .hamburger-content dl dt:last-child a {
 
     }
 
-    .hambergure-content dl dt a {
+    .hamburger-content dl dt a {
         display: block;
         border-top: 1px solid rgba(181, 189, 196, 0.06);
         width: 100%;
@@ -201,21 +199,21 @@ header .current {
     }
 
 
-    .hambergure-content dl dt:last-child a {
+    .hamburger-content dl dt:last-child a {
         border-bottom: 1px solid rgba(181, 189, 196, 0.06);
         padding-bottom: 1rem;
         color: #08F1C9;
     }
 
-    .hambergure-content dl dt a:hover {
+    .hamburger-content dl dt a:hover {
         color: #fff;
     }
 
-    .hambergure-content dl dt:last-child a:hover {
+    .hamburger-content dl dt:last-child a:hover {
         color: #08F1C9;
     }
 
-    .hambergure-content .current {
+    .hamburger-content .current {
         color: #fff;
     }
 
@@ -247,8 +245,8 @@ header .current {
     .sticky2 {
         position: fixed;
         min-height: 3rem;
-        /*padding-top: 6vw;*/
         transition: ease-in 0.25s;
+        background: black;
     }
 
 }
