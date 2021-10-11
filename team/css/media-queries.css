@@ -1,3 +1,17 @@
+/*-----small and medium and large sizes for mobile devices-----*/
+
+/*
+Smartphones(large-size)-----------(425px)  => 26th line
+Smartphones(Medium-size)-----------(375px) => 453th line
+Smartphones(Small-size)-----------(320px)  => 771th line
+*/
+
+/*-----small and 4k sizes for desktop devices-----*/
+
+/*
+Laptops(Small-size)-----------(1024px)    => 1111th line
+4K -----------(2560x)                     => 1594th line
+*/
 @media screen and (max-width: 765px) {
 
     header {
