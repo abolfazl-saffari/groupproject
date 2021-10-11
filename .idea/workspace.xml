@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
 =======
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
       <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/services.html" afterDir="false" />
+=======
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/media-queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/team.html" afterDir="false" />
+>>>>>>> Abolfazl
     </list>
 >>>>>>> Maryam
     <option name="SHOW_DIALOG" value="false" />
