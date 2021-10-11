@@ -1,8 +1,11 @@
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
     overflow-x: hidden;
+    position: relative;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -12,26 +15,34 @@ body {
     background: #00F1C7;
 }
 
+.alaki {
+    background-color: #00c19f;
+    width: 80%;
+    height: 100rem;
+}
+
 /*================= grids of container ==================*/
 
 .container {
-    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
     display: grid;
     grid-template-rows:  max-content max-content max-content max-content auto;
     row-gap: 1vw;
-    grid-template-areas: "header"
+    grid-template-areas: "main-header"
                          "content1"
                          "content2"
                          "content3"
-                         "footer";
+                         "main-footer";
 }
 
 .header {
-    grid-area: header;
+    grid-area: main-header;
 }
 
 .services {
     grid-area: content1;
+    width: 100vw;
 }
 
 .pics {
@@ -43,38 +54,42 @@ body {
 }
 
 .footer {
-    grid-area: footer;
+    grid-area: main-footer;
 }
 
 @media screen and (max-width: 426px) {
+
     .container {
-        grid-template-rows:  81.5vw max-content max-content max-content auto;
+        width: 425px;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        position: relative;
+        scroll-behavior: smooth;
 
     }
 }
-/*================= Burger menu ==================*/
 
-@media screen and (min-width: 426px) {
+/*================= Mobile Header ==================*/
+@media screen and (min-width: 427px) {
 
     .hambergure-menu {
         display: none;
     }
-
-    .hambergure-content {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 426px) {
-
-    .hambergure-content {
-        display: block;
-    }
 
     .hambergure-menu {
         background-color: rgba(10, 22, 34, 1);
         display: block;
-        width: 100%;
+        max-width: 100vw;
         min-height: 3.38rem;
         z-index: 100;
         padding-top: 0.53rem;
@@ -82,7 +97,6 @@ body {
 
     .hambergure-menu a {
         display: inline-block;
-        /*margin: 2rem;*/
         padding-left: 7.43rem;
         padding-top: 0.27rem;
     }
@@ -96,12 +110,72 @@ body {
         font-size: 2.12rem;
         color: #00c19f;
         float: right;
-        margin: -3.32rem 0.67rem 0 0;
+        margin: -3.1rem 0.67rem 0 0;
         padding-top: 3.45rem;
     }
 
     .hambergure-menu ion-icon:hover {
         cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+
+    .hambergure-menu {
+        max-width: 100vw;
+        min-height: 3rem;
+        padding-top: 0.7rem;
+    }
+
+    .hambergure-menu a {
+        padding-left: 5rem;
+    }
+
+    .hambergure-menu a img {
+        width: 10.5rem;
+    }
+
+    .hambergure-menu ion-icon {
+        font-size: 2rem;
+        margin: -3.3rem 0.6rem 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hambergure-menu {
+        max-width: 100vw;
+        min-height: 3rem;
+        padding-top: 0.7rem;
+    }
+
+    .hambergure-menu a {
+        padding-left: 3rem;
+    }
+
+    .hambergure-menu a img {
+        width: 11rem;
+    }
+
+    .hambergure-menu ion-icon {
+        font-size: 2rem;
+        margin: -3rem 0.6rem 0 0;
+    }
+}
+
+/*================= Burger menu ==================*/
+
+@media screen and (min-width: 1238px) {
+
+    .hambergure-content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1238px) {
+
+    .hambergure-content {
+        display: block;
     }
 
     .hambergure-content ion-icon:hover {
@@ -127,7 +201,6 @@ body {
         top: 0;
         right: 0;
     }
-
 
     .hambergure-content dl {
         display: flex;
@@ -192,7 +265,7 @@ body {
     }
 
     .moveBack-container {
-        transsform: translate(0);
+        transform: translate(0);
         transition: transform 1s;
     }
 
@@ -205,31 +278,129 @@ body {
 
 }
 
+@media screen and (max-width: 426px) {
+
+    .hambergure-content ion-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .hambergure-content ion-icon {
+        font-size: 2rem;
+        padding: 1rem;
+        float: right;
+        color: #a6a6a6;
+    }
+
+    .hambergure-content {
+        background-color: #191919;
+        width: 16rem;
+        height: 100vh;
+        z-index: 105;
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .hambergure-content dl {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .hambergure-content dl dt a {
+        display: block;
+        border-top: 1px solid rgba(181, 189, 196, 0.06);
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #B5BDC4;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .hambergure-content dl dt:last-child a {
+        border-bottom: 1px solid rgba(181, 189, 196, 0.06);
+        padding-bottom: 1rem;
+        color: #08F1C9;
+    }
+
+    .hambergure-content dl dt a:hover {
+        color: #fff;
+    }
+
+    .hambergure-content dl dt:last-child a:hover {
+        color: #08F1C9;
+    }
+
+    .hambergure-content .current {
+        color: #fff;
+    }
+
+    .open-menu {
+        transform: translate(0);
+        /*float: right;*/
+        transition: transform 1s;
+    }
+
+    .close-menu {
+        transform: translate(26.5rem);
+        transition: transform 1s 0.5s;
+    }
+
+    .moveOn-container {
+        transform: translate(-8rem);
+        background-color: rgba(27, 68, 179, 0.1);
+        filter: grayscale(70%);
+        transition: 1s 0.5s;
+    }
+
+    .moveBack-container {
+        transform: translate(0);
+        transition: transform 1s;
+    }
+
+    .sticky {
+        position: fixed;
+        min-height: 2.75rem;
+        width: 100vw;
+        transition: ease-in 1s;
+    }
+
+}
+
 @media screen and (max-width: 376px) {
     .hambergure-content {
-        width: 20rem;
+        width: 17rem;
+        height: 100vh;
     }
+
     .hambergure-content ion-icon {
         font-size: 2.2rem;
-        padding-right: 6rem;
+        padding-right: 1rem;
     }
 
-    .hambergure-menu {
-        min-height: 3rem;
-        padding-top: 0.7rem;
+    .hambergure-content dl {
+        margin-top: 3.6rem;
     }
 
-    .hambergure-menu a {
-        padding-left: 5rem;
+    .hambergure-content dl dt a {
+        padding: 0.8rem 1rem;
     }
 
-    .hambergure-menu a img {
-        width: 10.5rem;
+}
+
+@media screen and (max-width: 320px) {
+    .hambergure-content {
+        max-width: 15rem;
     }
 
-    .hambergure-menu ion-icon {
-        font-size: 2rem;
-        margin: -3rem 0.6rem 0 0;
+    .hambergure-content ion-icon {
+        font-size: 2.2rem;
+        padding-right: 1rem;
     }
 
     .hambergure-content dl {
@@ -240,11 +411,11 @@ body {
         padding: 0.6rem 1rem;
     }
 
-    .open-menu {
-    }
 }
+
 /*================= Movable Navbar ==================*/
-@media screen and (min-width: 426px) {
+
+@media screen and (min-width: 427px) {
     header {
         position: fixed;
         top: 0;
@@ -304,18 +475,8 @@ body {
         color: #fff;
     }
 }
-/*======= Movable Navbar ==> queries == */
 
-
-@media screen and (min-width: 1238px) {
-    header #open-icon {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 427px) {
     header {
         display: none;
     }
@@ -327,7 +488,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    height: auto;
+    height: 53rem;
     margin: 0;
     background-image: url("../images/slidebar.jpg");
     background-position: -4.5vw 0vw;
@@ -390,14 +551,13 @@ a.btnMore:hover {
     background-color: black;
 }
 
-/*======= Header ==> queries == */
-
 @media screen and (max-width: 426px) {
 
     .header {
         background-position: -5.3rem 3rem;
         background-size: 38.5rem;
-        width: 100%;
+        width: 425px;
+        height: 21rem;
     }
 
     #welcome {
@@ -420,15 +580,18 @@ a.btnMore:hover {
         font-size: 0.53rem;
     }
 }
+
 @media screen and (max-width: 376px) {
     .header {
         background-position: -5.3rem 3rem;
         background-size: 38.5rem;
-        max-height: 20rem;
+        height: 18.5rem;
     }
+
     #welcome {
-        margin-top: 8rem;
+        margin-top: 7rem;
     }
+
     #welcome h1 {
         font-size: 1.7rem;
     }
@@ -440,94 +603,121 @@ a.btnMore:hover {
         font-size: 0.5rem;
     }
 }
-/*================= Section 1 ==================*/
 
-.services {
-    padding-left: 8vw;
-    display: grid;
-    grid-template-rows: max-content max-content max-content;
-    grid-template-columns:18vw 18vw 18vw 18vw;
-    column-gap: 2vw;
-    row-gap: 4vw;
-    grid-template-areas: "top top top top"
+@media screen and (max-width: 320px) {
+
+    .header {
+
+        height: 16rem;
+    }
+
+    #welcome {
+        margin-top: 6.5rem;
+        line-height: 0.4rem;
+    }
+
+    #welcome h4 {
+        font-size: 0.3rem;
+    }
+
+    .btnMore {
+        width: 3rem;
+        height: 1rem;
+        font-size: 0.45rem;
+        padding: 1.8vw;
+        letter-spacing: 0;
+
+    }
+
+}
+
+/*================= Section 1 ==================*/
+@media screen and (min-width: 427px) {
+    .services {
+        padding-left: 8vw;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns:18vw 18vw 18vw 18vw;
+        column-gap: 2vw;
+        row-gap: 4vw;
+        grid-template-areas: "top top top top"
                          "cell1 cell2 cell3 cell4"
                          "view-button view-button view-button view-button";
+    }
+
+    .services-top {
+        grid-area: top;
+        padding-left: 2vw;
+        margin-top: 8vw;
+    }
+
+    .services-top h2 {
+        font-size: 3.7vw;
+        line-height: 4rem;
+        font-weight: 700;
+    }
+
+    .cell h4 {
+        color: #000;
+        font-weight: 400;
+        font-size: 1.8vw;
+        margin-top: 4vw;
+    }
+
+    .cell p {
+        color: #7a7c7e;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 1vw;
+        line-height: 2vw;
+    }
+
+    .cell {
+        padding: 0 1.53rem 2rem;
+    }
+
+
+    .cell1 {
+        grid-area: cell1;
+    }
+
+    .cell2 {
+        grid-area: cell2;
+    }
+
+    .cell3 {
+        grid-area: cell3;
+    }
+
+    .cell4 {
+        grid-area: cell4;
+    }
+
+    .view {
+        grid-area: view-button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+
+    .btnViewall {
+        display: inline-block;
+        padding: 1vw 1vw;
+        border: none;
+        width: 25vw;
+        height: 3.5vw;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.1vw;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
 }
-
-.services-top {
-    grid-area: top;
-    padding-left: 2vw;
-    margin-top: 5vw;
-}
-
-.services-top h2 {
-    font-size: 3.7vw;
-    line-height: 5.1rem;
-    font-weight: 700;
-}
-
-.cell h4 {
-    color: #000;
-    font-weight: 400;
-    font-size: 1.8vw;
-    margin-top: 4vw;
-}
-
-.cell p {
-    color: #7a7c7e;
-    font-weight: 400;
-    text-align: justify;
-    font-size: 1vw;
-    line-height: 2vw;
-}
-
-.cell {
-    padding: 1.53rem;
-}
-
-
-.cell1 {
-    grid-area: cell1;
-}
-
-.cell2 {
-    grid-area: cell2;
-}
-
-.cell3 {
-    grid-area: cell3;
-}
-
-.cell4 {
-    grid-area: cell4;
-}
-
-.view {
-    grid-area: view-button;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5vw;
-}
-
-.btnViewall {
-    display: inline-block;
-    padding: 1vw 1vw;
-    border: none;
-    width: 25vw;
-    height: 3.5vw;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.1vw;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    background-color: black;
-    text-align: center;
-    margin-bottom: 10vw;
-}
-
-/*======= Section 1 ==> queries == */
 
 @media screen and (max-width: 426px) {
 
@@ -544,19 +734,21 @@ a.btnMore:hover {
     .services-top h2 {
         font-size: 1.85rem;
         line-height: 2.34rem;
-        margin-bottom: 3.44rem;
+        margin-bottom: 5rem;
     }
 
     .cell h4 {
         font-size: 0.9rem;
         margin-top: 2.65rem;
         margin-bottom: 1.85rem;
+        font-weight: 400;
     }
 
     .cell p {
         font-size: 0.8rem;
         line-height: 1.3rem;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
+        font-weight: 300;
     }
 
     .cell {
@@ -564,11 +756,20 @@ a.btnMore:hover {
     }
 
     .btnViewall {
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
         padding: 0.8rem 0.53rem;
         width: 22.26rem;
         height: 2.39rem;
         font-size: 0.8rem;
-        margin-top: 5.17rem;
+        margin-top: 5.2rem;
         margin-bottom: 6rem;
     }
 }
@@ -587,217 +788,272 @@ a.btnMore:hover {
     .services-top h2 {
         font-size: 8vw;
         line-height: 2.2rem;
-        margin-bottom: 15vw;
+        margin-bottom: 20vw;
     }
 
     .cell h4 {
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin-bottom: 9vw;
+        font-weight: 400;
     }
 
     .cell p {
         font-size: 3.5vw;
         line-height: 5vw;
-        margin-bottom: 1.5vw;
+        margin-bottom: 4.5vw;
+        font-weight: 300;
     }
 
     .btnViewall {
-        padding: 3.5vw 2vw;
-        height: 11vw;
+        padding: 3vw 2vw;
+        height: 10vw;
         font-size: 3.5vw;
+        width: 20rem;
+        margin-top: 5.17rem;
+        margin-bottom: 6rem;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .services-top {
+        width: 80vw;
+    }
+
+    .services-top h2 {
+        font-size: 10vw;
+        margin-bottom: 21vw;
+    }
+
+    .cell h4 {
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+
+    .cell p {
+        font-size: 4vw;
+        width: 15rem;
+        font-weight: 300;
+        margin-bottom: 7.5vw;
+    }
+
+    .btnViewall {
+        width: 15.5rem;
+        height: 12vw;
+        font-size: 4vw;
+        padding: 0.8rem 0.53rem;
+        margin-top: 5.17rem;
+        margin-bottom: 6rem;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        background-color: black;
+        text-align: center;
+        margin-left: 1rem;
     }
 }
 
 /*================= Section 2 ==================*/
-
-.pics {
-    padding-left: 10vw;
-    display: grid;
-    grid-template-rows: 46.3rem 30.6rem 1.02rem;
-    grid-template-columns: 53vw 27vw;
-    grid-template-areas: "left-pic right-pic"
+@media screen and (min-width: 427px) {
+    .pics {
+        padding-left: 10vw;
+        display: grid;
+        grid-template-rows: 46.3rem 30.6rem 1.02rem;
+        grid-template-columns: 53vw 27vw;
+        grid-template-areas: "left-pic right-pic"
                          "book opening"
                          "line line";
+    }
+
+    .left-pic {
+        grid-area: left-pic;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic10.jpg");
+        background-repeat: no-repeat;
+        background-size: 55.2vw;
+        background-position: -1.8vw 0;
+        padding: 15.3rem 5vw;
+        font-family: Montserrat, serif;
+    }
+
+    .left-pic h1 {
+        font-size: 4.2vw;
+        margin: 1.61rem 0 1rem 0;
+        font-weight: 600;
+    }
+
+    .left-pic h3 {
+        font-size: 1.6vw;
+        margin: 0.61rem 0 2.06rem 0;
+        font-weight: 400;
+    }
+
+    .left-pic a {
+        font-size: 1.2vw;
+        padding: 0.765rem 1.1vw;
+        background-color: #fff;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .left-pic a:hover {
+        background-color: #EEEEEE;
+    }
+
+
+    .right-pic {
+        grid-area: right-pic;
+        background-image: url("../images/home_clinic3_pic11.jpg");
+        background-repeat: no-repeat;
+        background-size: 57vw;
+        background-position: -15vw 0;
+        background-position-y: 5vw;
+        padding: 11rem 4vw;
+        font-family: Montserrat, Arial, serif;
+        color: #ffffff;
+    }
+
+    .right-pic img {
+        width: 2.9vw;
+        margin: 11.22rem 0 2.5rem 1.4vw;
+    }
+
+    .right-pic h3 {
+        font-size: 2.4vw;
+        font-weight: 600;
+        text-shadow: 0 0 2.5vw rgba(0, 0, 0, 1);
+        margin: 0 0 2.55rem 1.4vw;
+
+    }
+
+    .btn-ourteam {
+        position: relative;
+        padding: 1.6vw 0.9vw 1.2vw 0.9vw;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 0.9vw;
+        font-weight: 700;
+        margin: 1vw 0.8vw;
+        color: white;
+    }
+
+    .btn-ourteam:after, .btn-ourteam:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.5vw;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        transform: scale(0.9);
+    }
+
+    .btn-ourteam:hover:before {
+        top: 0.5vw;
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .btn-ourteam:hover:after {
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .book-online {
+        grid-area: book;
+        float: right;
+        width: 29vw;
+        height: 15vw;
+        margin-left: 13vw;
+        padding: 4.08rem 5.5vw;
+        background-color: #00F1C7;
+        color: #000000;
+    }
+
+    .book-online h3 {
+        font-size: 2.3vw;
+        font-weight: 600;
+        margin: 1.53rem 0;
+    }
+
+    .book-online h4 {
+        font-size: 1.7vw;
+        font-weight: 400;
+        margin: 2.04rem 0 3.57rem 0;
+    }
+
+    .book-online a {
+        font-size: 1.1vw;
+        padding: 1.02rem 1.5vw;
+        background-color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .opening-time {
+        grid-area: opening;
+        padding: 2.24rem 5.7vw;
+    }
+
+    .opening-time hr {
+        border: none;
+        border-bottom: 0.05vw solid #656565;
+        margin: 2.244rem 0;
+        width: 10vw;
+    }
+
+    .opening-time h5:first-of-type {
+        font-size: 1.3vw;
+        font-weight: 400;
+        color: #B1B1B1;
+        margin: 2.805rem 0;
+    }
+
+    .opening-time h5:last-of-type {
+        font-size: 1.3vw;
+        font-weight: 400;
+        margin: 0 0 1.53rem 0;
+    }
+
+    .opening-time p {
+        font-size: 1.1vw;
+        font-weight: 400;
+        margin: 0;
+        color: #7A7C7E;
+    }
+
+    .opening-time a img {
+        width: 1.4vw;
+    }
+
+    .seperator {
+        grid-area: line;
+        width: 100%;
+        margin-top: 1.53rem;
+        margin-left: -10vw;
+        border: none;
+        border-bottom: 0.01vw solid #e2e2e2;
+    }
 }
-
-.left-pic {
-    grid-area: left-pic;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: start;
-    background-image: url("../images/home_clinic3_pic10.jpg");
-    background-repeat: no-repeat;
-    background-size: 55.2vw;
-    background-position: -1.8vw 0;
-    padding: 15.3rem 5vw;
-    font-family: Montserrat, serif;
-}
-
-.left-pic h1 {
-    font-size: 4.2vw;
-    margin-top: 5.61rem;
-    font-weight: 600;
-}
-
-.left-pic h3 {
-    font-size: 1.6vw;
-    margin: 0.61rem 0 3.06rem 0;
-    font-weight: 400;
-}
-
-.left-pic a {
-    font-size: 1.2vw;
-    padding: 0.765rem 2.2vw;
-    background-color: #fff;
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-
-.left-pic a:hover {
-    background-color: #EEEEEE;
-}
-
-
-.right-pic {
-    grid-area: right-pic;
-    background-image: url("../images/home_clinic3_pic11.jpg");
-    background-repeat: no-repeat;
-    background-size: 57vw;
-    background-position: -15vw 0;
-    background-position-y: 5vw;
-    padding: 15.3rem 4vw;
-    font-family: Montserrat, Arial, serif;
-    color: #ffffff;
-}
-
-.right-pic img {
-    width: 2.9vw;
-    margin: 11.22rem 0 2.5rem 1.4vw;
-}
-
-.right-pic h3 {
-    font-size: 2.4vw;
-    font-weight: 600;
-    text-shadow: 0 0 2.5vw rgba(0, 0, 0, 1);
-    margin: 0 0 2.55rem 1.4vw;
-
-}
-
-.btn-ourteam {
-    position: relative;
-    padding: 1.6vw 0.9vw 1.2vw 0.9vw;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1.1vw;
-    font-weight: 700;
-    margin: 1vw 0.8vw;
-    color: white;
-}
-
-.btn-ourteam:after, .btn-ourteam:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0.5vw;
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    transform: scale(0.9);
-}
-
-.btn-ourteam:hover:before {
-    top: 0.5vw;
-    background-color: #00c19f;
-    transform: scale(1);
-}
-
-.btn-ourteam:hover:after {
-    background-color: #00c19f;
-    transform: scale(1);
-}
-
-.book-online {
-    grid-area: book;
-    float: right;
-    width: 29vw;
-    height: 15vw;
-    margin-left: 13vw;
-    padding: 4.08rem 5.5vw;
-    background-color: #00F1C7;
-    color: #000000;
-}
-
-.book-online h3 {
-    font-size: 2.3vw;
-    font-weight: 600;
-    margin: 1.53rem 0;
-}
-
-.book-online h4 {
-    font-size: 1.7vw;
-    font-weight: 400;
-    margin: 2.04rem 0 3.57rem 0;
-}
-
-.book-online a {
-    font-size: 1.1vw;
-    padding: 1.02rem 1.5vw;
-    background-color: #000000;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.opening-time {
-    grid-area: opening;
-    padding: 2.24rem 5.7vw;
-}
-
-.opening-time hr {
-    border: none;
-    border-bottom: 0.05vw solid #656565;
-    margin: 2.244rem 0;
-    width: 10vw;
-}
-
-.opening-time h5:first-of-type {
-    font-size: 1.3vw;
-    font-weight: 400;
-    color: #B1B1B1;
-    margin: 2.805rem 0;
-}
-
-.opening-time h5:last-of-type {
-    font-size: 1.3vw;
-    font-weight: 400;
-    margin: 0 0 1.53rem 0;
-}
-
-.opening-time p {
-    font-size: 1.1vw;
-    font-weight: 400;
-    margin: 0;
-    color: #7A7C7E;
-}
-
-.opening-time a img {
-    width: 1.4vw;
-}
-
-.seperator {
-    grid-area: line;
-    width: 100%;
-    margin-top: 1.53rem;
-    margin-left: -10vw;
-    border: none;
-    border-bottom: 0.01vw solid #e2e2e2;
-}
-
-/*======= Section 2 ==> queries == */
 
 @media screen and (max-width: 426px) {
 
@@ -808,6 +1064,14 @@ a.btnMore:hover {
     }
 
     .left-pic {
+        grid-area: left-pic;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: start;
+        background-image: url("../images/home_clinic3_pic10.jpg");
+        background-repeat: no-repeat;
+        font-family: Montserrat, serif;
         background-size: 48.5rem;
         background-position: -13.25rem 0;
         padding: 7.6rem 1.6rem;
@@ -824,15 +1088,30 @@ a.btnMore:hover {
     .left-pic h3 {
         font-size: 0.85rem;
         margin: 0.6rem 0 2.12rem 0.8rem;
+        font-weight: 500;
     }
 
     .left-pic a {
+        background-color: #fff;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
         font-size: 0.8rem;
         padding: 0.8rem 1.33rem;
         margin-left: 0.4rem;
     }
 
+    .left-pic a:hover {
+        background-color: #EEEEEE;
+    }
+
     .right-pic {
+        grid-area: right-pic;
+        background-image: url("../images/home_clinic3_pic11.jpg");
+        background-repeat: no-repeat;
+        background-position-y: 5vw;
+        font-family: Montserrat, Arial, serif;
+        color: #ffffff;
         background-size: 46.75rem;
         background-position: -11.13rem 0.05rem;
         padding: 8.1rem 1.3rem;
@@ -846,19 +1125,56 @@ a.btnMore:hover {
     }
 
     .right-pic h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.85rem;
         margin: 0 0 2rem 4.5rem;
-        width: 13.25rem ;
+        width: 13.25rem;
+        font-weight: 600;
+        text-shadow: 0 0 30px black;
     }
 
     .btn-ourteam {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 700;
+        color: white;
         padding: 0.9rem 0.53rem 0.8rem 0.53rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin: 0.27rem 4rem;
+        text-shadow: 0 0 30px black;
+    }
+
+    .btn-ourteam:after, .btn-ourteam:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0.5vw;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        transform: scale(0.9);
+    }
+
+    .btn-ourteam:hover:before {
+        top: 0.5vw;
+        background-color: #00c19f;
+        transform: scale(1);
+    }
+
+    .btn-ourteam:hover:after {
+        background-color: #00c19f;
+        transform: scale(1);
     }
 
     .book-online {
+        grid-area: book;
+        float: right;
+        background-color: #00F1C7;
+        color: #000000;
         width: 20rem;
         height: 13rem;
         margin: 0 0 2.12rem 0vw;
@@ -866,22 +1182,27 @@ a.btnMore:hover {
     }
 
     .book-online h3 {
-        font-size: 1.1rem;
-        margin: 2.4rem 0 1.46rem 0;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 2.2rem 0 1.46rem 0;
     }
 
     .book-online h4 {
-        font-size: 0.9rem;
-        margin-bottom: 2.4rem;
+        font-size: 3.5vw;
+        font-weight: 400;
+        margin: 1rem 0 2.57rem 0;
     }
 
     .book-online a {
+        background-color: #000000;
+        text-decoration: none;
+        color: #ffffff;
         font-size: 0.8rem;
         padding: 0.7rem 1.325rem;
     }
 
-
     .opening-time {
+        grid-area: opening;
         padding: 1.2rem 4.7rem;
     }
 
@@ -893,11 +1214,14 @@ a.btnMore:hover {
     }
 
     .opening-time h5:first-of-type {
+        font-weight: 400;
+        color: #B1B1B1;
         font-size: 0.85rem;
         margin: 1.325rem 0 2.4rem;
     }
 
     .opening-time h5:last-of-type {
+        font-weight: 400;
         font-size: 0.85rem;
         letter-spacing: 0.5px;
         font-stretch: 100%;
@@ -906,14 +1230,22 @@ a.btnMore:hover {
 
     .opening-time p {
         font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0;
+        color: #7A7C7E;
     }
 
     .opening-time a img {
-        width: 1.3rem;
+        width: 4.3vw;
     }
 
     .seperator {
+        grid-area: line;
+        width: 100%;
         margin-top: 8.6rem;
+        margin-left: -10vw;
+        border: none;
+        border-bottom: 0.01vw solid #e2e2e2;
     }
 }
 
@@ -922,7 +1254,7 @@ a.btnMore:hover {
     .left-pic {
         background-size: 208vw;
         background-position: -62vw 0vw;
-        padding: 20.1rem 5vw;
+        padding: 9rem 5vw;
         width: 74vw;
         height: 106vw;
     }
@@ -941,14 +1273,14 @@ a.btnMore:hover {
 
     .left-pic a {
         font-size: 3.4vw;
-        padding: 3vw 6vw;
+        padding: 3.5vw 5.5vw;
         margin-left: 5.5vw;
     }
 
     .right-pic {
         background-size: 215vw;
         background-position: -64vw 0.2vw;
-        padding: 24rem 5vw;
+        padding: 10rem 5vw;
         width: 74vw;
         height: 68vw;
     }
@@ -964,28 +1296,29 @@ a.btnMore:hover {
 
     .book-online {
         width: 73vw;
-        height: 60vw;
+        height: 40vw;
         padding: 4.08rem 5.5vw;
     }
 
     .book-online h3 {
         font-size: 5.2vw;
-        margin: 11vw 0 7.5vw 0;
+        margin: 1vw 0 7.5vw 2rem;
     }
 
     .book-online h4 {
         font-size: 3.8vw;
         margin-bottom: 10.5vw;
+        margin-left: 2rem;
     }
 
     .book-online a {
         font-size: 3.6vw;
         padding: 3.3vw 6vw;
+        margin-left: 2rem;
     }
 
-
     .opening-time {
-        padding: 4.08rem 17.7vw;
+        padding: 1rem 17.7vw;
     }
 
     .opening-time hr {
@@ -1010,6 +1343,84 @@ a.btnMore:hover {
 
     .seperator {
         margin-top: 34.5vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .left-pic {
+        background-size: 244vw;
+        background-position: -83vw 0vw;
+        padding: 10rem 10vw;
+        width: 59vw;
+        height: 114vw;
+    }
+
+    .left-pic h1 {
+        font-size: 11vw;
+        margin-top: 36.5vw;
+        margin-left: 0;
+        width: 18vw;
+        font-weight: 600;
+    }
+
+    .left-pic h3 {
+        font-size: 4.5vw;
+        margin-left: 0;
+        font-weight: 400;
+    }
+
+    .left-pic a {
+        font-size: 4vw;
+        padding: 4.5vw 5.5vw;
+        margin-left: 0;
+    }
+
+    .right-pic {
+        background-size: 243vw;
+        background-position: -82vw 0.2vw;
+        padding: 8.5rem 5vw;
+        width: 69vw;
+        height: 99vw;
+    }
+
+    .right-pic img {
+        width: 13vw;
+        margin: 8.5rem 0 7vw 12.5vw;
+    }
+
+    .right-pic h3 {
+        margin: 0 0 12vw 11vw;
+        width: 10rem;
+    }
+
+    .btn-ourteam {
+        font-size: 0.9rem;
+    }
+
+    .book-online {
+        width: 68vw;
+        height: 75vw;
+        padding: 1.8rem 5.5vw;
+    }
+
+    .book-online h3 {
+        font-size: 6vw;
+        margin: 11vw 0 7.5vw 1rem;
+    }
+
+    .book-online h4 {
+        font-size: 4.8vw;
+        margin-bottom: 10.5vw;
+    }
+
+    .book-online a {
+        font-size: 4vw;
+        padding: 3.5vw 6vw;
+    }
+
+    .opening-time a img {
+        width: 6vw;
     }
 }
 
@@ -1100,7 +1511,6 @@ a.btnMore:hover {
     margin-left: 5vw;
 }
 
-
 .right {
     grid-area: right;
     display: grid;
@@ -1136,8 +1546,6 @@ a.btnMore:hover {
     margin-left: 5vw;
 }
 
-/*======= Section 3 ==> queries == */
-
 @media screen and (max-width: 426px) {
 
     .videos {
@@ -1151,8 +1559,6 @@ a.btnMore:hover {
     .left {
         display: flex;
         flex-direction: column;
-        /*overflow: hidden;*/
-        /*transition: 0.5s ease-in-out;*/
     }
 
     .left:nth-of-type(1) h2 {
@@ -1221,8 +1627,6 @@ a.btnMore:hover {
     .left {
         display: flex;
         flex-direction: column;
-        /*overflow: hidden;*/
-        /*transition: 0.5s ease-in-out;*/
     }
 
     .left:nth-of-type(1) h2 {
@@ -1232,7 +1636,7 @@ a.btnMore:hover {
 
     #left-video {
         margin-top: 9vw;
-        padding: 25.5rem 0;
+        padding: 11rem 0;
         width: 85vw;
         height: 75.5vw;
         background-size: 215vw;
@@ -1260,7 +1664,7 @@ a.btnMore:hover {
 
     #right-video {
         margin-top: 0;
-        padding: 25.5rem 0;
+        padding: 11.4rem 0;
         width: 85vw;
         height: 89vw;
         background-size: 215vw;
@@ -1277,7 +1681,70 @@ a.btnMore:hover {
     #right-video p {
         font-size: 4vw;
     }
+}
 
+@media screen and (max-width: 320px) {
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3vw;
+        margin-top: 19vw;
+        height: max-content;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left:nth-of-type(1) h2 {
+        font-size: 9.5vw;
+        margin-top: 8vw;
+    }
+
+    #left-video {
+        margin-top: 10vw;
+        padding: 11.5rem 0;
+        width: 79vw;
+        height: 80vw;
+        background-size: 245vw;
+        margin-left: 5.62vw;
+        background-position: -83vw -1rem;
+    }
+
+    .btns {
+        transform: translateX(4vw);
+    }
+
+    .pauseBtn {
+        transform: translateX(2vw);
+    }
+
+    #left-video h2 {
+        margin-top: 12vw;
+        font-size: 11vw;
+    }
+
+    #left-video p {
+        font-size: 4vw;
+        margin-left: 6vw;
+    }
+
+    #right-video {
+        margin-top: 0;
+        padding: 11.5rem 0;
+        width: 79vw;
+        height: 98vw;
+        background-size: 245vw;
+        margin-left: 5.62vw;
+        background-position: -83vw 0;
+    }
+
+    #right-video h2 {
+        width: 50vw;
+        font-size: 11vw;
+    }
 }
 
 /*================= Footer ==================*/
@@ -1422,7 +1889,6 @@ a.btnMore:hover {
 
 
 /*======= Footer ==> queries == */
-
 @media screen and (max-width: 426px) {
 
     .footer {
@@ -1498,8 +1964,9 @@ a.btnMore:hover {
 
     .subfooter {
         text-align: center;
-        padding: 1.8rem 2rem;
+        padding: 1.8rem 2.5rem;
         font-size: 0.8rem;
+        width: 22rem;
     }
 
     .subfooter a:first-of-type {
@@ -1511,7 +1978,7 @@ a.btnMore:hover {
 
     .subfooter a {
         font-size: 0.8rem;
-        line-height: 1rem;
+        line-height: 1.1rem;
 
     }
 }
@@ -1589,7 +2056,7 @@ a.btnMore:hover {
 
     .subfooter {
         text-align: center;
-        padding: 8vw 7.7vw;
+        padding: 7vw 2.5vw;
         font-size: 3.5vw;
     }
 
@@ -1607,82 +2074,175 @@ a.btnMore:hover {
     }
 }
 
-/*================= sticky button ==================*/
+@media screen and (max-width: 320px) {
 
+    .footer {
+        padding-bottom: 18vw;
+    }
+
+
+    .footer > div {
+        margin: 1vw 10vw 0;
+        font-size: 3vw;
+    }
+
+    #icon-number {
+        margin-top: 39vw;
+    }
+
+    #icon-number img {
+        width: 53vw;
+    }
+
+    #icon-number p {
+        font-size: 4vw;
+    }
+
+    #icon-number h3 {
+        font-size: 4.5vw;
+    }
+
+    #company h3 {
+        font-size: 4.8vw;
+        margin-top: 17.5vw;
+        margin-bottom: 5vw;
+    }
+
+    #company div {
+        margin: 4vw 0;
+    }
+
+
+    #company div a p {
+        font-size: 3.8vw;
+    }
+
+    #help {
+        margin-bottom: 9vw;
+    }
+
+    #help h3 {
+        font-size: 4.8vw;
+        margin-top: 17.5vw;
+        margin-bottom: 5vw;
+    }
+
+
+    #help div a p {
+        font-size: 3.8vw;
+    }
+
+    #help div {
+        margin: 4vw 0;
+    }
+
+    .subfooter {
+        text-align: center;
+        padding: 8vw 7.7vw;
+        font-size: 4vw;
+        width: 80vw;
+    }
+
+    .subfooter a:first-of-type {
+        float: none;
+        display: block;
+        font-size: 10vw;
+        padding: 3vw 36vw 9vw;
+    }
+
+    .subfooter a {
+        font-size: 3.7vw;
+        line-height: 8vw;
+
+    }
+}
+
+
+/*================= sticky button ==================*/
 /*sti = sticky*/
 /*btn = button*/
 
-.sti-btn-up {
-    display: flex;
-    flex-flow: column;
-    width: 3.8rem;
-    height: 3.8rem;
-    position: fixed;
-    top: 60%;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.2rem 0 0 0.2rem;
-    background-color: #06070C;
-    color: #ffffff;
-}
+@media screen and (min-width: 770px) {
 
-.sti-btn-up span:first-child {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: 0.2rem;
-
-}
-
-.sti-btn-up span:last-child {
-    font-size: 0.64rem;
-
-}
-
-.sti-btn-down {
-    display: flex;
-    flex-flow: column;
-    width: 3.8rem;
-    height: 3.8rem;
-    position: fixed;
-    top: 70%;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.2rem 0 0 0.2rem;
-    background-color: #80B541;
-    color: #F3F5F2;
-
-}
-
-.sti-btn-down img {
-    width: 1.5rem;
-    height: 1.6rem;
-}
-
-.sti-btn-down span {
-    font-size: 0.64rem;
-    margin-top: 0.21rem;
-}
-
-.blink {
-    animation: blinker 4s infinite;
-}
-
-@keyframes blinker {
-    0%, 100%, 50% {
-        opacity: 1
+    .sti-btn-up {
+        display: flex;
+        flex-flow: column;
+        width: 3.8rem;
+        height: 3.8rem;
+        position: fixed;
+        top: 60%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0.2rem 0 0 0.2rem;
+        background-color: #06070C;
+        color: #ffffff;
     }
-    25%, 75% {
-        opacity: .2
+
+    .sti-btn-up span:first-child {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-left: 0.2rem;
+
+    }
+
+    .sti-btn-up span:last-child {
+        font-size: 0.64rem;
+
+    }
+
+    .sti-btn-down {
+        display: flex;
+        flex-flow: column;
+        width: 3.8rem;
+        height: 3.8rem;
+        position: fixed;
+        top: 70%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0.2rem 0 0 0.2rem;
+        background-color: #80B541;
+        color: #F3F5F2;
+
+    }
+
+    .sti-btn-down img {
+        width: 1.5rem;
+        height: 1.6rem;
+    }
+
+    .sti-btn-down span {
+        font-size: 0.64rem;
+        margin-top: 0.21rem;
+    }
+
+    .blink {
+        animation: blinker 4s infinite;
+    }
+
+    @keyframes blinker {
+        0%, 100%, 50% {
+            opacity: 1
+        }
+        25%, 75% {
+            opacity: .2
+        }
     }
 }
 
-/*======= Section 2 ==> queries == */
+@media screen and (min-width: 1100px) {
+    .sti-btn-up {
+        top: 29%;
+    }
+    .sti-btn-down {
+        top: 33.7%;
+    }
+}
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 770px) {
 
     .sti-btn {
         display: none;

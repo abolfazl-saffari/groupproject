@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="team tab v03">
+      <change beforePath="$PROJECT_DIR$/.idea/groupproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groupproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/css/mediaQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/mediaQ.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <workItem from="1633452876536" duration="319000" />
       <workItem from="1633770522448" duration="16238000" />
       <workItem from="1633809992941" duration="7351000" />
-      <workItem from="1633887757614" duration="2132000" />
+      <workItem from="1633887757614" duration="24965000" />
     </task>
     <task id="LOCAL-00001" summary="team tab v03">
       <created>1633804110416</created>
