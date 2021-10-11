@@ -1,3 +1,6 @@
+/*                    main styles or 1440px size(Laptop L)                       */
+/*         For another sizes you should check the media-queries.css file         */
+
 /*========main-style=========*/
 html {
     scroll-behavior: smooth;
