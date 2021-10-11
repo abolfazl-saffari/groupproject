@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="team tab v03">
-      <change beforePath="$PROJECT_DIR$/.idea/groupproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groupproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/css/mediaQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/mediaQ.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.html" afterDir="false" />
+<<<<<<< HEAD
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
+      <change beforePath="$PROJECT_DIR$/services/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/services/css/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/services.html" afterDir="false" />
     </list>
+>>>>>>> Maryam
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +30,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="alireza" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -42,16 +42,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/home/css/styles.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/home/home.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/home/javascript/java.js" root0="FORCE_HIGHLIGHTING" />
-=======
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/home/javascript/java.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/home/home.html" root0="FORCE_HIGHLIGHTING" />
->>>>>>> Abolfazl
   </component>
   <component name="ProjectId" id="1z5zjvEq7bo6hf1bHN3AQmCNqcG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,9 +71,20 @@
       <option name="presentableId" value="Default" />
       <updated>1633452875161</updated>
       <workItem from="1633452876536" duration="319000" />
+<<<<<<< HEAD
       <workItem from="1633770522448" duration="16238000" />
-      <workItem from="1633809992941" duration="7351000" />
-      <workItem from="1633887757614" duration="24965000" />
+=======
+      <workItem from="1633454872910" duration="6042000" />
+      <workItem from="1633494144195" duration="16391000" />
+      <workItem from="1633578685262" duration="33819000" />
+      <workItem from="1633662381297" duration="14629000" />
+      <workItem from="1633755934344" duration="13816000" />
+      <workItem from="1633836089575" duration="24015000" />
+<<<<<<< HEAD
+>>>>>>> Maryam
+=======
+      <workItem from="1633923206837" duration="10611000" />
+>>>>>>> Maryam
     </task>
     <task id="LOCAL-00001" summary="team tab v03">
       <created>1633804110416</created>
@@ -92,7 +93,18 @@
       <option name="project" value="LOCAL" />
       <updated>1633804110416</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
+=======
+    <task id="LOCAL-00005" summary="complected responsive">
+      <created>1633860282262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633860282262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> Maryam
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +123,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="team tab v03" />
     <option name="LAST_COMMIT_MESSAGE" value="team tab v03" />
+=======
+    <MESSAGE value="added services tab" />
+    <MESSAGE value="Edited services tab" />
+    <MESSAGE value="added small phone responsive" />
+    <MESSAGE value="complected small phone responsive" />
+    <MESSAGE value="complected responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="complected responsive" />
+>>>>>>> Maryam
   </component>
 </project>
