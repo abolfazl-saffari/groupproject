@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -13,12 +16,6 @@ body {
 ::selection {
     color: #ffffff;
     background: #00F1C7;
-}
-
-.alaki {
-    background-color: #00c19f;
-    width: 80%;
-    height: 100rem;
 }
 
 /*================= grids of container ==================*/
@@ -126,7 +123,7 @@ body {
 @media screen and (max-width: 426px) {
 
     .hambergure-menu {
-        background-color: rgba(10, 22, 34, 1);
+        background-color: rgba(10, 22, 34, 1) !important;
         display: block;
         max-width: 100vw;
         min-height: 3.38rem;
@@ -224,7 +221,7 @@ body {
 
     .hambergure-content ion-icon {
         font-size: 2rem;
-        padding: 1rem 3rem 1.5rem 1rem;
+        padding: 1rem 1rem 1.5rem 1rem;
         float: right;
         color: #a6a6a6;
     }
@@ -299,7 +296,7 @@ body {
     .moveOn-container {
         transform: translate(-8rem);
         background-color: rgba(27, 68, 179, 0.1);
-        filter: grayscale(70%);
+        filter: brightness(30%);
         transition: 1s 0.5s;
     }
 
@@ -992,6 +989,7 @@ a.btnMore:hover {
         font-weight: 700;
         margin: 1vw 0.8vw;
         color: white;
+        text-decoration: none;
     }
 
     .btn-ourteam:after, .btn-ourteam:before {
@@ -1184,6 +1182,7 @@ a.btnMore:hover {
         font-size: 0.9rem;
         margin: 0.27rem 4rem;
         text-shadow: 0 0 30px black;
+        text-decoration: none;
     }
 
     .btn-ourteam:after, .btn-ourteam:before {
@@ -2204,14 +2203,24 @@ a.btnMore:hover {
 
 @media screen and (min-width: 770px) {
 
+    .sti-btn {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        row-gap: 0.2rem;
+        top: 395px;
+        right: 0;
+
+    }
+
     .sti-btn-up {
         display: flex;
         flex-flow: column;
         width: 3.8rem;
         height: 3.8rem;
-        position: fixed;
-        top: 60%;
-        right: 0;
+        /*position: fixed;*/
+        /*top: 60%;*/
+        /*right: 0;*/
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -2237,9 +2246,9 @@ a.btnMore:hover {
         flex-flow: column;
         width: 3.8rem;
         height: 3.8rem;
-        position: fixed;
-        top: 70%;
-        right: 0;
+        /*position: fixed;*/
+        /*top: 70%;*/
+        /*right: 0;*/
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -2270,15 +2279,6 @@ a.btnMore:hover {
         25%, 75% {
             opacity: .2
         }
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .sti-btn-up {
-        top: 29%;
-    }
-    .sti-btn-down {
-        top: 33.7%;
     }
 }
 
