@@ -28,7 +28,7 @@ body {
 @media screen and (max-width: 765px) {
 
     .container {
-        grid-template-rows:  80vh max-content max-content max-content max-content;
+        grid-template-rows:  60vh max-content max-content max-content max-content;
     }
 }
 
@@ -279,7 +279,7 @@ header .current {
     .header {
         background-position: -47rem 0;
         width: 100vw;
-        height: 53.5vh;
+        height: 45.5vh;
     }
 
 
@@ -287,6 +287,10 @@ header .current {
         font-size: 3rem;
         margin-top: 12rem;
         margin-left: 6rem;
+    }
+
+    .hamburger-menu {
+        background: black;
     }
 }
 
@@ -337,6 +341,10 @@ header .current {
     font-weight: 300;
     line-height: 5vh;
     margin-top: 3vh;
+}
+
+.left-section h2 {
+    font-size: 3rem;
 }
 
 .left-section button {
@@ -454,7 +462,7 @@ header .current {
     .book-online {
         margin-left: 15%;
         width: 75vw;
-        height: 32vh;
+        height: 40vh;
         margin-bottom: 10vh;
     }
 
@@ -993,6 +1001,40 @@ header .current {
     }
 }
 
+@media screen and (max-width: 1050px) and (min-width: 766px) {
+    .header h1 {
+        margin-left: 10vw;
+    }
+
+    .hamburger-menu a {
+        width: 40vw;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .left-section h4 {
+        font-size: 1.5rem;
+    }
+
+    .left-section h1 {
+        margin: revert;
+    }
+
+    #icon-number img {
+        width: 10rem;
+    }
+
+    #icon-number {
+        margin-left: 13vw;
+    }
+
+    #icon-number h3 {
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 765px) {
 
     .sti-btn {
@@ -1057,6 +1099,10 @@ header .current {
 
     .hamburger-menu a img {
         padding-left: 15vw;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
     }
 }
 
