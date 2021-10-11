@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="team tab v05 - more changes +">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/team/css/media-queries.css" afterDir="false" />
-    </list>
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633860816215</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="team tab v09 - (-_*)">
+      <created>1633975485837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633975485837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +128,7 @@
     <MESSAGE value="team tab v04-laptop size 1024 and 4k size added" />
     <MESSAGE value="team tab v05 - more changes" />
     <MESSAGE value="team tab v05 - more changes +" />
-    <option name="LAST_COMMIT_MESSAGE" value="team tab v05 - more changes +" />
+    <MESSAGE value="team tab v09 - (-_*)" />
+    <option name="LAST_COMMIT_MESSAGE" value="team tab v09 - (-_*)" />
   </component>
 </project>
