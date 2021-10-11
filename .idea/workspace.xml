@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
 =======
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="complected responsive">
@@ -20,6 +21,9 @@
 >>>>>>> Abolfazl
     </list>
 >>>>>>> Maryam
+=======
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="" />
+>>>>>>> Abolfazl
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,8 +115,19 @@
       <option name="project" value="LOCAL" />
       <updated>1633860282262</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="6" />
 >>>>>>> Maryam
+=======
+    <task id="LOCAL-00006" summary="team tab v09 - (-_*)">
+      <created>1633975485837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633975485837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+>>>>>>> Abolfazl
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +148,7 @@
   <component name="VcsManagerConfiguration">
 <<<<<<< HEAD
     <MESSAGE value="team tab v03" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="team tab v03" />
 =======
     <MESSAGE value="added services tab" />
@@ -142,5 +158,12 @@
     <MESSAGE value="complected responsive" />
     <option name="LAST_COMMIT_MESSAGE" value="complected responsive" />
 >>>>>>> Maryam
+=======
+    <MESSAGE value="team tab v04-laptop size 1024 and 4k size added" />
+    <MESSAGE value="team tab v05 - more changes" />
+    <MESSAGE value="team tab v05 - more changes +" />
+    <MESSAGE value="team tab v09 - (-_*)" />
+    <option name="LAST_COMMIT_MESSAGE" value="team tab v09 - (-_*)" />
+>>>>>>> Abolfazl
   </component>
 </project>
