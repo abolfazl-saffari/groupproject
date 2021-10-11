@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="team tab v03">
       <change beforePath="$PROJECT_DIR$/.idea/groupproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groupproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/css/mediaQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/mediaQ.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.html" afterDir="false" />
+=======
+    <list default="true" id="4ed3722e-a743-424f-819a-1434068afb8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/team/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/team.html" afterDir="false" />
+>>>>>>> Abolfazl
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
