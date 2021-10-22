@@ -1,10 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+    <title>Contact – BeClinic 3 – BeTheme</title>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="css/colors.css" type="text/css">
+    <link rel="shortcut icon" href="../team/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head> 
 <body>
+    <div class="hambergure-menu-responsive">
+<div class="hambergure-menu" id="hambergure-menu">
+    <a href="../pages.html" class="logo">
+        <img src="../team/images/logo-brand(white).png" alt="retina-clinic">
+    </a>
+    <ion-icon name="menu-outline" id="open-icon" onclick="openMenu()"></ion-icon>
+</div>
+</div>
+<div class="hambergure-content close-menu" id="hambergure-content">
 
+    <div>
+        <ion-icon name="close-outline" id="close-icon" onclick="closeMenu()"></ion-icon>
+    </div>
+
+    <dl>
+        <dt><a href="../pages.html">Home</a></dt>
+        <dt><a href="../about%20us/aboutus.html">About us</a></dt>
+        <dt><a href="../services/services.html">Services</a></dt>
+        <dt><a class="current" href="../team/team.html">Team</a></dt>
+        <dt><a href="https://themes.muffingroup.com/be/clinic3/contact/">Contact</a></dt>
+        <dt><a href="https://1.envato.market/c/1289117/275988/4415?u=https%3A%2F%2Fthemeforest.net%2Fitem%2Fbetheme-responsive-multipurpose-wordpress-theme%2F7758048%3Fref%3Dmuffingroup">Buy now</a></dt>
+    </dl>
+
+</div>
+<div class="container" id="container" onclick="closeMenuBody()">
+    <header>
+        <a href="../pages.html" class="logo"><img src="../team/images/logo-brand(white).png" alt="retina-clinic"></a>
+        <dl>
+            <dt><a href="../pages.html">Home</a></dt>
+            <dt><a href="../about%20us/aboutus.html">About us</a></dt>
+            <dt><a href="../services/services.html">Services</a></dt>
+            <dt><a class="current" href="../team/team.html">Team</a></dt>
+            <dt><a href="https://themes.muffingroup.com/be/clinic3/contact/">Contact</a></dt>
+            <dt><a href="https://1.envato.market/c/1289117/275988/4415?u=https%3A%2F%2Fthemeforest.net%2Fitem%2Fbetheme-responsive-multipurpose-wordpress-theme%2F7758048%3Fref%3Dmuffingroup">Buy now</a></dt>
+        </dl>
+    </header>
+    <section class="header__banner">
+        <div>
+            <h1>Contact</h1>
+        </div>
+    </section>
+        <!--===============BeClinicBox starts===============-->
+        <div class="BeClinicBox section-1">
+            <div class="BeClinic-p-box">
+                <div><img src="../team/images/logo.png"></div>
+                <section>
+                <div><h2>BeClinic</h2></div>
+                <div><p id="Beclinic-details">Sed ultrices nisl velit, eu ornare est ullamcorper a. 
+                    Nunc quis nibh magna. Proin risus erat, 
+                    fringilla vel purus sit amet, mattis porta enim.</p>
+                    
+                    <span id="details-sub"> fermentum faucibus est, sed vehicula velit sodales vitae.</span></div>
+                    </section>
+                <div><p id="address">Level 13, 2 Elizabeth St,<br>
+                    Melbourne, Victoria 3000,<br>
+                    Australia</p></div>
+                <div><h3>+61 (0) 3 8376 6284</h3></div>
+                <div><p id="email">noreply@envato.com</p></div>
+            </div>
+            <div class="BeClinic-img-box">
+                <div class="BeClinic-img">
+                    <img src="images/home_clinic3_pic23.jpg" width="100%">
+                </div>
+                <div class="opening-time-box">
+                    <section>
+                        <h3>Opening <br> time</h3>
+                        <p id="opening-day-time">Monday - Friday</p>
+                        <span id="opening-time">7:00 - 20:00</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="contactus-container section-2">
+        <section class="contact-withus-box">
+            <div style="height: 2px;"><img src="../team/images/logo.png"></div>
+            <div><h2>Contact with us</h2></div>
+            <div><p id="contact-withus-details">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. 
+                Nulla mauris dolor, gravida a <br> varius blandit, 
+                auctor eget purus.</p></div>
+        </section>
+        <!--===============BeClinicBox ends===============-->
+        <!--===============form starts===============-->
+        <div class="formBox">
+            <form action="">
+                <div class="name-email-flex">
+                <input type="text" class="f-style" id="f-name" placeholder="Your name" required>
+                <input type="email" class="f-style" id="f-email" placeholder="Your e-mail" required>
+            </div>
+            <div class="extra-form-flex">
+                <input type="text" class="f-style" id="f-subject" placeholder="Subject">
+                <textarea type="text" id="f-message" placeholder="Message"></textarea>
+                <input type="submit" id="f-button" value="Send a message">
+            </div>
+            </form>
+        </div>
+    </div>
+        <!--===============form ends===============-->
+    <!--===============footer starts===============-->
+    <div class="allfooter">
+        <div class="footer">
+            <div id="icon-number">
+                <img src="../team/images/logo-brand(black).png" alt="retina-clinic">
+                <p>Phone number</p>
+                <h3>+61 (0) 3 8376 6284</h3>
+            </div>
+            <div id="company">
+                <h3>Company</h3>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Lorem ipsum</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Praesent pretium</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Pellentesque</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Aliquam</p></a></div>
+            </div>
+            <div id="help">
+                <h3>Help</h3>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Etiam dapibus</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Nunc sit</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Etiam tempor</p></a></div>
+                <div><span>&#10230</span><a href=""> &nbsp <p> Lorem ipsum</p></a></div>
+            </div>
+
+        </div>
+        <div class="subfooter">
+            <div>
+                <a class="fa fa-angle-up" href="#"></a>
+                &#169;
+                <span> 2021 Betheme by </span>
+                <a class="footer-hover-a" href="https://muffingroup.com/"> Muffin
+                    group </a>
+                &#124;
+                <span> All Rights Reserved</span>
+                &#124;
+                <span> Powered by</span>
+                <a class="footer-hover-a" href="https://wordpress.org/"> WordPress</a>
+
+            </div>
+        </div>
+    </div>
+    <!--===============footer ends===============-->
+    <a href="#" class="sti-btn-up">
+        <span class="blink"> 600&#x2B </span>
+        <span class="blink"> websites </span>
+    </a>
+    <a target="_blank" class="sti-btn-down" href="https://1.envato.market/DENky">
+        <img src="../team/images/buy.svg" alt="">
+        <span>Buy now</span>
+    </a>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../team/javascript/javascript.js" type="text/javascript"></script>
 </body>
 </html>
